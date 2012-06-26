@@ -47,14 +47,14 @@ table {
 }
 
 @font-face {
-	  font-family: 'FertigoProRegular';
-	  src: url('../fonts/fertigo-pro-webfont.eot');
-	  src: url('../fonts/fertigo-pro-webfont.eot?#iefix') format('embedded-opentype'),
-	       url('../fonts/fertigo-pro-webfont.woff') format('woff'),
-	       url('../fonts/fertigo-pro-webfont.ttf') format('truetype'),
-	       url('../fonts/fertigo-pro-webfont.svg#FertigoProRegular') format('svg');
-	  font-weight: normal;
-	  font-style: normal;
+		font-family: 'FertigoProRegular';
+		src: url('../fonts/fertigo-pro-webfont.eot');
+		src: url('../fonts/fertigo-pro-webfont.eot?#iefix') format('embedded-opentype'),
+		     url('../fonts/fertigo-pro-webfont.woff') format('woff'),
+		     url('../fonts/fertigo-pro-webfont.ttf') format('truetype'),
+		     url('../fonts/fertigo-pro-webfont.svg#FertigoProRegular') format('svg');
+		font-weight: normal;
+		font-style: normal;
 
 }
 
@@ -183,6 +183,10 @@ header a.button {
 	right: 0;
 	top: 0;
 	background: transparent url(../images/psr-button.png) 0 0 no-repeat;
+	width: 126px;
+	height: 58px;
+	padding-left: 76px;
+	font-size: 21px;
 }
 
 aside a.button {
@@ -420,19 +424,19 @@ footer a:hover {
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 	.inner {
-	  width: 740px;
+		width: 740px;
 	}
 	header h1, header h2 {
-	  width: 340px;
+		width: 340px;
 	}
 	header h1 {
-	  font-size: 60px;
+		font-size: 60px;
 	}
 	header h2 {
-	  font-size: 30px;
+		font-size: 30px;
 	}
 	#main-content {
-	  width: 490px;
+		width: 490px;
 	}
 	#main-content h1:before,
 	#main-content h2:before,
@@ -440,67 +444,67 @@ footer a:hover {
 	#main-content h4:before,
 	#main-content h5:before,
 	#main-content h6:before {
-	  content: none;
-	  padding-right: 0;
-	  margin-left: 0;
+		content: none;
+		padding-right: 0;
+		margin-left: 0;
 	}
 }
 
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
 	.inner {
-	  width: 93%;
+		width: 93%;
 	}
 	header {
-	  padding: 20px 0;
+		padding: 20px 0;
 	}
 	header .inner {
-	  position: relative;
+		position: relative;
 	}
 	header h1, header h2 {
-	  width: 100%;
+		width: 100%;
 	}
 	header h1 {
-	  font-size: 48px;
+		font-size: 48px;
 	}
 	header h2 {
-	  font-size: 24px;
+		font-size: 24px;
 	}
 	header a.button {
-	  background-image: none;
-	  width: auto;
-	  height: auto;
-	  display: inline-block;
-	  margin-top: 15px;
-	  padding: 5px 10px;
-	  position: relative;
-	  text-align: center;
-	  font-size: 13px;
-	  line-height: 1;
-	  background-color: #9ddcff;
-	  color: #2879d0;
-	  -moz-border-radius: 5px;
-	  -webkit-border-radius: 5px;                     
-	  border-radius: 5px;    
+		background-image: none;
+		width: auto;
+		height: auto;
+		display: inline-block;
+		margin-top: 15px;
+		padding: 5px 10px;
+		position: relative;
+		text-align: center;
+		font-size: 13px;
+		line-height: 1;
+		background-color: #9ddcff;
+		color: #2879d0;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;                     
+		border-radius: 5px;    
 	}
 	header a.button small {
-	  font-size: 13px;
-	  display: inline;
+		font-size: 13px;
+		display: inline;
 	}
 	#main-content,
 	aside#sidebar {
-	  float: none;
-	  width: 100% ! important;
+		float: none;
+		width: 100% ! important;
 	}
 	aside#sidebar {
-	  background-image: none;
-	  margin-top: 20px;
-	  border-top: solid 1px #ddd;
-	  padding: 20px 0;
-	  min-height: 0;
+		background-image: none;
+		margin-top: 20px;
+		border-top: solid 1px #ddd;
+		padding: 20px 0;
+		min-height: 0;
 	}
 	aside#sidebar a.button {
-	  display: none;
+		display: none;
 	}
 	#main-content h1:before,
 	#main-content h2:before,
@@ -508,9 +512,9 @@ footer a:hover {
 	#main-content h4:before,
 	#main-content h5:before,
 	#main-content h6:before {
-	  content: none;
-	  padding-right: 0;
-	  margin-left: 0;
+		content: none;
+		padding-right: 0;
+		margin-left: 0;
 	}
 }
 
