@@ -1,0 +1,15 @@
+/* Format copied from http://humanstxt.org/humans.txt */
+
+/* TEAM */
+
+	Website Lead: Paul Dragoonis
+	Contact: paul@ppi.io
+	Twitter: @dr4goonis
+	From: Glasgow, Scotland
+
+/* THANKS */
+	
+	(First) Contributor: Brandon Holtsclaw
+	Contact: www.brandonholtsclaw.com 
+	Twitter: me@brandonholtsclaw.com
+	From: Kansas City, Missouri, USA
