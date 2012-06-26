@@ -163,7 +163,7 @@ a.button {
 }
 a.button small {
   display: block;
-  font-size: 11px;
+  font-size: 0.55em;
 }
 header a.button {
   position: absolute;
@@ -171,6 +171,7 @@ header a.button {
   top: 0;
   background: transparent url(../images/psr-button.png) 0 0 no-repeat;
 }
+
 aside a.button {
   width: 138px;
   padding-left: 64px;
@@ -178,6 +179,10 @@ aside a.button {
   background: transparent url(../images/download-button.png) 0 0 no-repeat;
   margin-bottom: 20px;
   font-size: 21px;
+}
+
+aside #mailing-list-button {
+  background: transparent url(../images/discussion-button.png) 0 0 no-repeat;
 }
 
 code, pre {
