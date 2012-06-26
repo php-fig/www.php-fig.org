@@ -119,9 +119,32 @@ aside#sidebar {
   line-height: 1.3;
 }
 
-aside#sidebar p.repo-owner,
-aside#sidebar p.repo-owner a {
+aside#sidebar ul.voting-members {
+	margin-left: 0;
+}
+
+aside#sidebar .voting-members-title {
+  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; 
+  font-size: 18px;
   font-weight: bold;
+  margin-top: 24px;
+  margin-bottom: 8px;
+  color: #474747;
+} 
+
+aside#sidebar .voting-members-title:before {
+  content: "///";
+  color: #9ddcff;
+  padding-right: 0.3em;
+}
+
+#main-content ul.voting-members li p {
+	margin-bottom: 5px;
+	font-size: 1.0em;
+}
+#main-content ul.voting-members li {
+	list-style-type: none;
+	padding-left: 0;
 }
 
 #downloads {
@@ -307,7 +330,7 @@ h6:before {
 }
 
 p {
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
  
 a {
