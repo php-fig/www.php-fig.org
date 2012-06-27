@@ -48,6 +48,7 @@ to implement every - or any - accepted PSR’s. Projects have to consider backwa
 compatability issues when upgrading and make the changes at the right time, so it 
 is assumed most projects will eventually adopt, but it is not a requirement.
 
+
 ## Can I get involved?
 
 Absolutely. Anybody who subscribes to the Google Group is part of the PHP-FIG. 
@@ -57,6 +58,7 @@ Members can start or participate in votes, but the discussion and formation stag
 involved everyone.
 
   [mailing]: http://groups.google.com/group/php-fig/
+
 
 ## Should I contact my representative to get involved?
 
