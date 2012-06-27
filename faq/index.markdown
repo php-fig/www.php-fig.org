@@ -37,25 +37,24 @@ Programer — how to build your application.
 ## Who appointed you to make these decisions?
 
 The entire group is self appointed. It may not be “official” but if that was the
-case who would do the appointing? If the group was all entirely official this
-would be the _Zend Interoperability Group_, which might not be as fair as
-letting various projects come together to make decisions as a community. Anyone
-can apply for membership and if they get enough votes they’ll be a member of the
-group.
+case who would do the appointing? The FIG represents a cross-section of the 
+community, and over time that cross-section will represent a wider selection of projects.
 
 
 ## Do voting members have to comply to the standards?
 
 No. Becoming a voting member on the PHP-FIG in no way forces a member or project
-to implement every - or any - accepted PSR’s. It is assumed that some will be
-picked up, but in no way required.
+to implement every - or any - accepted PSR’s. Projects have to consider backwards-
+compatability issues when upgrading and make the changes at the right time, so it 
+is assumed most projects will eventually adopt, but it is not a requirement.
 
 ## Can I get involved?
 
-Absolutely. Anybody who subscribes to the Google Group is part of the PHP-FIG,
-but only voting members get a to vote — simple right? If you or your project
-want to become a voting member simply send an email to the [mailing list][mailing] 
-requesting membership (see [homepage](/) for more details).
+Absolutely. Anybody who subscribes to the Google Group is part of the PHP-FIG. 
+As soon as you subscribe to the [mailing list][mailing] you are a PHP-FIG Community Member, who
+can influence standards, make suggestions, give feedback, etc. Only PHP-FIG Voting 
+Members can start or participate in votes, but the discussion and formation stages 
+involved everyone.
 
   [mailing]: http://groups.google.com/group/php-fig/
 
