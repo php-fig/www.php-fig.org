@@ -1,5 +1,6 @@
 ---
 layout: default
+title:  PHP-FIG — PHP Framework Interop Group
 ---
 # Welcome PHP developers
 
