@@ -93,6 +93,16 @@ header h1 {
 	width: 560px;
 }
 
+header h1 a:link, header h1 a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+header h1 a:hover, header h1 a:active {
+	color: #fff;
+	text-decoration: underline;
+}
+
 header h2 {
 	font-size: 26px;
 	color: #9ddcff;
