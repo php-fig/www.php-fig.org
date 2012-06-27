@@ -50,13 +50,14 @@ No. Becoming a voting member on the PHP-FIG in no way forces a member or project
 to implement every - or any - accepted PSR’s. It is assumed that some will be
 picked up, but in no way required.
 
-
 ## Can I get involved?
 
 Absolutely. Anybody who subscribes to the Google Group is part of the PHP-FIG,
 but only voting members get a to vote — simple right? If you or your project
-want to become a voting member simply
+want to become a voting member simply send an email to the [mailing list][mailing] 
+requesting membership (see [homepage](/) for more details).
 
+  [mailing]: http://groups.google.com/group/php-fig/
 
 ## Should I contact my representative to get involved?
 
