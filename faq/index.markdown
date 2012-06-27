@@ -1,5 +1,6 @@
 ---
 layout: default
+title:  FAQ — PHP-FIG
 ---
 # PHP-FIG FAQ
 	
