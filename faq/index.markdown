@@ -26,7 +26,7 @@ Programer — how to build your application.
 
 <dl>
 	<dt><a href="https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md">PSR-0</a></dt> 
-	<dd>Aims to provide a standard file, class and namespace convention to allow plug and play code.</dd>
+	<dd>Aims to provide a standard file, class and namespace convention to allow plug-and-play code.</dd>
 	<dt><a href="https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md">PSR-1</a></dt> 
 	<dd>Aims to ensure a high level of technical interoperability between shared PHP code.</dd>
 	<dt><a href="https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md">PSR-2</a></dt>
@@ -54,8 +54,8 @@ The full list of voting members can be seen [here](members).
 ## Do voting members have to comply to the standards?
 
 No. Becoming a voting member on the PHP-FIG in no way forces a member or project
-to implement every - or any - accepted PSR’s. Projects have to consider backwards-
-compatability issues when upgrading and make the changes at the right time, so it 
+to implement every - or any - accepted PSRs. Projects have to consider backwards-
+compatibility issues when upgrading and make the changes at the right time, so it 
 is assumed most projects will eventually adopt, but it is not a requirement.
 
 
@@ -91,25 +91,25 @@ The rules are all described in the [Voting Protocol Bylaws][bylaws].
  [bylaws]: https://github.com/php-fig/fig-standards/blob/master/bylaws/001-voting-protocol.md
 
 
-## Why have [FRAMEWORK X] not been voted into the group?
+## Why has [FRAMEWORK X] not been voted into the group?
 
 Every single vote has a number of reasons for and against voting. No explicit
 guideline or explicit set of rules has been set out. Some vote for everyone,
 some vote for their friends, some vote for projects with a certain size or
-reputation. In reality sizes of all projects have been accepted, from the large
+reputation. In reality sizes of all projects have been accepted from the large
 and extremely well known (Zend Framework 2 & Drupal) to the considerably smaller
 ([PyroCMS](http://pyrocms.com/)). If a project you use is not represented they
 have either not applied, or were not involved enough in discussion prior to
-submitting their vote that they have not been voted in. They can try again later
-of course.
+submitting their vote that they have not been voted in. They can try again at a 
+later date, of course.
 
 
 ## Why are there non-frameworks as voting members?
 
 It was quickly discovered that CMS, applications, package developers, etc. have
 as much to add as the frameworks themselves. The idea is to get a cross-section
-of the eco-system and not JUST one specific group of developers. Having the
-implementers working alongside the people creating packages and the people
+of the ecosystem and not JUST one specific group of developers. Having the
+implementors working alongside the people creating packages and the people
 developing systems with the frameworks are all of equal importance.
 
 
