@@ -36,9 +36,19 @@ Programer — how to build your application.
 
 ## Who appointed you to make these decisions?
 
-The entire group is self appointed. It may not be “official” but if that was the
-case who would do the appointing? The FIG represents a cross-section of the 
-community, and over time that cross-section will represent a wider selection of projects.
+The group was bootstrapped by a number of framework developers at php|tek in 2009. 
+Since then various other memebers have applied and been voted in, increasing the size
+of the group from the first 5 to over 20.
+
+It may not be an “official” PHP group, but if that was the case who would do the appointing? 
+The FIG represents a cross-section of the community, and over time that cross-section 
+will represent a wider selection of projects.
+
+## Who are these voting members?
+
+The full list of voting members can be seen [here](members).
+
+  [members]: https://github.com/php-fig/fig-standards#voting-members
 
 
 ## Do voting members have to comply to the standards?
