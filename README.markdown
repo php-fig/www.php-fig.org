@@ -4,7 +4,7 @@ www.php-fig.org
 This is the source for [www.php-fig.org][site]. It is automatically compiled by
 [Jekyll][jekyll] every time a pull request is merged.
 
- [site]:   https://www.php-fig.org
+ [site]:   http://www.php-fig.org
  [jekyll]: https://github.com/mojombo/jekyll
 
 
