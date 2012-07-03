@@ -46,9 +46,7 @@ will represent a wider selection of projects.
 
 ## Who are these voting members?
 
-The full list of voting members can be seen [here](members).
-
-  [members]: https://github.com/php-fig/fig-standards#voting-members
+The full list of voting members can be seen [here](https://github.com/php-fig/fig-standards#voting-members)
 
 
 ## Do voting members have to comply to the standards?
