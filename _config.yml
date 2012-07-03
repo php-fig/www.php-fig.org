@@ -4,3 +4,6 @@ lsi:       false
 pygments:  true
 permalink: /news/:title/
 markdown:  rdiscount
+
+# custom config
+cachebust: 1
