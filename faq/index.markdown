@@ -30,7 +30,7 @@ Programer — how to build your application.
 	<dt><a href="https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md">PSR-1</a></dt> 
 	<dd>Aims to ensure a high level of technical interoperability between shared PHP code.</dd>
 	<dt><a href="https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md">PSR-2</a></dt>
-	<dd>Provides a Coding Style Guide for projects looking to standardise their code.</dd>
+	<dd>Provides a Coding Style Guide for projects looking to standardize their code.</dd>
 </dl>
 
 
