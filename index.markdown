@@ -33,7 +33,8 @@ Current members will vote on your request.
 Do not combine separate membership requests in a single thread; one request per thread, please.
 
 
-### Voting Members
+### Member Projects
+###### Click at the project name to see more info about it
 <div class="custom-class" markdown="1">
 	<ul class="voting-members" id="project-list">
 		<li>
