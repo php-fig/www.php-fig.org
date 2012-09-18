@@ -362,6 +362,16 @@ h6:before {
 	margin-left: -3.7em;
 }
 
+.project-info {
+	color: #7598FF;
+	font-style: italic;
+	display: none;
+}
+
+#project-list li {
+	border-bottom: 1px solid #CCC;
+}
+
 p {
 	margin-bottom: 12px;
 }
