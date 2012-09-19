@@ -35,7 +35,7 @@ Do not combine separate membership requests in a single thread; one request per 
 
 ### Member Projects
 <div class="member-projects" markdown="1">
-    <p> Click at the project name to see more info about it </p>
+    <p> Click at the project name to see more info about it</p>
 	<ul class="voting-members" id="project-list">
 		<li>
 			<a href="#" class="project-title" title="Agavi">Agavi</a>
