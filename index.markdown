@@ -59,6 +59,13 @@ Do not combine separate membership requests in a single thread; one request per 
 			</div>
 		</li>
 		<li>
+			<a href="#" class="project-title" title="Aura Project and Solar Framework">Aura Project | Solar Framework</a>
+			<div class="project-info"> 
+				<p>Project Website: <a target="_blank" href="http://auraphp.github.com/">auraphp.github.com</a> <a target="_blank" href="http://www.solarphp.com/">www.solarphp.com</a></p>
+				<p>Project Lead: Paul M. Jones (<a href="http://twitter.com/#!/pmjones/">@pmjones</a>)</p>
+			</div>
+		</li>
+		<li>
 			<a href="#" class="project-title" title="CakePHP">CakePHP</a>
 			<div class="project-info"> 
 				<p>Project Website: <a target="_blank" href="http://cakephp.org/">cakephp.org</a></p>
@@ -161,13 +168,6 @@ Do not combine separate membership requests in a single thread; one request per 
 			<div class="project-info"> 
 				<p>Project Website: <a target="_blank" href="http://www.sabredav.org/">www.sabredav.org</a></p>
 				<p>Project Lead: Evert Pot (<a href="http://twitter.com/#!/evertp/">@evertp</a>)</p>
-			</div>
-		</li>
-		<li>
-			<a href="#" class="project-title" title="Solar Framework and Aura Project">Solar Framework | Aura Project</a>
-			<div class="project-info"> 
-				<p>Project Website: <a target="_blank" href="http://www.solarphp.com/">www.solarphp.com</a> <a target="_blank" href="http://auraphp.github.com/">auraphp.github.com</a></p>
-				<p>Project Lead: Paul M. Jones (<a href="http://twitter.com/#!/pmjones/">@pmjones</a>)</p>
 			</div>
 		</li>
 		<li>
