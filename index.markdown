@@ -90,7 +90,7 @@ Do not combine separate membership requests in a single thread; one request per 
 			<a href="#" class="project-title" title="Drupal">Drupal</a>
 			<div class="project-info"> 
 				<p>Project Website: <a target="_blank" href="http://drupal.org">drupal.org</a></p>
-				<p>Project Lead: Larry Garfield (<a href="http://twitter.com/#!/Crell/">@Crell</a>)</p>
+				<p>Project Representative: Larry Garfield (<a href="http://twitter.com/#!/Crell/">@Crell</a>)</p>
 			</div>
 		</li>
 		<li>
