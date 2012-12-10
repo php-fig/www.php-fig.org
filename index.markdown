@@ -115,6 +115,13 @@ Do not combine separate membership requests in a single thread; one request per 
 			</div>
 		</li>
 		<li>
+			<a href="#" class="project-title" title="Jackalope">Jackalope</a>
+			<div class="project-info"> 
+				<p>Project Website: <a target="_blank" href="http://jackalope.github.com">jackalope.github.com</a></p>
+				<p>Project Lead: Lukas Kahwe Smith (<a href="http://twitter.com/lsmith">@lsmith</a>)</p>
+			</div>
+		</li>
+		<li>
 			<a href="#" class="project-title" title="Joomla">Joomla</a>
 			<div class="project-info"> 
 				<p>Project Website: <a target="_blank" href="http://www.joomla.org/">www.joomla.org</a></p>
