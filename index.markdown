@@ -178,6 +178,13 @@ Do not combine separate membership requests in a single thread; one request per 
 			</div>
 		</li>
 		<li>
+			<a href="#" class="project-title" title="SugarCRM">SugarCRM</a>
+			<div class="project-info"> 
+				<p>Project Website: <a target="_blank" href="http://developers.sugarcrm.com/wordpress">developers.sugarcrm.com/wordpress</a></p>
+				<p>Project Lead: John Mertic (<a href="http://twitter.com/#!/jmertic/">@jmertic</a>)</p>
+			</div>
+		</li>
+		<li>
 			<a href="#" class="project-title" title="Symfony2">Symfony2</a>
 			<div class="project-info"> 
 				<p>Project Website: <a target="_blank" href="http://www.symfony.com/">www.symfony.com</a></p>
