@@ -150,6 +150,13 @@ Do not combine separate membership requests in a single thread; one request per 
 			</div>
 		</li>
 		<li>
+			<a href="#" class="project-title" title="phpDocumentor">phpDocumentor</a>
+			<div class="project-info"> 
+				<p>Project Website: <a target="_blank" href="http://www.phpdoc.org/">www.phpdoc.org</a></p>
+				<p>Project Lead: Mike van Riel (<a href="http://twitter.com/#!/mvriel/">@mvriel</a>)</p>
+			</div>
+		</li>
+		<li>
 			<a href="#" class="project-title" title="PPI">PPI</a>
 			<div class="project-info"> 
 				<p>Project Website: <a target="_blank" href="http://www.ppi.io/">www.ppi.io</a></p>
