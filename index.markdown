@@ -18,11 +18,13 @@ do so, but that is not the aim.
 
 ### Requesting Membership
 
-You do not need to be a voting member to participate in discussion on the [mailing list][mailing-list].
+You do not need to be a voting member to participate in discussion on the [mailing list][mailing-list]
+or in the [IRC channel][irc].
 
 To become a voting member, you must send an email to the [mailing list][mailing-list].
 
   [mailing-list]: https://groups.google.com/forum/?fromgroups#!forum/php-fig
+  [irc]: /irc/
 
 The subject line should read: `Membership Request: {$your_name} ({$project_name})`
 
