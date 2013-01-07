@@ -31,6 +31,8 @@ Programer — how to build your application.
 	<dd>Aims to ensure a high level of technical interoperability between shared PHP code.</dd>
 	<dt><a href="https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md">PSR-2</a></dt>
 	<dd>Provides a Coding Style Guide for projects looking to standardise their code.</dd>
+	<dt><a href="https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-3-logger-interface.md">PSR-3</a></dt>
+	<dd>Describes a common interface for logging libraries.</dd>
 </dl>
 
 
