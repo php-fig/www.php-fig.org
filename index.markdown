@@ -108,9 +108,9 @@ Do not combine separate membership requests in a single thread; one request per 
 			</div>
 		</li>
 		<li>
-			<a href="#" class="project-title" title="FLOW3">FLOW3</a>
+			<a href="#" class="project-title" title="FLOW3">FLOW</a>
 			<div class="project-info"> 
-				<p>Project Website: <a target="_blank" href="http://flow3.typo3.org/">flow3.typo3.org</a></p>
+				<p>Project Website: <a target="_blank" href="http://flow.typo3.org/">flow.typo3.org</a></p>
 				<p>Project Lead: Robert Lemke (<a href="http://twitter.com/#!/robertlemke/">@robertlemke</a>)</p>
 			</div>
 		</li>
