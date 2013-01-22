@@ -185,8 +185,9 @@ a.button {
 	font-family: 'FertigoProRegular', 'Helvetica Neue', Helvetica, Arial, serif; 
 }
 a.button small {
+	line-height: 1.4em;
 	display: block;
-	font-size: 0.55em;
+	font-size: 0.65em;
 }
 header a.button {
 	position: absolute;
@@ -200,12 +201,12 @@ header a.button {
 }
 
 aside a.button {
-	width: 138px;
-	padding-left: 64px;
+	width: 142px;
+	padding-left: 60px;
 	display: block;
 	background: transparent url(../images/download-button.png) 0 0 no-repeat;
 	margin-bottom: 20px;
-	font-size: 21px;
+	font-size: 1.55em;
 }
 
 aside #mailing-list-button {
