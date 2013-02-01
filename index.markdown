@@ -210,7 +210,7 @@ Do not combine separate membership requests in a single thread; one request per 
 			<a href="#" class="project-title" title="Zend Framework 2">Zend Framework 2</a>
 			<div class="project-info"> 
 				<p>Project Website: <a target="_blank" href="http://framework.zend.com/">framework.zend.com</a></p>
-				<p>Project Lead: Matthew Weier O'Phinney (<a href="http://twitter.com/#!/weierophinney/">@weierophinney</a>)</p>
+				<p>Project Lead: Matthew Weier O'Phinney (<a href="http://twitter.com/#!/mwop/">@mwop</a>)</p>
 			</div>
 		</li>
 		<li>
