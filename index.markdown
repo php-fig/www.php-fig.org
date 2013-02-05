@@ -54,6 +54,13 @@ Do not combine separate membership requests in a single thread; one request per 
 			</div>
 		</li>
 		<li>
+			<a href="#" class="project-title" title="Apache log4php">Apache log4php</a>
+			<div class="project-info"> 
+				<p>Project Website: <a target="_blank" href="http://logging.apache.org/log4php/">logging.apache.org/log4php/</a></p>
+				<p>Project Lead: Ivan Habunek</p>
+			</div>
+		</li>
+		<li>
 			<a href="#" class="project-title" title="Assetic and Buzz">Assetic | Buzz</a>
 			<div class="project-info"> 
 				<p>Project Website: <a target="_blank" href="http://github.com/kriswallsmith/assetic/">github.com/kriswallsmith/assetic</a> <a target="_blank" href="https://github.com/kriswallsmith/Buzz">github.com/kriswallsmith/Buzz</a></p>
