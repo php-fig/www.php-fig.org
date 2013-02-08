@@ -48,7 +48,7 @@ will represent a wider selection of projects.
 
 ## Who are these voting members?
 
-The full list of voting members can be seen [here](https://github.com/php-fig/fig-standards#voting-members)
+The full list of voting members can be seen [here](https://github.com/php-fig/fig-standards#voting-members).
 
 
 ## Do voting members have to comply to the standards?
@@ -66,7 +66,7 @@ As soon as you subscribe to the [mailing list][mailing] and/or join the
 [IRC channel][irc] you are a PHP-FIG Community Member, who
 can influence standards, make suggestions, give feedback, etc. Only PHP-FIG Voting 
 Members can start or participate in votes, but the discussion and formation stages 
-involved everyone.
+involve everyone.
 
   [mailing]: http://groups.google.com/group/php-fig/
   [irc]: /irc/
