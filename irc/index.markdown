@@ -15,9 +15,8 @@ and is called [#phpfig][irc-channel].
 
 ## Web Interface
 
-A [full-page web interface][irc-fullscreen] is also available.
+A <a href="/irc/fullscreen/" target="_blank">full-page web interface</a> is also available (opens in a new tab).
 
   [mailing]: http://groups.google.com/group/php-fig/
   [freenode]: http://www.freenode.net
   [irc-channel]: irc://freenode.net/phpfig
-  [irc-fullscreen]: /irc/fullscreen/
