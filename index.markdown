@@ -57,7 +57,7 @@ Do not combine separate membership requests in a single thread; one request per 
 			<a href="#" class="project-title" title="Apache log4php">Apache log4php</a>
 			<div class="project-info"> 
 				<p>Project Website: <a target="_blank" href="http://logging.apache.org/log4php/">logging.apache.org/log4php/</a></p>
-				<p>Project Lead: Ivan Habunek</p>
+				<p>Project Representative: Ivan Habunek (<a href="http://twitter.com/ihabunek/">@ihabunek</a>)</p>
 			</div>
 		</li>
 		<li>
