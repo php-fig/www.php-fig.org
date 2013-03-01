@@ -174,7 +174,7 @@ Do not combine separate membership requests in a single thread; one request per 
     
     <li>
         <h4><a target="_blank" href="http://framework.zend.com/">Zend Framework 2</a></h4>
-        Matthew Weier O'Phinney (<a href="http://twitter.com/mwop/">@mwop</a>)
+        Pádraic Brady (<a href="http://twitter.com/padraicb/">@padraicb</a>)
     </li>
     
     <li>
