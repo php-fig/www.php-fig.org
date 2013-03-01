@@ -47,7 +47,7 @@ implement PSR's, but you definitely can if you want to.
 	<dt><a target="_blank" href="https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md">PSR-1</a></dt>
 	<dd>Aims to ensure a high level of technical interoperability between shared PHP code.</dd>
 	<dt><a target="_blank" href="https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md">PSR-2</a></dt>
-	<dd>Provides a Coding Style Guide for projects looking to standardise their code.</dd>
+	<dd>Provides a Coding Style Guide for projects looking to standardize their code.</dd>
 	<dt><a target="_blank" href="https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-3-logger-interface.md">PSR-3</a></dt>
 	<dd>Describes a common interface for logging libraries.</dd>
 </dl>
