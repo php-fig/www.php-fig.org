@@ -3,7 +3,7 @@ layout: default
 title:  FAQ — PHP-FIG
 ---
 # PHP-FIG FAQ
-	
+
 
 ## What does FIG stand for?
 
@@ -19,7 +19,7 @@ commonalities between our projects and find ways we can work together. Our main
 audience is each other, but we’re very aware that the rest of the PHP community
 is watching. If other folks want to adopt what we’re doing they are welcome to
 do so, but that is not the aim. Nobody in the group wants to tell you — Joe
-Programer — how to build your application.
+Programmer — how to build your application.
 
 
 ## What standards have been passed so far?
@@ -38,12 +38,12 @@ Programer — how to build your application.
 
 ## Who appointed you to make these decisions?
 
-The group was bootstrapped by a number of framework developers at php|tek in 2009. 
+The group was bootstrapped by a number of framework developers at php|tek in 2009.
 Since then various other members have applied and been voted in, increasing the size
 of the group from the first 5 to over 20.
 
-It may not be an “official” PHP group, but if that was the case who would do the appointing? 
-The FIG represents a cross-section of the community, and over time that cross-section 
+It may not be an “official” PHP group, but if that was the case who would do the appointing?
+The FIG represents a cross-section of the community, and over time that cross-section
 will represent a wider selection of projects.
 
 ## Who are these voting members?
@@ -55,17 +55,17 @@ The full list of voting members can be seen [here](https://github.com/php-fig/fi
 
 No. Becoming a voting member on the PHP-FIG in no way forces a member or project
 to implement every - or any - accepted PSRs. Projects have to consider backwards-
-compatibility issues when upgrading and make the changes at the right time, so it 
+compatibility issues when upgrading and make the changes at the right time, so it
 is assumed most projects will eventually adopt, but it is not a requirement.
 
 
 ## Can I get involved?
 
-Absolutely. Anybody who subscribes to the Google Group is part of the PHP-FIG. 
+Absolutely. Anybody who subscribes to the Google Group is part of the PHP-FIG.
 As soon as you subscribe to the [mailing list][mailing] and/or join the
 [IRC channel][irc] you are a PHP-FIG Community Member, who
-can influence standards, make suggestions, give feedback, etc. Only PHP-FIG Voting 
-Members can start or participate in votes, but the discussion and formation stages 
+can influence standards, make suggestions, give feedback, etc. Only PHP-FIG Voting
+Members can start or participate in votes, but the discussion and formation stages
 involve everyone.
 
   [mailing]: http://groups.google.com/group/php-fig/
@@ -102,7 +102,7 @@ reputation. In reality sizes of all projects have been accepted from the large
 and extremely well known (Zend Framework 2 & Drupal) to the considerably smaller
 ([PyroCMS](http://pyrocms.com/)). If a project you use is not represented they
 have either not applied, or were not involved enough in discussion prior to
-submitting their vote that they have not been voted in. They can try again at a 
+submitting their vote that they have not been voted in. They can try again at a
 later date, of course.
 
 
