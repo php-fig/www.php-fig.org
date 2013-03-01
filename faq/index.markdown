@@ -22,6 +22,23 @@ do so, but that is not the aim. Nobody in the group wants to tell you — Joe
 Programmer — how to build your application.
 
 
+## What does PSR stand for?
+
+The FIG work together to build "PHP Standard Recommendations" which can be a text 
+based list of rules and guidelines, or they can be represented as code in the form 
+of interfaces. After-all, what is an easier way to ensure a class follows a specific 
+set of required methods and arguments than by building an interface for it?
+
+
+## Why are they called PHP Standard Recommendations? 
+
+As said above, the PHP-FIG is not trying to standardize ALL PHP users, all projects, 
+or the language itself. We make "PHP Standard Recommendations" that apply to how 
+member projects can code their own projects and this standard is also applied to any 
+interfaces or code released by the PHP-FIG itself. The FIG is not telling you to 
+implement PSR's, but you definitely can if you want to.
+
+
 ## What standards have been passed so far?
 
 <dl>
