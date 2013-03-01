@@ -140,3 +140,14 @@ when they do this. Factors like features, functionality, style guide, minimum
 requirements, etc. are all subject to change in any new version and each project
 makes their own decisions. How they involve their communities in decision making
 is entirely up to them, not the FIG.
+
+## Why does this website have no unicorns?
+
+Okay, here's one!
+
+![Unicorn](../images/unicorn.png)
+
+<span class="unicorn-credit">
+[Pocket Pony Sweetie Belle](http://creshosk.deviantart.com/art/Pocket-Pony-Sweetie-Belle-244401983)
+by Marc Roberg ([CC BY-NC-SA 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)).
+</span>
