@@ -123,3 +123,28 @@ when they do this. Factors like features, functionality, style guide, minimum
 requirements, etc. are all subject to change in any new version and each project
 makes their own decisions. How they involve their communities in decision making
 is entirely up to them, not the FIG.
+
+
+## Why do you use strict languages with words like MUST, MUST NOT, and REQUIRED in all caps in your documentation and specifications?
+
+This is because we are following [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt).
+For more information on the origins of RFC 2119, please see the [Internet
+Engineering Task Force (IETF)](http://www.ietf.org/).
+
+To quote the abstract from RFC 2119:
+
+> In many standards track documents several words are used to signify the
+> requirements in the specification.  These words are often capitalized. This
+> document defines these words as they should be interpreted in IETF documents.
+
+By following RFC 2119 we can be both more concise in what we are saying as well
+as more consistent in how we are saying it. Emphasizing words as recommended by
+RFC 2119 helps ensure that documentation will be read as the authors intended
+and leaves less room for ambiguity. This ensures that there is a smaller chance
+that the same text can be interpreted to mean more than one thing.
+
+We are far from alone in using RFC 2119 in writing standards and specifications.
+The IETF uses it for its own documentation but there are examples of other
+projects outside of the IETF using RFC 2119 as well.
+[The Atom Syndication Format](http://www.atomenabled.org/developers/syndication/atom-format-spec.php)
+is a good example of a project adopting RFC 2119 for its own purposes.
