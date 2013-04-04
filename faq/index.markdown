@@ -125,7 +125,7 @@ makes their own decisions. How they involve their communities in decision making
 is entirely up to them, not the FIG.
 
 
-## Why do you use strict languages with words like MUST, MUST NOT, and REQUIRED in all caps in your documentation and specifications?
+## Why do you use strict language with words like MUST, MUST NOT, and REQUIRED in all caps in your documentation and specifications?
 
 This is because we are following [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt).
 For more information on the creators of RFC 2119, please see the [Internet
