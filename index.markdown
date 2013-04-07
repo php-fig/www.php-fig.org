@@ -75,11 +75,6 @@ Do not combine separate membership requests in a single thread; one request per 
     </li>
     
     <li>
-        <h4><a target="_blank" href="http://www.chisimba.com">Chisimba</a></h4>
-        Paul Scott (<a href="http://twitter.com/paulscott56/">@paulscott56</a>)
-    </li>
-    
-    <li>
         <h4>
             <a target="_blank" href="http://getcomposer.org/">Composer</a>
             and <a target="_blank" href="http://packagist.org/">Packagist</a>
