@@ -113,6 +113,11 @@ Do not combine separate membership requests in a single thread; one request per 
     </li>
     
     <li>
+        <h4><a target="_blank" href="http://laravel.com/">Laravel</a></h4>
+        Taylor Otwell (<a href="http://twitter.com/taylorotwell/">@taylorotwell</a>)
+    </li>
+    
+    <li>
         <h4><a target="_blank" href="http://lithify.me/">Lithium</a></h4>
         Nate Abele (<a href="http://twitter.com/nateabele/">@nateabele</a>)
     </li>
