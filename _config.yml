@@ -3,7 +3,7 @@ safe:      true
 lsi:       false
 pygments:  true
 permalink: /news/:title/
-markdown:  rdiscount
+markdown:  redcarpet
 
 # custom config
 cachebust: 1
