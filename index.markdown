@@ -109,7 +109,7 @@ Do not combine separate membership requests in a single thread; one request per 
     
     <li>
         <h4><a target="_blank" href="http://www.joomla.org/">Joomla</a></h4>
-        Andrew Eddie (<a href="http://twitter.com/AndrewEddie/">@AndrewEddie</a>)
+        Don Gilbert (<a href="http://twitter.com/dilbert4life/">@dilbert4life</a>)
     </li>
     
     <li>
