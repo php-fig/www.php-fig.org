@@ -44,8 +44,11 @@ Do not combine separate membership requests in a single thread; one request per 
     </li>
     
     <li>
-        <h4><a target="_blank" href="http://aws.amazon.com/sdkforphp/">Amazon Web Services SDK</a></h4>
-        Ryan Parman (<a href="http://twitter.com/Skyzyx/">@Skyzyx</a>)
+        <h4>
+            <a target="_blank" href="http://aws.amazon.com/sdkforphp/">AWS SDK for PHP</a>
+            and <a target="_blank" href="http://guzzlephp.org/">Guzzle</a>
+        </h4>
+        Michael Dowling (<a href="http://twitter.com/mtdowling/">@mtdowling</a>)
     </li>
     
     <li>
