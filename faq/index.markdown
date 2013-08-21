@@ -4,25 +4,39 @@ title:  FAQ — PHP-FIG
 ---
 # PHP-FIG FAQ
 
+- [What does FIG stand for?](#what-does-fig-stand-for)
+- [What are the aims of the PHP-FIG?](#what-are-the-aims-of-the-php-fig)
+- [What standards have been passed so far?](#what-standards-have-been-passed-so-far)
+- [Who appointed you to make these decisions?](#who-appointed-you-to-make-these-decisions)
+- [Who are these voting members?](#who-are-these-voting-members)
+- [Do voting members have to comply to the standards?](#do-voting-members-have-to-comply-to-the-standards)
+- [Can I get involved?](#can-i-get-involved)
+- [Should I contact my representative to get involved?](#should-i-contact-my-representative-to-get-involved)
+- [Who gets the vote — the individual or the framework/project?](#who-gets-the-vote--the-individual-or-the-frameworkproject)
+- [Who should initiate/close voting?](#who-should-initiateclose-voting)
+- [Why has [FRAMEWORK X] not been voted into the group?](#why-has-framework-x-not-been-voted-into-the-group)
+- [Why are there non-frameworks as voting members?](#why-are-there-non-frameworks-as-voting-members)
+- [I use [FRAMEWORK X] which is a voting member, yet I’ve never heard about the PHP-FIG until now. How are they representing their community?](#i-use-framework-x-which-is-a-voting-member-yet-ive-never-heard-about-the-php-fig-until-now-how-are-they-representing-their-community)
+- [Why do you use strict language with words like MUST, MUST NOT, and REQUIRED in all caps in your documentation and specifications?](#why-do-you-use-strict-language-with-words-like-must-must-not-and-required-in-all-caps-in-your-documentation-and-specifications)
 
-## What does FIG stand for?
+## <a id="what-does-fig-stand-for"></a>What does FIG stand for?
 
 The FIG stands for Framework Interoperability Group. The name until recently was
 “PHP Standards Group” but this was somewhat inaccurate of the intentions of the
 group.
 
 
-## What are the aims of the PHP-FIG?
+## <a id="what-are-the-aims-of-the-php-fig"></a>What are the aims of the PHP-FIG?
 
 The idea behind the group is for project representatives to talk about the
 commonalities between our projects and find ways we can work together. Our main
 audience is each other, but we’re very aware that the rest of the PHP community
 is watching. If other folks want to adopt what we’re doing they are welcome to
-do so, but that is not the aim. Nobody in the group wants to tell you, as a programmer, 
+do so, but that is not the aim. Nobody in the group wants to tell you, as a programmer,
 how to build your application.
 
 
-## What standards have been passed so far?
+## <a id="what-standards-have-been-passed-so-far"></a>What standards have been passed so far?
 
 <dl>
 	<dt><a target="_blank" href="https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md">PSR-0</a></dt>
@@ -36,7 +50,7 @@ how to build your application.
 </dl>
 
 
-## Who appointed you to make these decisions?
+## <a id="who-appointed-you-to-make-these-decisions"></a>Who appointed you to make these decisions?
 
 The group was bootstrapped by a number of framework developers at php|tek in 2009.
 Since then various other members have applied and been voted in, increasing the size
@@ -46,12 +60,12 @@ It may not be an “official” PHP group, but if that was the case who would do
 The FIG represents a cross-section of the community, and over time that cross-section
 will represent a wider selection of projects.
 
-## Who are these voting members?
+## <a id="who-are-these-voting-members"></a>Who are these voting members?
 
 The full list of voting members can be seen [here](https://github.com/php-fig/fig-standards#voting-members).
 
 
-## Do voting members have to comply to the standards?
+## <a id="do-voting-members-have-to-comply-to-the-standards"></a>Do voting members have to comply to the standards?
 
 No. Becoming a voting member on the PHP-FIG in no way forces a member or project
 to implement every - or any - accepted PSRs. Projects have to consider backwards-
@@ -59,7 +73,7 @@ compatibility issues when upgrading and make the changes at the right time, so i
 is assumed most projects will eventually adopt, but it is not a requirement.
 
 
-## Can I get involved?
+## <a id="can-i-get-involved"></a>Can I get involved?
 
 Absolutely. Anybody who subscribes to the Google Group is part of the PHP-FIG.
 As soon as you subscribe to the [mailing list][mailing] and/or join the
@@ -72,28 +86,28 @@ involve everyone.
   [irc]: /irc/
 
 
-## Should I contact my representative to get involved?
+## <a id="should-i-contact-my-representative-to-get-involved"></a>Should I contact my representative to get involved?
 
 If you think that your project would benefit from implementing PSRs and you want
 to have a say in the development of future standards then you certainly should
 get involved.
 
 
-## Who gets the vote — the individual or the framework/project?
+## <a id="who-gets-the-vote--the-individual-or-the-frameworkproject"></a>Who gets the vote — the individual or the framework/project?
 
 Multiple members can represent a single project, but that project will only get
 one vote. A member can represent multiple projects, but that member will still
 only get one vote.
 
 
-## Who should initiate/close voting?
+## <a id="who-should-initiateclose-voting"></a>Who should initiate/close voting?
 
 The rules are all described in the [Voting Protocol Bylaws][bylaws].
 
  [bylaws]: https://github.com/php-fig/fig-standards/blob/master/bylaws/001-voting-protocol.md
 
 
-## Why has [FRAMEWORK X] not been voted into the group?
+## <a id="why-has-framework-x-not-been-voted-into-the-group"></a>Why has [FRAMEWORK X] not been voted into the group?
 
 Every single vote has a number of reasons for and against voting. No explicit
 guideline or explicit set of rules has been set out. Some vote for everyone,
@@ -106,7 +120,7 @@ submitting their vote that they have not been voted in. They can try again at a
 later date, of course.
 
 
-## Why are there non-frameworks as voting members?
+## <a id="why-are-there-non-frameworks-as-voting-members"></a>Why are there non-frameworks as voting members?
 
 It was quickly discovered that CMS, applications, package developers, etc. have
 as much to add as the frameworks themselves. The idea is to get a cross-section
@@ -115,7 +129,7 @@ implementors working alongside the people creating packages and the people
 developing systems with the frameworks are all of equal importance.
 
 
-## I use [FRAMEWORK X] which is a voting member, yet I’ve never heard about the PHP-FIG until now. How are they representing their community?
+## <a id="i-use-framework-x-which-is-a-voting-member-yet-ive-never-heard-about-the-php-fig-until-now-how-are-they-representing-their-community"></a>I use [FRAMEWORK X] which is a voting member, yet I’ve never heard about the PHP-FIG until now. How are they representing their community?
 
 Framework developers have a multitude of factors to consider when planning the
 roadmap for their products and they need to take their community into account
@@ -125,7 +139,7 @@ makes their own decisions. How they involve their communities in decision making
 is entirely up to them, not the FIG.
 
 
-## Why do you use strict language with words like MUST, MUST NOT, and REQUIRED in all caps in your documentation and specifications?
+## <a id="why-do-you-use-strict-language-with-words-like-must-must-not-and-required-in-all-caps-in-your-documentation-and-specifications"></a>Why do you use strict language with words like MUST, MUST NOT, and REQUIRED in all caps in your documentation and specifications?
 
 This is because we are following [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt).
 For more information on the creators of RFC 2119, please see the [Internet
