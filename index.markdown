@@ -181,5 +181,10 @@ Do not combine separate membership requests in a single thread; one request per 
         <h4><a target="_blank" href="http://www.zikula.org/">Zikula</a></h4>
         Karma Dordrak (<a href="http://twitter.com/zikuladrak/">@zikuladrak</a>)
     </li>
+
+    <li>
+        <h4><a target="_blank" href="http://www.yiiframework.com/">Yii framework</a></h4>
+        Alexander Makarov (<a href="http://twitter.com/sam_dark/">@sam_dark</a>)
+    </li>
     
 </ul>
