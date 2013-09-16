@@ -171,6 +171,11 @@ Do not combine separate membership requests in a single thread; one request per 
         <h4>The community at large</h4>
         Cal Evans (<a href="http://twitter.com/CalEvans/">@CalEvans</a>)
     </li>
+
+    <li>
+        <h4><a target="_blank" href="http://www.yiiframework.com/">Yii framework</a></h4>
+        Alexander Makarov (<a href="http://twitter.com/sam_dark/">@sam_dark</a>)
+    </li>
     
     <li>
         <h4><a target="_blank" href="http://framework.zend.com/">Zend Framework 2</a></h4>
@@ -182,9 +187,4 @@ Do not combine separate membership requests in a single thread; one request per 
         Karma Dordrak (<a href="http://twitter.com/zikuladrak/">@zikuladrak</a>)
     </li>
 
-    <li>
-        <h4><a target="_blank" href="http://www.yiiframework.com/">Yii framework</a></h4>
-        Alexander Makarov (<a href="http://twitter.com/sam_dark/">@sam_dark</a>)
-    </li>
-    
 </ul>
