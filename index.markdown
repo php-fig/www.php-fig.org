@@ -164,7 +164,7 @@ Do not combine separate membership requests in a single thread; one request per 
     
     <li>
         <h4><a target="_blank" href="http://www.symfony.com/">Symfony2</a></h4>
-        Fabien Potencier (<a href="http://twitter.com/fabpot/">@fabpot</a>)
+        Bernhard Schussek (<a href="http://twitter.com/webmozart/">@webmozart</a>)
     </li>
     
     <li>
