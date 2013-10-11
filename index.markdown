@@ -83,6 +83,11 @@ Do not combine separate membership requests in a single thread; one request per 
     </li>
     
     <li>
+        <h4><a target="_blank" href="https://contao.org">Contao Open Source CMS</a></h4>
+        Leo Feyer (<a href="http://twitter.com/leofeyer/">@leofeyer</a>)
+    </li>
+
+    <li>
         <h4><a target="_blank" href="http://www.doctrine-project.org">Doctrine</a></h4>
         Guilherme Blanco (<a href="http://twitter.com/guilhermeblanco/">@guilhermeblanco</a>)
     </li>
