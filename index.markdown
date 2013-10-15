@@ -143,7 +143,7 @@ Do not combine separate membership requests in a single thread; one request per 
     </li>
     
     <li>
-        <h4><a target="_blank" href="http://www.ppi.io/">PPI</a></h4>
+        <h4><a target="_blank" href="http://www.ppi.io/">PPI Framework</a></h4>
         Paul Dragoonis (<a href="http://twitter.com/dr4goonis/">@dr4goonis</a>)
     </li>
     
