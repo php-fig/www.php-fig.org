@@ -148,3 +148,15 @@ The IETF uses it for its own documentation but there are examples of other
 projects outside of the IETF using RFC 2119 as well.
 [The Atom Syndication Format](http://www.atomenabled.org/developers/syndication/atom-format-spec.php)
 is a good example of a project adopting RFC 2119 for its own purposes.
+
+
+## Can you help me with my PHP code?
+
+While there are many user groups and forums dedicated to providing general
+PHP support, the FIG is not one of them. Here are some great PHP resources
+and support forums:
+
+ * [/r/phphelp](http://www.reddit.com/r/phphelp)
+ * [Stack Overflow](http://stackoverflow.com/questions/tagged/php)
+ * The [PHP Manual](http://php.net/manual/) (especially the comments)
+ * [PHP: The Right Way](http://www.phptherightway.com)
