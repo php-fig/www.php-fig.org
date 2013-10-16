@@ -8,10 +8,12 @@ An IRC channel is available, in addition to the [mailing list][mailing], to
 hold more real-time discussions, bounce ideas off of one another, and to chat
 between ourselves in a slightly more informal setting.
 
+
 ## Channel Location
 
 The channel is located on [Freenode][freenode] (irc.freenode.net)
 and is called [#phpfig][irc-channel].
+
 
 ## Web Interface
 
