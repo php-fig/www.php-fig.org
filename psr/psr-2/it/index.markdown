@@ -5,9 +5,9 @@ title:  PSR-2 - Coding Style Guide
 
 <nav id="lngmenu">
   Available translations:
-  <a href="/psr/psr-2">English (official)</a>
-  <a href="/psr/psr-2/es">Spanish</a>
-  <a href="/psr/psr-2/fr">French</a>
+  <a href="/psr/psr-2">English (official)</a>,
+  <a href="/psr/psr-2/es">Spanish</a>,
+  <a href="/psr/psr-2/fr">French</a>,
   <b>Italian</b>
 </nav>
 
