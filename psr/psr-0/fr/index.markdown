@@ -13,4 +13,4 @@ title:  PSR-0 - Autoloading Standard
 
 {% include disclaimer.html %}
 
-{% include fig-standards/accepted/PSR-0.md %}
+{% include fig-standards/accepted/fr/PSR-0.md %}
