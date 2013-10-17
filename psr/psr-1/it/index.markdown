@@ -13,4 +13,4 @@ title:  PSR-1 - Basic Coding Standard
 
 {% include disclaimer.html %}
 
-{% include fig-standards/accepted/PSR-1-basic-coding-standard.md %}
+{% include fig-standards/accepted/it/PSR-1-basic-coding-standard.md %}

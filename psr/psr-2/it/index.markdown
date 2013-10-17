@@ -13,4 +13,4 @@ title:  PSR-2 - Coding Style Guide
 
 {% include disclaimer.html %}
 
-{% include fig-standards/accepted/PSR-2-coding-style-guide.md %}
+{% include fig-standards/accepted/it/PSR-2-coding-style-guide.md %}
