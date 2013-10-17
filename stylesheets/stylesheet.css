@@ -538,6 +538,26 @@ footer a:hover {
   display: none;
 }
 
+/* Language switch */
+#lngmenu {
+  background: #eee;
+  border: 1px solid #ccc;
+  padding: 3px 6px;
+  margin-bottom: 1em;
+  font-size: 90%;
+}
+
+#lngmenu b {
+  font-weight: 500;
+}
+
+#disclaimer {
+  background: #ffc;
+  border: 1px solid #f90;
+  padding: 3px 6px;
+  font-size: 90%;
+}
+
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {}
 

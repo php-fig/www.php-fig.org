@@ -18,7 +18,7 @@ The idea behind the group is for project representatives to talk about the
 commonalities between our projects and find ways we can work together. Our main
 audience is each other, but we’re very aware that the rest of the PHP community
 is watching. If other folks want to adopt what we’re doing they are welcome to
-do so, but that is not the aim. Nobody in the group wants to tell you, as a programmer, 
+do so, but that is not the aim. Nobody in the group wants to tell you, as a programmer,
 how to build your application.
 
 
@@ -45,6 +45,7 @@ of the group from the first 5 to over 20.
 It may not be an “official” PHP group, but if that was the case who would do the appointing?
 The FIG represents a cross-section of the community, and over time that cross-section
 will represent a wider selection of projects.
+
 
 ## Who are these voting members?
 
