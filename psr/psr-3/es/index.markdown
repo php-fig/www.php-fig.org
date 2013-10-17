@@ -12,4 +12,4 @@ title:  PSR-3 - Logger Interface
 
 {% include disclaimer.html %}
 
-{% include fig-standards/accepted/PSR-3-logger-interface.md %}
+{% include fig-standards/accepted/es/PSR-3-interfaz-de-logger.md %}
