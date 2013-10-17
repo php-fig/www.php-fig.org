@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<nav id="lngmenu">
+  Available translations:
+  <ul>
+    {% for lang in page.translations %}
+      {% if lang.path %}
+        <li><a href="{{ lang.path }}">{{ lang.name }}</a></li>
+      {% else %}
+        <li><b>{{ lang.name }}</b></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</nav>
+
+{% if page.disclaimer %}
+  {% include disclaimer.html %}
+{% endif %}
+
+{{ content }}
