@@ -1,7 +1,6 @@
 ---
 layout: default
 title:  PSR-3 - Logger Interface
-alias:  [/psr/3]
 ---
 
 <nav id="lngmenu">

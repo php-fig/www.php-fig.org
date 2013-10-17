@@ -1,7 +1,6 @@
 ---
 layout: default
 title:  PSR-0 - Autoloading Standard
-alias:  [/psr/0]
 ---
 
 <nav id="lngmenu">

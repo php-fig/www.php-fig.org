@@ -1,7 +1,6 @@
 ---
 layout: default
 title:  PSR-2 - Coding Style Guide
-alias:  [/psr/2]
 ---
 
 <nav id="lngmenu">

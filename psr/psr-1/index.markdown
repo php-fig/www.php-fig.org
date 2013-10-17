@@ -1,7 +1,6 @@
 ---
 layout: default
 title:  PSR-1 - Basic Coding Standard
-alias:  [/psr/1]
 ---
 
 <nav id="lngmenu">
