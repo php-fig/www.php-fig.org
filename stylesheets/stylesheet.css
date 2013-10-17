@@ -547,9 +547,24 @@ footer a:hover {
   font-size: 90%;
 }
 
+#lngmenu ul, #lngmenu li {
+  margin:     0;
+  padding:    0;
+  list-style: none;
+  display:    inline;
+}
+
+#lngmenu li:after {
+  content: ', ';
+}
+#lngmenu li:last-child:after {
+  content: '';
+}
+
 #lngmenu b {
   font-weight: 500;
 }
+
 
 #disclaimer {
   background: #ffc;
