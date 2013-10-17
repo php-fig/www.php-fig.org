@@ -28,7 +28,7 @@ Contributing
     Then compile!
 
     ```bash
-    jekyll serve
+    bundle exec jekyll serve
     ```
 
     ... and open `http://localhost:4000` in your browser to check it out!
