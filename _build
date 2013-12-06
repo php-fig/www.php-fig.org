@@ -15,7 +15,7 @@ raise 'Run "git submodule init"' unless File.directory?(PSR_DIR)
 Dir["#{PSR_DIR}/*.md"].each do |original|
   next unless File.basename(original) =~ /^PSR-(\d+)\b/
   num   = $1
-  title = File.read(original).split(/[\n\r]/).first
+  title = File.read(original).split(/[\n\r]/).first.sub(/^#\s*/, '')
 
   pages = [
     {
