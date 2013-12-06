@@ -6,4 +6,4 @@ disclaimer: false
 translations:
  - name: English (official)
 ---
-{% include fig-standards/accepted/accepted/PSR-4-autoloader.md %}
+{% include fig-standards/accepted/PSR-4-autoloader.md %}
