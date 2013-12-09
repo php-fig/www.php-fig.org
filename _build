@@ -4,6 +4,7 @@
 # A script for programmatically generating PSR and translation pages for php-fig.org
 
 PSR_DIR  = File.join(File.dirname(__FILE__), '_includes', 'fig-standards', 'accepted')
+EXTRAS   = ['meta', 'examples']
 LANG_MAP = {
   :es => 'Spanish',
   :fr => 'French',
@@ -12,10 +13,15 @@ LANG_MAP = {
 
 raise 'Run "git submodule init"' unless File.directory?(PSR_DIR)
 
-Dir["#{PSR_DIR}/*.md"].each do |original|
+Dir["#{PSR_DIR}/*.md"].sort.each do |original|
+  # Skip the meta and example files
+  next if File.basename(original) =~ Regexp.new("-(#{EXTRAS.join('|')})\\.md$")
+
+  # Skip non-PSR files?
   next unless File.basename(original) =~ /^PSR-(\d+)\b/
+
   num   = $1
-  title = File.read(original).split(/[\n\r]/).first
+  title = File.read(original).split(/[\n\r]/).first.sub(/^#\s*/, '')
 
   pages = [
     {
