@@ -171,7 +171,7 @@ Do not combine separate membership requests in a single thread; one request per 
 
     <li>
         <h4><a target="_blank" href="http://developers.sugarcrm.com/wordpress">SugarCRM</a></h4>
-        John Mertic (<a href="http://twitter.com/jmertic/">@jmertic</a>)
+        Filipe Guerra (<a href="http://twitter.com/alias_mac/">@alias_mac</a>)
     </li>
 
     <li>
