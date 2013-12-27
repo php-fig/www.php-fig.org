@@ -15,10 +15,6 @@ The channel is located on [Freenode][freenode] (irc.freenode.net)
 and is called [#phpfig][irc-channel].
 
 
-## Web Interface
-
-A <a href="/irc/fullscreen/" target="_blank">full-page web interface</a> is also available (opens in a new tab).
-
   [mailing]: http://groups.google.com/group/php-fig/
   [freenode]: http://www.freenode.net
   [irc-channel]: irc://freenode.net/phpfig
