@@ -173,6 +173,11 @@ Do not combine separate membership requests in a single thread; one request per 
         Beau D. Simensen (<a href="http://twitter.com/beausimensen/">@beausimensen</a>)
     </li>
 
+    <li>
+        <h4><a target="_blank" href="http://www.tedivm.com/stash/">Stash</a></h4>
+        Robert Hafner (<a href="http://twitter.com/tedivm/">@tedivm</a>)
+    </li>
+
 
     <li>
         <h4><a target="_blank" href="http://developers.sugarcrm.com/wordpress">SugarCRM</a></h4>
