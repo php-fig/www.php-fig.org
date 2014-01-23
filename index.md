@@ -64,7 +64,7 @@ Do not combine separate membership requests in a single thread; one request per 
     <li>
         <h4>
             <a target="_blank" href="http://auraphp.github.com/">Aura Project</a>
-            and <a target="_blank" href="http://www.solarphp.com/">Solar Framework</a>
+            and <a target="_blank" href="http://solarphp.com/">Solar Framework</a>
         </h4>
         Paul M. Jones (<a href="http://twitter.com/pmjones/">@pmjones</a>)
     </li>
