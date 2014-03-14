@@ -13,5 +13,6 @@ translations:
    path: /psr/psr-4/ru
 additional:
 
+redirect_from: /psr/4
 ---
 {% include fig-standards/accepted/PSR-4-autoloader.md %}
