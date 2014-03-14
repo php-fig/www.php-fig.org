@@ -29,6 +29,7 @@ Dir["#{PSR_DIR}/*.md"].sort.each do |original|
       :name  => 'English (official)',
       :path  => "/psr/psr-#{num}",
       :title => "PSR-#{num} — #{title}",
+      :num   => num,
       :disc  => false,
       :inc   => original.sub(%r{.*/fig-standards/}, 'fig-standards/'),
     }
@@ -43,11 +44,16 @@ Dir["#{PSR_DIR}/*.md"].sort.each do |original|
       :name  => LANG_MAP[lang.to_sym],
       :path  => "/psr/psr-#{num}/#{lang}",
       :title => "PSR-#{num} — #{title}",
+      :num   => num,
       :inc   => tr.sub(%r{.*/fig-standards/}, 'fig-standards/'),
     }
   end
 
   pages.each do |page|
+    if page[:lang] == 'en'
+      redirect = "redirect_from: /psr/#{page[:num]}\n"
+    end
+
     links = []
     pages.each do |other|
       links << " - name: #{other[:name]}"
@@ -63,7 +69,7 @@ Dir["#{PSR_DIR}/*.md"].sort.each do |original|
         disclaimer: #{page[:lang] == 'en' ? 'false' : 'true'}
         translations:
         #{links.join("\n")}
-        ---
+        #{redirect || ''}---
         {% include #{page[:inc]} %}
       EOS
     end

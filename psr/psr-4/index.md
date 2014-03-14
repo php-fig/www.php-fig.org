@@ -5,5 +5,6 @@ title:      PSR-4 — Autoloader
 disclaimer: false
 translations:
  - name: English (official)
+redirect_from: /psr/4
 ---
 {% include fig-standards/accepted/PSR-4-autoloader.md %}

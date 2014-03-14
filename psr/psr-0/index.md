@@ -11,5 +11,6 @@ translations:
    path: /psr/psr-0/fr
  - name: Italian
    path: /psr/psr-0/it
+redirect_from: /psr/0
 ---
 {% include fig-standards/accepted/PSR-0.md %}
