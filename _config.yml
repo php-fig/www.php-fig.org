@@ -5,7 +5,9 @@ pygments:  true
 permalink: /news/:title/
 markdown:  redcarpet
 redcarpet:
-    extensions: ["tables"]
+  extensions: ["tables"]
+gems:
+  - jekyll-redirect-from
 
 # custom config
 cachebust: 1
