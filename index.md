@@ -153,6 +153,11 @@ Do not combine separate membership requests in a single thread; one request per 
     </li>
 
     <li>
+        <h4><a target="_blank" href="http://www.prestashop.com/">PrestaShop</a></h4>
+        R&eacute;mi Gaillard (<a href="http://twitter.com/xtaz07/">@xtaz07</a>)
+    </li>
+
+    <li>
         <h4><a target="_blank" href="http://www.propelorm.org/">Propel</a></h4>
         William Durand (<a href="http://twitter.com/couac/">@couac</a>)
     </li>
