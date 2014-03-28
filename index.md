@@ -138,6 +138,11 @@ Do not combine separate membership requests in a single thread; one request per 
     </li>
 
     <li>
+        <h4><a target="_blank" href="http://www.phing.info/">Phing</a></h4>
+        Michiel Rook (<a href="http://twitter.com/michieltcs/">@michieltcs</a>)
+    </li>
+
+    <li>
         <h4><a target="_blank" href="http://www.phpbb.com/">phpBB</a></h4>
         Nils Adermann (<a href="http://twitter.com/naderman/">@naderman</a>)
     </li>
