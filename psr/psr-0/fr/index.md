@@ -11,5 +11,7 @@ translations:
  - name: French
  - name: Italian
    path: /psr/psr-0/it
+ - name: Slovenian
+   path: /psr/psr-0/sl
 ---
 {% include fig-standards/accepted/fr/PSR-0.md %}
