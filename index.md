@@ -206,7 +206,7 @@ Do not combine separate membership requests in a single thread; one request per 
 
     <li>
         <h4>
-            <a target="_blank" href="https://www.wikidata.org">Wikidata</a>
+            <a target="_blank" href="http://www.wikiba.se/">Wikibase</a>
             and <a target="_blank" href="https://semantic-mediawiki.org">Semantic MediaWiki</a>
         </h4>
         Jeroen De Dauw (<a href="https://twitter.com/JeroenDeDauw">@JeroenDeDauw</a>)
