@@ -14,3 +14,5 @@ title:  PSR Overview
 - [PSR-2 - Coding Style Guide](/psr/psr-2)
 
 - [PSR-3 - Logger Interface](/psr/psr-3)
+
+- [PSR-4 - Autoloader](/psr/psr-4)
