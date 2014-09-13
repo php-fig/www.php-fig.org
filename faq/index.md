@@ -21,6 +21,9 @@ is watching. If other folks want to adopt what we’re doing they are welcome to
 do so, but that is not the aim. Nobody in the group wants to tell you, as a programmer,
 how to build your application.
 
+## What does PSR stand for?
+
+PSR stands for PHP Standards Recommendation.
 
 ## What standards have been passed so far?
 
