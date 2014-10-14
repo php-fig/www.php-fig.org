@@ -75,10 +75,7 @@ Do not combine separate membership requests in a single thread; one request per 
     </li>
 
     <li>
-        <h4>
-            <a target="_blank" href="http://getcomposer.org/">Composer</a>
-            and <a target="_blank" href="http://packagist.org/">Packagist</a>
-        </h4>
+        <h4><a target="_blank" href="http://getcomposer.org/">Composer</a></h4>
         Jordi Boggiano (<a href="http://twitter.com/seldaek/">@seldaek</a>)
     </li>
 
