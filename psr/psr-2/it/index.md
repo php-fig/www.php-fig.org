@@ -6,10 +6,16 @@ disclaimer: true
 translations:
  - name: English (official)
    path: /psr/psr-2
- - name: Spanish
-   path: /psr/psr-2/es
+ - name: Slovenian
+   path: /psr/psr-2/sl
  - name: French
    path: /psr/psr-2/fr
  - name: Italian
+ - name: Spanish
+   path: /psr/psr-2/es
+ - name: Brazilian Portuguese
+   path: /psr/psr-2/pt-BR
+additional:
+
 ---
 {% include fig-standards/accepted/it/PSR-2-coding-style-guide.md %}
