@@ -21,16 +21,17 @@ Contributing
     a markdown engine:
      
     ```bash
-    gem install jekyll rdiscount
+    gem install bundler
+    bundle install
     ```
 
     Then compile!
 
     ```bash
-    jekyll --server
+    bundle exec jekyll serve
     ```
 
-    ... and open http://localhost:4000 in your browser to check it out!
+    ... and open `http://localhost:4000` in your browser to check it out!
 
  [issue]: https://github.com/php-fig/php-fig.github.com/issues
  [edit]:  https://github.com/blog/905-edit-like-an-ace

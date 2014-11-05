@@ -39,14 +39,16 @@ how to build your application.
 ## <a id="what-standards-have-been-passed-so-far"></a>What standards have been passed so far?
 
 <dl>
-	<dt><a target="_blank" href="https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md">PSR-0</a></dt>
+	<dt><a target="_blank" href="http://www.php-fig.org/psr/psr-0/">PSR-0</a></dt>
 	<dd>Aims to provide a standard file, class and namespace convention to allow plug-and-play code.</dd>
-	<dt><a target="_blank" href="https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md">PSR-1</a></dt>
+	<dt><a target="_blank" href="http://www.php-fig.org/psr/psr-1/">PSR-1</a></dt>
 	<dd>Aims to ensure a high level of technical interoperability between shared PHP code.</dd>
-	<dt><a target="_blank" href="https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md">PSR-2</a></dt>
+	<dt><a target="_blank" href="http://www.php-fig.org/psr/psr-2/">PSR-2</a></dt>
 	<dd>Provides a Coding Style Guide for projects looking to standardize their code.</dd>
-	<dt><a target="_blank" href="https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-3-logger-interface.md">PSR-3</a></dt>
+	<dt><a target="_blank" href="http://www.php-fig.org/psr/psr-3/">PSR-3</a></dt>
 	<dd>Describes a common interface for logging libraries.</dd>
+	<dt><a target="_blank" href="http://www.php-fig.org/psr/psr-4/">PSR-4</a></dt>
+	<dd>A more modern take on autoloading reflecting advances in the ecosystem.</dd>
 </dl>
 
 
@@ -59,6 +61,7 @@ of the group from the first 5 to over 20.
 It may not be an “official” PHP group, but if that was the case who would do the appointing?
 The FIG represents a cross-section of the community, and over time that cross-section
 will represent a wider selection of projects.
+
 
 ## <a id="who-are-these-voting-members"></a>Who are these voting members?
 
@@ -162,3 +165,15 @@ The IETF uses it for its own documentation but there are examples of other
 projects outside of the IETF using RFC 2119 as well.
 [The Atom Syndication Format](http://www.atomenabled.org/developers/syndication/atom-format-spec.php)
 is a good example of a project adopting RFC 2119 for its own purposes.
+
+
+## Can you help me with my PHP code?
+
+While there are many user groups and forums dedicated to providing general
+PHP support, the FIG is not one of them. Here are some great PHP resources
+and support forums:
+
+ * [/r/phphelp](http://www.reddit.com/r/phphelp)
+ * [Stack Overflow](http://stackoverflow.com/questions/tagged/php)
+ * The [PHP Manual](http://php.net/manual/) (especially the comments)
+ * [PHP: The Right Way](http://www.phptherightway.com)

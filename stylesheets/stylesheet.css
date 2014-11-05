@@ -186,7 +186,7 @@ aside .mailing-list-button {
 }
 
 code, pre {
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color: #222;
   margin-bottom: 30px;
   font-size: 13px;
@@ -536,6 +536,41 @@ footer a:hover {
 #voting-members h4:before {
   content: '';
   display: none;
+}
+
+/* Language switch */
+#lngmenu {
+  background: #eee;
+  border: 1px solid #ccc;
+  padding: 3px 6px;
+  margin-bottom: 1em;
+  font-size: 90%;
+}
+
+#lngmenu ul, #lngmenu li {
+  margin:     0;
+  padding:    0;
+  list-style: none;
+  display:    inline;
+}
+
+#lngmenu li:after {
+  content: ', ';
+}
+#lngmenu li:last-child:after {
+  content: '';
+}
+
+#lngmenu b {
+  font-weight: 500;
+}
+
+
+#disclaimer {
+  background: #ffc;
+  border: 1px solid #f90;
+  padding: 3px 6px;
+  font-size: 90%;
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */

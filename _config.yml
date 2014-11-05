@@ -4,6 +4,8 @@ lsi:       false
 pygments:  true
 permalink: /news/:title/
 markdown:  redcarpet
+redcarpet:
+    extensions: ["tables"]
 
 # custom config
 cachebust: 1
