@@ -7,10 +7,6 @@
 	Twitter: @dr4goonis
 	From: Glasgow, Scotland
 
-	Phil Sturgeon
-	Contact: email@philsturgeon.co.uk
-	Twitter: @philsturgeon
-	From: Gateshead, UK
 
 /* THANKS */
 	
