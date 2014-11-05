@@ -1,18 +1,6 @@
 ---
 layout: default
-title:  PSR Overview
+title:  Index of PHP Standard Recommendations
 ---
-# PHP-FIG PSR
 
-
-### Accepted Standards
-
-- [PSR-0 - Autoloading Standard](/psr/psr-0)
-
-- [PSR-1 - Basic Coding Standard](/psr/psr-1)
-
-- [PSR-2 - Coding Style Guide](/psr/psr-2)
-
-- [PSR-3 - Logger Interface](/psr/psr-3)
-
-- [PSR-4 - Autoloader](/psr/psr-4)
+{% include fig-standards/index.md %}
