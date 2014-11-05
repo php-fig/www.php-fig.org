@@ -9,6 +9,7 @@ LANG_MAP = {
   :es => 'Spanish',
   :fr => 'French',
   :it => 'Italian',
+  :sl => 'Slovenian',
 }
 
 raise 'Run "git submodule init"' unless File.directory?(PSR_DIR)

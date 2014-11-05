@@ -5,5 +5,7 @@ title:      PSR-4 — Autoloader
 disclaimer: false
 translations:
  - name: English (official)
+ - name: Slovenian
+   path: /psr/psr-4/sl
 ---
 {% include fig-standards/accepted/PSR-4-autoloader.md %}

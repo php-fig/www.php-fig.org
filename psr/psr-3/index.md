@@ -9,5 +9,7 @@ translations:
    path: /psr/psr-3/es
  - name: French
    path: /psr/psr-3/fr
+ - name: Slovenian
+   path: /psr/psr-3/sl
 ---
 {% include fig-standards/accepted/PSR-3-logger-interface.md %}

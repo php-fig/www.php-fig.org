@@ -11,5 +11,7 @@ translations:
    path: /psr/psr-1/fr
  - name: Italian
    path: /psr/psr-1/it
+ - name: Slovenian
+   path: /psr/psr-1/sl
 ---
 {% include fig-standards/accepted/es/PSR-1-codificacion-estandar-basica.md %}
