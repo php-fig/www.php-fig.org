@@ -19,6 +19,7 @@ title:  FAQ — PHP-FIG
 - [I use [FRAMEWORK X] which is a voting member, yet I’ve never heard about the PHP-FIG until now. How are they representing their community?](#i-use-framework-x-which-is-a-voting-member-yet-ive-never-heard-about-the-php-fig-until-now-how-are-they-representing-their-community)
 - [Why do you use strict language with words like MUST, MUST NOT, and REQUIRED in all caps in your documentation and specifications?](#why-do-you-use-strict-language-with-words-like-must-must-not-and-required-in-all-caps-in-your-documentation-and-specifications)
 
+
 ## <a id="what-does-fig-stand-for"></a>What does FIG stand for?
 
 The FIG stands for Framework Interoperability Group. The name until recently was
