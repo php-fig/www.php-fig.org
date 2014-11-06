@@ -3,6 +3,8 @@
 
 # A script for programmatically generating PSR and translation pages for php-fig.org
 
+require 'fileutils'
+
 PSR_DIR  = File.join(File.dirname(__FILE__), '_includes', 'fig-standards', 'accepted')
 EXTRAS   = ['meta', 'examples']
 LANG_MAP = {
@@ -84,6 +86,8 @@ Dir["#{PSR_DIR}/*.md"].sort.each do |original|
       links << " - name: #{other[:name]}"
       links << "   path: #{other[:path]}" unless other[:path] == page[:path]
     end
+
+    FileUtils.mkdir_p ".#{page[:path]}"
     File.open(".#{page[:path]}/#{page[:filename]}.md", 'w') do |f|
       f << <<-EOS.gsub(/^ {8}/, '')
         ---
