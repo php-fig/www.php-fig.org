@@ -71,7 +71,7 @@ Dir["#{PSR_DIR}/*.md"].sort.each do |original|
 
   pages.each do |page|
     if page[:lang] == 'en'
-      redirect = "redirect_from: /psr/#{page[:num]}\n"
+      redirect = "redirect_from: /psr/#{page[:num]}/\n"
     end
 
     links = []
