@@ -3,9 +3,10 @@ safe:        true
 lsi:         false
 highlighter: pygments
 permalink:   /news/:title/
+exclude:     [vendor]
 markdown:    redcarpet
 redcarpet:
-    extensions: ["tables"]
+    extensions: [tables]
 
 # custom config
 cachebust: 1

@@ -1,0 +1,9 @@
+machine:
+  environment:
+    NOKOGIRI_USE_SYSTEM_LIBRARIES: true # speeds up installation of html-proofer
+  ruby:
+    version: 2.1.4
+test:
+  override:
+    - bundle exec jekyll build
+    - bundle exec htmlproof ./_site --href_ignore irc://freenode.net/phpfig
