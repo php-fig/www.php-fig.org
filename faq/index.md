@@ -39,18 +39,7 @@ how to build your application.
 
 ## <a id="what-standards-have-been-passed-so-far"></a>What standards have been passed so far?
 
-<dl>
-	<dt><a target="_blank" href="http://www.php-fig.org/psr/psr-0/">PSR-0</a></dt>
-	<dd>Aims to provide a standard file, class and namespace convention to allow plug-and-play code.</dd>
-	<dt><a target="_blank" href="http://www.php-fig.org/psr/psr-1/">PSR-1</a></dt>
-	<dd>Aims to ensure a high level of technical interoperability between shared PHP code.</dd>
-	<dt><a target="_blank" href="http://www.php-fig.org/psr/psr-2/">PSR-2</a></dt>
-	<dd>Provides a Coding Style Guide for projects looking to standardize their code.</dd>
-	<dt><a target="_blank" href="http://www.php-fig.org/psr/psr-3/">PSR-3</a></dt>
-	<dd>Describes a common interface for logging libraries.</dd>
-	<dt><a target="_blank" href="http://www.php-fig.org/psr/psr-4/">PSR-4</a></dt>
-	<dd>A more modern take on autoloading reflecting advances in the ecosystem.</dd>
-</dl>
+<p>A full breakdown of PSRs can be found in our <a href="/psr">Index of PHP Standard Recommendations</a></p>
 
 
 ## <a id="who-appointed-you-to-make-these-decisions"></a>Who appointed you to make these decisions?
