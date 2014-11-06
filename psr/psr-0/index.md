@@ -19,6 +19,6 @@ translations:
    path: /psr/psr-0/pt-BR
 additional:
 
-redirect_from: /psr/0
+redirect_from: /psr/0/
 ---
 {% include fig-standards/accepted/PSR-0.md %}

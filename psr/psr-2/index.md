@@ -17,6 +17,6 @@ translations:
    path: /psr/psr-2/pt-BR
 additional:
 
-redirect_from: /psr/2
+redirect_from: /psr/2/
 ---
 {% include fig-standards/accepted/PSR-2-coding-style-guide.md %}

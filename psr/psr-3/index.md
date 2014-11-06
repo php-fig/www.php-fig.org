@@ -13,6 +13,6 @@ translations:
    path: /psr/psr-3/es
 additional:
 
-redirect_from: /psr/3
+redirect_from: /psr/3/
 ---
 {% include fig-standards/accepted/PSR-3-logger-interface.md %}

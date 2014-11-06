@@ -19,6 +19,6 @@ translations:
    path: /psr/psr-1/pt-BR
 additional:
 
-redirect_from: /psr/1
+redirect_from: /psr/1/
 ---
 {% include fig-standards/accepted/PSR-1-basic-coding-standard.md %}
