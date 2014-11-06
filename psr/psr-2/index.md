@@ -5,11 +5,17 @@ title:      PSR-2 — Coding Style Guide
 disclaimer: false
 translations:
  - name: English (official)
- - name: Spanish
-   path: /psr/psr-2/es
+ - name: Slovenian
+   path: /psr/psr-2/sl
  - name: French
    path: /psr/psr-2/fr
  - name: Italian
    path: /psr/psr-2/it
+ - name: Spanish
+   path: /psr/psr-2/es
+ - name: Brazilian Portuguese
+   path: /psr/psr-2/pt-BR
+additional:
+
 ---
 {% include fig-standards/accepted/PSR-2-coding-style-guide.md %}
