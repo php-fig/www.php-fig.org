@@ -1,9 +1,9 @@
 # jekyll config
-safe:      true
-lsi:       false
-pygments:  true
-permalink: /news/:title/
-markdown:  redcarpet
+safe:        true
+lsi:         false
+highlighter: pygments
+permalink:   /news/:title/
+markdown:    redcarpet
 redcarpet:
     extensions: ["tables"]
 
