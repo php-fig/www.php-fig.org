@@ -3,12 +3,9 @@
 layout:     psr
 title:      PSR-2 meta dokument
 disclaimer: true
-translations:
- - name: Slovenian
- - name: Brazilian Portuguese
-   path: /psr/psr-2/pt-BR
 additional:
  - name: PSR-2 — Vodič stila kode
-   path: /psr/psr-2/sl/index.html
+   path: /psr/psr-2/sl
+ - name: PSR-2 meta dokument
 ---
 {% include fig-standards/accepted/sl/PSR-2-coding-style-guide-meta.md %}

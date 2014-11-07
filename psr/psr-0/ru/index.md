@@ -6,8 +6,8 @@ disclaimer: true
 translations:
  - name: English (official)
    path: /psr/psr-0
- - name: Spanish
-   path: /psr/psr-0/es
+ - name: Brazilian Portuguese
+   path: /psr/psr-0/pt-br
  - name: French
    path: /psr/psr-0/fr
  - name: Italian
@@ -15,9 +15,7 @@ translations:
  - name: Russian
  - name: Slovenian
    path: /psr/psr-0/sl
- - name: Brazilian Portuguese
-   path: /psr/psr-0/pt-BR
-additional:
-
+ - name: Spanish
+   path: /psr/psr-0/es
 ---
 {% include fig-standards/accepted/ru/PSR-0.md %}
