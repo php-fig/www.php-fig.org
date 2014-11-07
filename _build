@@ -1,29 +1,32 @@
 #!/usr/bin/env ruby
 # encoding: utf-8
 
-# A script for programmatically generating PSR and translation pages for php-fig.org
+# A script for programmatically generating PSR, translation and redirect pages
+# for php-fig.org
 
 require 'fileutils'
 
 PSR_DIR  = File.join(File.dirname(__FILE__), '_includes', 'fig-standards', 'accepted')
-EXTRAS   = ['meta', 'examples']
+EXTRAS   = %w(meta examples)
+
 LANG_MAP = {
-  :es => 'Spanish',
-  :fr => 'French',
-  :it => 'Italian',
-  :ru => 'Russian',
-  :sl => 'Slovenian',
-  :'pt-BR' => 'Brazilian Portuguese',
-}
-PSR_MAP = {
-  :PSR0 => 'PSR-0',
-  :PSR1 => 'PSR-1-basic-coding-standard',
-  :PSR2 => 'PSR-2-coding-style-guide',
-  :PSR3 => 'PSR-3-logger-interface',
-  :PSR4 => 'PSR-4-autoloader',
+  es:    'Spanish',
+  fr:    'French',
+  it:    'Italian',
+  ru:    'Russian',
+  sl:    'Slovenian',
+  pt_BR: 'Brazilian Portuguese'
 }
 
-raise 'Run "git submodule init"' unless File.directory?(PSR_DIR)
+PSR_MAP = {
+  PSR0: 'PSR-0',
+  PSR1: 'PSR-1-basic-coding-standard',
+  PSR2: 'PSR-2-coding-style-guide',
+  PSR3: 'PSR-3-logger-interface',
+  PSR4: 'PSR-4-autoloader'
+}
+
+fail 'Run "git submodule init"' unless File.directory?(PSR_DIR)
 
 Dir["#{PSR_DIR}/*.md"].sort.each do |original|
   # Skip the meta and example files
@@ -32,27 +35,27 @@ Dir["#{PSR_DIR}/*.md"].sort.each do |original|
   # Skip non-PSR files?
   next unless File.basename(original) =~ /^PSR-(\d+)\b/
 
-  num   = $1
+  num   = Regexp.last_match[1]
   title = File.read(original).split(/[\n\r]/).first.sub(/^#\s*/, '')
 
   pages = [
     {
-      :lang  => 'en',
-      :filename  => 'index',
-      :name  => 'English (official)',
-      :path  => "/psr/psr-#{num}",
-      :title => "PSR-#{num} — #{title}",
-      :num   => num,
-      :disc  => false,
-      :inc   => original.sub(%r{.*/fig-standards/}, 'fig-standards/'),
+      lang:     'en',
+      filename: 'index',
+      name:     'English (official)',
+      path:     "/psr/psr-#{num}",
+      title:    "PSR-#{num} — #{title}",
+      num:      num,
+      disc:     false,
+      inc:      original.sub(%r{.*/fig-standards/}, 'fig-standards/')
     }
   ]
 
-  Dir["#{PSR_DIR}/*/PSR-#{num}*.md"].sort{|a, b| a.length.to_i <=> b.length.to_i }.each do |tr|
-    lang  = File.basename(File.dirname(tr))
-    title = File.read(tr).split(/[\n\r]/).first
+  Dir["#{PSR_DIR}/*/PSR-#{num}*.md"].sort_by(&:length).each do |tr|
+    lang     = File.basename(File.dirname(tr))
+    title    = File.read(tr).split(/[\n\r]/).first
     filename = File.basename(tr).match(/#{PSR_MAP[:"PSR#{num}"]}\-(.*)\.md$/)
-    index = 'index'
+    index    = 'index'
 
     if filename
       index = filename[1]
@@ -60,31 +63,31 @@ Dir["#{PSR_DIR}/*.md"].sort.each do |original|
       PSR_MAP[:"PSR#{num}"] = File.basename(tr).match(/(.*)\.md$/)[1]
     end
 
+    title = "PSR-#{num} — #{title}" if index == 'index'
     pages << {
-      :lang  => lang,
-      :filename  => index,
-      :name  => LANG_MAP[lang.to_sym],
-      :path  => "/psr/psr-#{num}/#{lang}",
-      :title => index == 'index' ? "PSR-#{num} — #{title}" : title,
-      :num   => num,
-      :inc   => tr.sub(%r{.*/fig-standards/}, 'fig-standards/'),
+      lang:     lang,
+      filename: index,
+      name:     LANG_MAP[lang.sub('-', '_').to_sym],
+      path:     "/psr/psr-#{num}/#{lang}",
+      title:    title,
+      num:      num,
+      inc:      tr.sub(%r{.*/fig-standards/}, 'fig-standards/')
     }
   end
 
   pages.each do |page|
-    if page[:lang] == 'en'
-      redirect = "redirect_from: /psr/#{page[:num]}/\n"
-    end
+    redirect = "redirect_from: /psr/#{page[:num]}/\n" if page[:lang] == 'en'
 
     links = []
     additional = []
-    pages.select{ |a| a[:filename] != page[:filename] and a[:lang] == page[:lang] }.each do |other|
-      additional << " - name: #{other[:title]}"
-      additional << "   path: #{other[:path]}/#{other[:filename]}.html"
-    end
-    pages.select{ |a| a[:filename] == page[:filename] }.each do |other|
-      links << " - name: #{other[:name]}"
-      links << "   path: #{other[:path]}" unless other[:path] == page[:path]
+    pages.each do |other|
+      if other[:filename] == page[:filename]
+        links << " - name: #{other[:name]}"
+        links << "   path: #{other[:path]}" unless other[:path] == page[:path]
+      elsif other[:lang] == page[:lang]
+        additional << " - name: #{other[:title]}"
+        additional << "   path: #{other[:path]}/#{other[:filename]}.html"
+      end
     end
 
     FileUtils.mkdir_p ".#{page[:path]}"
