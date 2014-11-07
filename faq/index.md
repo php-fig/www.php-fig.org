@@ -6,6 +6,7 @@ title:  FAQ — PHP-FIG
 
 - [What does FIG stand for?](#what-does-fig-stand-for)
 - [What are the aims of the PHP-FIG?](#what-are-the-aims-of-the-php-fig)
+- [What does PSR stand for?](#what-does-psr-stand-for)
 - [What standards have been passed so far?](#what-standards-have-been-passed-so-far)
 - [Who appointed you to make these decisions?](#who-appointed-you-to-make-these-decisions)
 - [Who are these voting members?](#who-are-these-voting-members)
@@ -36,9 +37,9 @@ is watching. If other folks want to adopt what we’re doing they are welcome to
 do so, but that is not the aim. Nobody in the group wants to tell you, as a programmer,
 how to build your application.
 
-## What does PSR stand for?
+## <a id="what-does-psr-stand-for"></a> What does PSR stand for?
 
-PSR stands for PHP Standards Recommendation.
+PSR stands for PHP Standard Recommendation.
 
 ## <a id="what-standards-have-been-passed-so-far"></a>What standards have been passed so far?
 
