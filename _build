@@ -28,31 +28,31 @@ class Psrs
   end
 
   def pages
-    @files.sort_by {|f| f[:num]}
+    @files.sort_by { |f| f[:num] }
   end
 
   def standards
     @files
-      .select {|f| !f[:is_extra]}
-      .sort_by {|f| f[:num]}
+      .select { |f| !f[:is_extra] }
+      .sort_by { |f| f[:num] }
   end
 
   def extras
     @files
-      .select {|f| f[:is_extra]}
-      .sort_by {|f| f[:num]}
+      .select { |f| f[:is_extra] }
+      .sort_by { |f| f[:num] }
   end
 
   def translations_for(num)
     standards
-      .select {|f| f[:num] == num }
-      .sort_by {|f| f[:order]}
+      .select { |f| f[:num] == num }
+      .sort_by { |f| f[:order] }
   end
 
   def extras_for(num, lang)
     @files
-      .select {|f| f[:num] == num && f[:lang] == lang }
-      .sort_by {|f| f[:is_extra] ? 1 : 0 }
+      .select { |f| f[:num] == num && f[:lang] == lang }
+      .sort_by { |f| f[:is_extra] ? 1 : 0 }
   end
 
   def path_for(num, lang, extra = nil)
@@ -93,7 +93,7 @@ class Psrs
         title:    title,
         is_extra: !extra.nil?,
         inc:      filename.sub(%r{.*/fig-standards/}, 'fig-standards/'),
-        order:    LANG_MAP.keys.index(lang),
+        order:    LANG_MAP.keys.index(lang)
       }
     end
   end
