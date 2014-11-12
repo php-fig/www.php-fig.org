@@ -6,4 +6,4 @@ machine:
 test:
   override:
     - bundle exec jekyll build
-    - bundle exec htmlproof ./_site --href_ignore irc://freenode.net/phpfig
+    - bundle exec htmlproof ./_site
