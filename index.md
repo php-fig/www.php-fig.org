@@ -175,6 +175,11 @@ Do not combine separate membership requests in a single thread; one request per 
     </li>
 
     <li>
+        <h4><a target="_blank" href="http://www.revive-adserver.com/">Revive Adserver</a></h4>
+        Matteo Beccati (<a href="http://twitter.com/mbeccati/">@mbeccati</a>)
+    </li>
+
+    <li>
         <h4><a target="_blank" href="http://sabre.io/">SabreDAV</a></h4>
         Evert Pot (<a href="http://twitter.com/evertp/">@evertp</a>)
     </li>
