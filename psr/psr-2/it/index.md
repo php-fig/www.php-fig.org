@@ -11,6 +11,8 @@ translations:
  - name: French
    path: /psr/psr-2/fr
  - name: Italian
+ - name: Russian
+   path: /psr/psr-2/ru
  - name: Slovenian
    path: /psr/psr-2/sl
  - name: Spanish

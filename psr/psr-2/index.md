@@ -10,6 +10,8 @@ translations:
    path: /psr/psr-2/fr
  - name: Italian
    path: /psr/psr-2/it
+ - name: Russian
+   path: /psr/psr-2/ru
  - name: Slovenian
    path: /psr/psr-2/sl
  - name: Spanish
