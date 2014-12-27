@@ -85,7 +85,7 @@ class Psrs
       title = File.read(filename).split(/[\n\r]/).first.sub(/^#\s*/, '')
       title = "PSR-#{num} — #{title}" unless title.include?("PSR-#{num}")
 
-      data = {
+      {
         num:      num,
         lang:     lang,
         filename: filename,
