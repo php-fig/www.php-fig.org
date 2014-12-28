@@ -9,5 +9,7 @@ machine:
     version: 2.1.4
 test:
   override:
+    # Fail if _build generates or modifies any files:
+    - "bundle exec ./_build && [[ -z `git status --porcelain -u` ]]"
     - bundle exec jekyll build
     - bundle exec htmlproof ./_site
