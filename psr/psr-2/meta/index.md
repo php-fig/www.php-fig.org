@@ -6,6 +6,5 @@ additional:
  - name: PSR-2 — Coding Style Guide
    path: /psr/psr-2
  - name: PSR-2 Meta Document
-redirect_from: /psr/2/
 ---
 {% include fig-standards/accepted/PSR-2-coding-style-guide-meta.md %}
