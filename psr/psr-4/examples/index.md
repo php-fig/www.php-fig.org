@@ -8,6 +8,5 @@ additional:
  - name: PSR-4 Meta Document
    path: /psr/psr-4/meta
  - name: Example Implementations of PSR-4
-redirect_from: /psr/4/
 ---
 {% include fig-standards/accepted/PSR-4-autoloader-examples.md %}

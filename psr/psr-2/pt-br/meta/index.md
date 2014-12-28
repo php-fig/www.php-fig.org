@@ -7,9 +7,5 @@ additional:
  - name: PSR-2 — Guia de Estilo de Codificação
    path: /psr/psr-2/pt-br
  - name: PSR-2 Meta Documento
-redirect_from:
- - /psr/psr-2/pt-br/pt_BR/
- - /psr/psr-2/pt-br/pt-BR/
- - /psr/psr-2/pt-br/pt_br/
 ---
 {% include fig-standards/accepted/pt-BR/PSR-2-guia-de-estilo-de-codificacao-meta.md %}

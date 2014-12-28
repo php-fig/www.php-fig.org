@@ -129,18 +129,21 @@ psrs.pages.each do |page|
       end
     end
 
-    if page[:lang] == :en
-      f << "redirect_from: /psr/#{page[:num]}/\n" if page[:lang] == :en
-    elsif page[:lang].to_s.include?('_')
-      # redirect from non-normalized language urls.
-      base = File.dirname(page[:path])
-      f << "redirect_from:\n"
-      f << " - #{base}/#{page[:lang]}/\n"
-      f << " - #{base}/#{page[:lang].to_s.sub('_', '-')}/\n"
-      if page[:lang] != page[:lang].downcase
-        f << " - #{base}/#{page[:lang].to_s.downcase}/\n"
+    unless page[:is_extra]
+      if page[:lang] == :en
+        f << "redirect_from: /psr/#{page[:num]}/\n"
+      elsif page[:lang].to_s.include?('_')
+        # redirect from non-normalized language urls.
+        base = File.dirname(page[:path])
+        f << "redirect_from:\n"
+        f << " - #{base}/#{page[:lang]}/\n"
+        f << " - #{base}/#{page[:lang].to_s.sub('_', '-')}/\n"
+        if page[:lang] != page[:lang].downcase
+          f << " - #{base}/#{page[:lang].to_s.downcase}/\n"
+        end
       end
     end
+
     f << "---\n"
     f << "{% include #{page[:inc]} %}\n"
   end
