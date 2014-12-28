@@ -6,7 +6,9 @@ permalink:   /news/:title/
 exclude:     [vendor]
 markdown:    redcarpet
 redcarpet:
-    extensions: [tables]
+  extensions: [tables]
+gems:
+  - jekyll-redirect-from
 
 # custom config
 cachebust: 1

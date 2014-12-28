@@ -6,17 +6,24 @@ disclaimer: true
 translations:
  - name: English (official)
    path: /psr/psr-2
- - name: Slovenian
-   path: /psr/psr-2/sl
+ - name: Brazilian Portuguese
  - name: French
    path: /psr/psr-2/fr
  - name: Italian
    path: /psr/psr-2/it
+ - name: Russian
+   path: /psr/psr-2/ru
+ - name: Slovenian
+   path: /psr/psr-2/sl
  - name: Spanish
    path: /psr/psr-2/es
- - name: Brazilian Portuguese
 additional:
+ - name: PSR-2 — Guia de Estilo de Codificação
  - name: PSR-2 Meta Documento
-   path: /psr/psr-2/pt-BR/meta.html
+   path: /psr/psr-2/pt-br/meta
+redirect_from:
+ - /psr/psr-2/pt_BR/
+ - /psr/psr-2/pt-BR/
+ - /psr/psr-2/pt_br/
 ---
 {% include fig-standards/accepted/pt-BR/PSR-2-guia-de-estilo-de-codificacao.md %}

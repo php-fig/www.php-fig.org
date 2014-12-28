@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+{% if page.translations %}
 <nav id="lngmenu">
   Available translations:
   <ul>
@@ -13,6 +14,7 @@ layout: default
     {% endfor %}
   </ul>
 </nav>
+{% endif %}
 
 {% if page.disclaimer %}
   {% include disclaimer.html %}

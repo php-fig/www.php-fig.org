@@ -6,12 +6,10 @@ disclaimer: true
 translations:
  - name: English (official)
    path: /psr/psr-3
+ - name: French
  - name: Slovenian
    path: /psr/psr-3/sl
- - name: French
  - name: Spanish
    path: /psr/psr-3/es
-additional:
-
 ---
 {% include fig-standards/accepted/fr/PSR-3-logger-interface.md %}

@@ -3,14 +3,11 @@
 layout:     psr
 title:      Примеры реализации PSR-4
 disclaimer: true
-translations:
- - name: Slovenian
-   path: /psr/psr-4/sl
- - name: Russian
 additional:
- - name: PSR-4 — # Автозагрузчик
-   path: /psr/psr-4/ru/index.html
+ - name: PSR-4 — Автозагрузчик
+   path: /psr/psr-4/ru
  - name: PSR-4 метадокумент
-   path: /psr/psr-4/ru/meta.html
+   path: /psr/psr-4/ru/meta
+ - name: Примеры реализации PSR-4
 ---
 {% include fig-standards/accepted/ru/PSR-4-autoloader-examples.md %}

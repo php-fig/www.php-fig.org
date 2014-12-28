@@ -6,18 +6,20 @@ disclaimer: true
 translations:
  - name: English (official)
    path: /psr/psr-1
- - name: Slovenian
-   path: /psr/psr-1/sl
+ - name: Brazilian Portuguese
  - name: French
    path: /psr/psr-1/fr
  - name: Italian
    path: /psr/psr-1/it
  - name: Russian
    path: /psr/psr-1/ru
+ - name: Slovenian
+   path: /psr/psr-1/sl
  - name: Spanish
    path: /psr/psr-1/es
- - name: Brazilian Portuguese
-additional:
-
+redirect_from:
+ - /psr/psr-1/pt_BR/
+ - /psr/psr-1/pt-BR/
+ - /psr/psr-1/pt_br/
 ---
 {% include fig-standards/accepted/pt-BR/PSR-1-padrao-basico-de-codificacao.md %}
