@@ -1,3 +1,7 @@
+checkout:
+  post:
+    - git submodule sync
+    - git submodule update --init # use submodules
 machine:
   environment:
     NOKOGIRI_USE_SYSTEM_LIBRARIES: true # speeds up installation of html-proofer
