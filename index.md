@@ -171,7 +171,7 @@ Do not combine separate membership requests in a single thread; one request per 
 
     <li>
         <h4><a target="_blank" href="http://www.pyrocms.com/">PyroCMS</a></h4>
-        Phil Sturgeon (<a href="http://twitter.com/philsturgeon/">@philsturgeon</a>)
+        Ryan Thompson (<a href="http://twitter.com/RyanThePyro/">@RyanThePyro</a>)
     </li>
 
     <li>
