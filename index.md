@@ -75,6 +75,11 @@ Do not combine separate membership requests in a single thread; one request per 
     </li>
 
     <li>
+        <h4>The community at large</h4>
+        Cal Evans (<a href="http://twitter.com/CalEvans/">@CalEvans</a>)
+    </li>
+
+    <li>
         <h4><a target="_blank" href="http://getcomposer.org/">Composer</a></h4>
         Jordi Boggiano (<a href="http://twitter.com/seldaek/">@seldaek</a>)
     </li>
@@ -105,11 +110,6 @@ Do not combine separate membership requests in a single thread; one request per 
     </li>
 
     <li>
-        <h4><a target="_blank" href="http://flow.typo3.org/">TYPO3 Flow</a></h4>
-        Karsten Dambekalns (<a href="http://twitter.com/kdambekalns/">@kdambekalns</a>)
-    </li>
-
-    <li>
         <h4><a target="_blank" href="http://jackalope.github.com">Jackalope</a></h4>
         Lukas Kahwe Smith (<a href="http://twitter.com/lsmith">@lsmith</a>)
     </li>
@@ -122,6 +122,11 @@ Do not combine separate membership requests in a single thread; one request per 
     <li>
         <h4><a target="_blank" href="http://laravel.com/">Laravel</a></h4>
         Taylor Otwell (<a href="http://twitter.com/taylorotwell/">@taylorotwell</a>)
+    </li>
+
+    <li>
+        <h4><a target="_blank" href="http://thephpleague.com">The League of Extraordinary Packages</a></h4>
+        Kayla Daniels (<a href="https://twitter.com/kayladnls">@kayladnls</a>)
     </li>
 
     <li>
@@ -191,6 +196,11 @@ Do not combine separate membership requests in a single thread; one request per 
     </li>
 
     <li>
+        <h4><a target="_blank" href="http://www.slimframework.com">Slim</a></h4>
+        Josh Lockhart (<a href="http://twitter.com/codeguy/">@codeguy</a>)
+    </li>
+
+    <li>
         <h4><a target="_blank" href="http://www.tedivm.com/stash/">Stash</a></h4>
         Robert Hafner (<a href="http://twitter.com/tedivm/">@tedivm</a>)
     </li>
@@ -207,8 +217,8 @@ Do not combine separate membership requests in a single thread; one request per 
     </li>
 
     <li>
-        <h4>The community at large</h4>
-        Cal Evans (<a href="http://twitter.com/CalEvans/">@CalEvans</a>)
+        <h4><a target="_blank" href="http://flow.typo3.org/">TYPO3 Flow</a></h4>
+        Karsten Dambekalns (<a href="http://twitter.com/kdambekalns/">@kdambekalns</a>)
     </li>
 
     <li>
