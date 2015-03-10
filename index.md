@@ -125,7 +125,7 @@ Do not combine separate membership requests in a single thread; one request per 
     </li>
 
     <li>
-        <h4><a target="_blank" href="https://thephpleague.com">The League of Extraordinary Packages</a></h4>
+        <h4><a target="_blank" href="http://thephpleague.com">The League of Extraordinary Packages</a></h4>
         Kayla Daniels (<a href="https://twitter.com/kayladnls">@kayladnls</a>)
     </li>
 
