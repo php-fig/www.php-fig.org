@@ -185,7 +185,7 @@ Do not combine separate membership requests in a single thread; one request per 
     </li>
 
     <li>
-        <h4><a target="_blank" href="http://sabre.io/">SabreDAV</a></h4>
+        <h4><a target="_blank" href="http://sabre.io/">sabre/dav</a></h4>
         Evert Pot (<a href="http://twitter.com/evertp/">@evertp</a>)
     </li>
 
