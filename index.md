@@ -212,7 +212,7 @@ Do not combine separate membership requests in a single thread; one request per 
     </li>
 
     <li>
-        <h4><a target="_blank" href="http://www.symfony.com/">Symfony2</a></h4>
+        <h4><a target="_blank" href="http://www.symfony.com/">Symfony</a></h4>
         Bernhard Schussek (<a href="http://twitter.com/webmozart/">@webmozart</a>)
     </li>
 
