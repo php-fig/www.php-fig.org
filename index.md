@@ -44,11 +44,6 @@ Do not combine separate membership requests in a single thread; one request per 
     </li>
 
     <li>
-        <h4><a target="_blank" href="http://aws.amazon.com/sdkforphp/">AWS SDK for PHP (Amazon Web Services)</a></h4>
-        Michael Dowling (<a href="http://twitter.com/mtdowling/">@mtdowling</a>)
-    </li>
-
-    <li>
         <h4><a target="_blank" href="http://logging.apache.org/log4php/">Apache log4php</a></h4>
         Ivan Habunek (<a href="http://twitter.com/ihabunek/">@ihabunek</a>)
     </li>
@@ -107,6 +102,11 @@ Do not combine separate membership requests in a single thread; one request per 
     <li>
         <h4><a target="_blank" href="http://ez.no/">eZ Publish</a></h4>
         Andre Romcke (<a href="http://twitter.com/andrerom/">@andrerom</a>)
+    </li>
+
+    <li>
+        <h4><a target="_blank" href="http://www.guzzlephp.com/">Guzzle</a></h4>
+        Jeremy Lindblom (<a href="https://twitter.com/jeremeamia/">@jeremeamia</a>)
     </li>
 
     <li>
