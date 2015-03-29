@@ -110,6 +110,11 @@ Do not combine separate membership requests in a single thread; one request per 
     </li>
 
     <li>
+        <h4><a target="_blank" href="http://www.horde.org/">Horde</a></h4>
+        Jan Schneider (<a href="https://twitter.com/yunosh">@yunosh</a>)
+    </li>
+
+    <li>
         <h4><a target="_blank" href="http://jackalope.github.com">Jackalope</a></h4>
         Lukas Kahwe Smith (<a href="http://twitter.com/lsmith">@lsmith</a>)
     </li>
