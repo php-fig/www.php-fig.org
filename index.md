@@ -44,11 +44,6 @@ Do not combine separate membership requests in a single thread; one request per 
     </li>
 
     <li>
-        <h4><a target="_blank" href="http://logging.apache.org/log4php/">Apache log4php</a></h4>
-        Ivan Habunek (<a href="http://twitter.com/ihabunek/">@ihabunek</a>)
-    </li>
-
-    <li>
         <h4>
             <a target="_blank" href="http://github.com/kriswallsmith/assetic/">Assetic</a>
             and <a target="_blank" href="https://github.com/kriswallsmith/Buzz">Buzz</a>
