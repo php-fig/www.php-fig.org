@@ -208,7 +208,7 @@ Do not combine separate membership requests in a single thread; one request per 
 
     <li>
         <h4><a target="_blank" href="http://developers.sugarcrm.com/wordpress">SugarCRM</a></h4>
-        Filipe Guerra (<a href="http://twitter.com/alias_mac/">@alias_mac</a>)
+        Andreas Sandberg (<a href="http://twitter.com/yellowandy/">@yellowandy</a>)
     </li>
 
     <li>
