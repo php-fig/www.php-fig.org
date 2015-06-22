@@ -108,6 +108,13 @@ Do not combine separate membership requests in a single thread; one request per 
         <h4><a target="_blank" href="http://www.horde.org/">Horde</a></h4>
         Jan Schneider (<a href="https://twitter.com/yunosh">@yunosh</a>)
     </li>
+    
+    <li>
+        <h4><a target="_blank" href="https://github.com/zendtech/IbmiToolkit/">IBMi Toolkit</a></h4>
+        Adam Culp (<a href="https://twitter.com/adamculp">@adamculp</a>)
+    </li>
+    
+    
 
     <li>
         <h4><a target="_blank" href="http://jackalope.github.com">Jackalope</a></h4>
