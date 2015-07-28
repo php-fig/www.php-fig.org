@@ -1,36 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css?{{ site.cachebust }}" media="screen">
-        <link rel="stylesheet" type="text/css" href="/stylesheets/pygment_trac.css?{{ site.cachebust }}" media="screen">
-        <link rel="stylesheet" type="text/css" href="/stylesheets/print.css?{{ site.cachebust }}" media="print">
-        <!--[if lt IE 9]>
-        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-        <title>{{ page.title }}</title>
-    </head>
-    <body>
-        <header>
-            <div class="inner">
-                <h1><a href="/">www.php-fig.org</a></h1>
-                <h2>PHP Framework Interop Group</h2>
-                <a href="https://github.com/php-fig/fig-standards" class="button"><small>View Our </small>Github Page</a>
-            </div>
-        </header>
-        <div id="content-wrapper">
-            <div class="inner clearfix">
-                <section id="main-content">
-                    {{ content }}
-                </section>
-                {% include sidebar.html %}
-            </div>
-        </div>
-        <script type="text/javascript">
-            var _gaq = _gaq || [];_gaq.push(['_setAccount','UA-1997599-8']);_gaq.push(['_setDomainName','php-fig.org']);_gaq.push(['_trackPageview']);
-            (function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src='https://ssl.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})();
-        </script>
-    </body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{{ page.title }}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="/css/all.css">
+</head>
+<body>
+
+<header class="site_header">
+    <div class="center">
+        <a class="site_logo" href="/">
+            <span class="site_logo__short_name">PHP-FIG</span>
+            <span class="site_logo__long_name">The PHP Framework Interop Group</span>
+        </a>
+        <nav class="site_menu">
+            <ul class="site_menu__list">
+                <li class="site_menu__item">
+                    <a class="site_menu__link {% if page.url == '/index.html' %}site_menu__link--active{% endif %}" href="/">Home</a>
+                </li>
+                <li class="site_menu__item">
+                    <a class="site_menu__link {% if page.url == '/psr/' %}site_menu__link--active{% endif %}" href="/psr/">Standards Recommendations</a>
+                </li>
+                <li class="site_menu__item">
+                    <a class="site_menu__link {% if page.url == '/members/' %}site_menu__link--active{% endif %}" href="/members/">Members</a>
+                </li>
+                <li class="site_menu__item">
+                    <a class="site_menu__link {% if page.url == '/bylaws/' %}site_menu__link--active{% endif %}" href="/bylaws/">Bylaws</a>
+                </li>
+                <li class="site_menu__item">
+                    <a class="site_menu__link {% if page.url == '/faqs/' %}site_menu__link--active{% endif %}" href="/faqs/">FAQs</a>
+                </li>
+                <li class="site_menu__item">
+                    <a class="site_menu__link {% if page.url == '/get-involved/' %}site_menu__link--active{% endif %}" href="/get-involved/">Get Involved</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+{{ content }}
+
 </html>

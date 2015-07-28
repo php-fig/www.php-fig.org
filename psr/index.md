@@ -1,6 +1,7 @@
 ---
-layout: default
-title:  Index of PHP Standard Recommendations
+layout: markdown
+title:  PHP Standards Recommendations
+permalink: psr/
 ---
 
 {% include fig-standards/index.md %}

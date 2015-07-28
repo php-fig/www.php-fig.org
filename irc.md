@@ -1,6 +1,7 @@
 ---
 layout: default
 title:  IRC — PHP-FIG
+permalink: irc/
 ---
 # PHP-FIG IRC
 

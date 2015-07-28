@@ -1,8 +1,10 @@
 ---
-layout: default
-title:  FAQ — PHP-FIG
+layout: markdown
+title:  Frequently Asked Questions
+permalink: faqs/
 ---
-# PHP-FIG FAQ
+
+# Frequently Asked Questions
 
 - [What does FIG stand for?](#what-does-fig-stand-for)
 - [What are the aims of the PHP-FIG?](#what-are-the-aims-of-the-php-fig)

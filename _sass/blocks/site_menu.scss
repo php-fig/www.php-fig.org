@@ -1,0 +1,31 @@
+.site_menu {
+
+    position: absolute;
+    right: 0;
+    top: 50px;
+
+    &__list {
+        @include clearfix;
+    }
+
+    &__item {
+        float: left;
+        margin: 0 0 0 30px;
+    }
+
+    &__link {
+        transition: all .15s;
+
+        color: #fff4e1;
+        font-family: 'Whitney SSm A', 'Whitney SSm B';
+        font-weight: 500;
+        font-style: normal;
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+    &__link:hover,
+    &__link--active {
+        color: #65be97;
+    }
+}
