@@ -1,0 +1,15 @@
+.page_banner {
+
+    height: 170px;
+    padding: 75px 0 0 0;
+
+    background: #256d4e url(/img/page_banner_bg.jpg) center top no-repeat;
+
+    &__title {
+        color: #f9f2e8;
+        font-family: 'Tungsten A', 'Tungsten B';
+        font-weight: 500;
+        font-size: 70px;
+        text-shadow: 1px 1px 0 #1e5f42;
+    }
+}

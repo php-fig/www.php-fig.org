@@ -1,0 +1,20 @@
+.site_footer {
+
+    padding: 40px 0;
+    background: #226146;
+
+    color: #4cb88a;
+    font-family: 'Whitney SSm A', 'Whitney SSm B';
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+
+    &__link {
+        color: #7cddb4;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

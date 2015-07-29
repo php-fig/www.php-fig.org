@@ -10,7 +10,8 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/all.css?{{ site.cachebust }}">
+    <link rel="stylesheet" href="/css/pygment_trac.css?{{ site.cachebust }}">
 </head>
 <body>
 
@@ -23,28 +24,44 @@
         <nav class="site_menu">
             <ul class="site_menu__list">
                 <li class="site_menu__item">
-                    <a class="site_menu__link {% if page.url == '/index.html' %}site_menu__link--active{% endif %}" href="/">Home</a>
+                    <a class="site_menu__link {% if page.url == '/' %}site_menu__link--active{% endif %}" href="/">Home</a>
                 </li>
                 <li class="site_menu__item">
-                    <a class="site_menu__link {% if page.url == '/psr/' %}site_menu__link--active{% endif %}" href="/psr/">Standards Recommendations</a>
+                    <a class="site_menu__link {% if page.url contains '/psr/' %}site_menu__link--active{% endif %}" href="/psr/">Standards Recommendations</a>
                 </li>
                 <li class="site_menu__item">
-                    <a class="site_menu__link {% if page.url == '/members/' %}site_menu__link--active{% endif %}" href="/members/">Members</a>
+                    <a class="site_menu__link {% if page.url contains '/members/' %}site_menu__link--active{% endif %}" href="/members/">Members</a>
                 </li>
                 <li class="site_menu__item">
-                    <a class="site_menu__link {% if page.url == '/bylaws/' %}site_menu__link--active{% endif %}" href="/bylaws/">Bylaws</a>
+                    <a class="site_menu__link {% if page.url contains '/bylaws/' %}site_menu__link--active{% endif %}" href="/bylaws/">Bylaws</a>
                 </li>
                 <li class="site_menu__item">
-                    <a class="site_menu__link {% if page.url == '/faqs/' %}site_menu__link--active{% endif %}" href="/faqs/">FAQs</a>
+                    <a class="site_menu__link {% if page.url contains '/faqs/' %}site_menu__link--active{% endif %}" href="/faqs/">FAQs</a>
                 </li>
                 <li class="site_menu__item">
-                    <a class="site_menu__link {% if page.url == '/get-involved/' %}site_menu__link--active{% endif %}" href="/get-involved/">Get Involved</a>
+                    <a class="site_menu__link {% if page.url contains '/get-involved/' %}site_menu__link--active{% endif %}" href="/get-involved/">Get Involved</a>
                 </li>
             </ul>
         </nav>
     </div>
 </header>
 
-{{ content }}
+{% if page.disable_page_banner != true %}
+    <div class="page_banner">
+        <div class="center">
+            <h1 class="page_banner__title">{{ page.title }}</h1>
+        </div>
+    </div>
+{% endif %}
+
+<div class="{{ page.classes | join }}">
+    {{ content }}
+</div>
+
+<footer class="site_footer">
+    <div class="center">
+        &copy; 2015 PHP Framework Interop Group. Site design by <a class="site_footer__link" href="https://twitter.com/reinink" target="_blank">Jonathan Reinink</a>.
+    </div>
+</footer>
 
 </html>

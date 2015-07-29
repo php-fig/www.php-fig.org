@@ -1,0 +1,110 @@
+.home_features {
+
+    &__list {
+
+    }
+
+    &__item {
+        @include clearfix;
+
+        padding: 50px 0 0 0;
+    }
+
+    &__item--interfaces {
+        background: #f1ede5;
+    }
+
+    &__content {
+        float: left;
+        width: 50%;
+        padding: 0 100px 0 40px;
+    }
+
+    &__title {
+        position: relative;
+        margin: 25px 0 0 0;
+
+        color: #a39989;
+        font-family: 'Whitney SSm A', 'Whitney SSm B';
+        font-weight: 300;
+        font-size: 40px;
+        text-transform: uppercase;
+
+        &:before {
+            content: "";
+
+            position: absolute;
+            left: -40px;
+            top: 5px;
+
+            display: block;
+            width: 30px;
+            height: 40px;
+
+            background-repeat: no-repeat;
+            background-size: 30px;
+        }
+    }
+
+    &__item--autoloading &__title:before {
+        background-image: url(/img/autoloading_icon.png);
+    }
+
+    &__item--interfaces &__title:before {
+        background-image: url(/img/interfaces_icon.png);
+    }
+
+    &__item--coding_styles &__title:before {
+        top: 8px;
+        background-image: url(/img/coding_styles_icon.png);
+    }
+
+    &__description {
+        margin: 10px 0 0 0;
+
+        color: #746a5b;
+        font-family: 'Whitney SSm A', 'Whitney SSm B';
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    &__editor {
+        float: left;
+        width: 50%;
+    }
+
+    &__chrome {
+        height: 20px;
+        border-radius: 3px 3px 0 0;
+        background: #d4cfc6;
+    }
+
+    &__chrome_dot {
+
+        float: left;
+        margin: 9px 0 0 6px;
+
+        width: 4px;
+        height: 4px;
+
+        border-radius: 3px;
+        background: #b0a796;
+
+        &:first-child {
+            margin-left: 10px;
+        }
+    }
+
+    &__code {
+        display: block;
+
+        padding: 25px;
+        min-height: 200px;
+
+        font-family: 'Source Code Pro';
+        font-size: 15px;
+        line-height: 1.3;
+
+        background: white;
+    }
+}
