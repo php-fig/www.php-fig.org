@@ -9,10 +9,10 @@ disable_page_banner: true
     <div class="center">
         <div class="home_banner__content">
             <h1 class="home_banner__title">Moving PHP forward through collaboration and standards.</h1>
-            <p class="home_banner__intro">Welcome the PHP Framework Interop Group! We are a group of established PHP projects whose goal is to talk about the commonalities between our projects and find ways we can work better together.</p>
+            <p class="home_banner__intro">Welcome the PHP Framework Interop Group! We're a group of established PHP projects whose goal is to talk about commonalities between our projects and find ways we can work better together.</p>
             <div class="home_banner__links">
-                <a class="home_banner__link" href="">Find us on Github</a>
-                <a class="home_banner__link" href="">Follow us on Twitter</a>
+                <a class="home_banner__link" href="/psr/">View recommendations</a>
+                <a class="home_banner__link" href="/faqs/">Frequently asked questions</a>
             </div>
         </div>
     </div>
@@ -115,19 +115,4 @@ class ClassName
             </div>
         </li>
     </ul>
-</div>
-
-<div class="home_footer_links">
-    <div class="center">
-        <div class="home_footer_links__content">
-            <ul class="home_footer_links__list">
-                <li class="home_footer_links__item">
-                    <a class="home_footer_links__link" href="/psr/">View the recommendations</a>
-                </li>
-                <li class="home_footer_links__item">
-                    <a class="home_footer_links__link" href="/faqs/">Frequently asked questions</a>
-                </li>
-            </ul>
-        </div>
-    </div>
 </div>

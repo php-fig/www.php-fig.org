@@ -24,7 +24,7 @@
         color: #f9f2e8;
         font-family: 'Whitney SSm A', 'Whitney SSm B';
         font-weight: 400;
-        font-size: 15px;
+        font-size: 16px;
         line-height: 2;
     }
 
@@ -46,11 +46,11 @@
         text-decoration: none;
 
         border-radius: 3px;
-        background: #1a4c37;
+        background: darken(#1a4c37, 2%);
 
         &:hover {
             color: #f9f2e8;
-            background: darken(#1a4c37, 2%);
+            background: darken(#1a4c37, 4%);
         }
     }
 }
