@@ -1,43 +1,48 @@
 ---
 layout: default
-classes:
-    - center
-    - markdown
 ---
 
-{% if page.translations %}
-<nav id="lngmenu">
-  Available translations:
-  <ul>
-    {% for lang in page.translations %}
-      {% if lang.path %}
-        <li><a href="{{ lang.path }}">{{ lang.name }}</a></li>
-      {% else %}
-        <li><b>{{ lang.name }}</b></li>
-      {% endif %}
-    {% endfor %}
-  </ul>
-</nav>
-{% endif %}
+<div class="columns">
+    <div class="columns__column columns__column--8">
+        {% if page.disclaimer %}
+            {% include disclaimer.html %}
+        {% endif %}
 
-{% if page.disclaimer %}
-  {% include disclaimer.html %}
-{% endif %}
+        <div class="markdown">
+            {{ content }}
+        </div>
+    </div>
+    <div class="columns__column columns__column--4 columns__column--padding_left">
 
-{{ content }}
+        {% if page.translations %}
+            <nav class="sidebar">
+                <h2>Available translations:</h2>
+                <ul>
+                    {% for lang in page.translations %}
+                        {% if lang.path %}
+                            <li><a href="{{ lang.path | remove: "/pages" }}">{{ lang.name }}</a></li>
+                        {% else %}
+                            <li><b>{{ lang.name }}</b></li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </nav>
+        {% endif %}
 
-{% if page.additional %}
-<nav id="additional">
-  Additional Info:
-  <ul>
-    {% for additional in page.additional %}
-    {% if additional.path %}
-    <li><a href="{{ additional.path }}">{{ additional.name }}</a></li>
-    {% else %}
-    <li><b>{{ additional.name }}</b></li>
-    {% endif %}
-    {% endfor %}
-  </ul>
-</nav>
-{% endif %}
+        {% if page.additional %}
+            <nav class="sidebar">
+                <h2>Additional Info:</h2>
+                <ul>
+                    {% for additional in page.additional %}
+                    {% if additional.path %}
+                    <li><a href="{{ additional.path }}">{{ additional.name }}</a></li>
+                    {% else %}
+                    <li><b>{{ additional.name }}</b></li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+            </nav>
+        {% endif %}
 
+    </div>
+</div>

@@ -2,7 +2,6 @@
 layout: default
 permalink: /
 title:  PHP-FIG — PHP Framework Interop Group
-disable_page_banner: true
 ---
 
 <div class="home_banner">

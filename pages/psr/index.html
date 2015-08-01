@@ -2,9 +2,12 @@
 layout: default
 title:  PHP Standards Recommendations
 permalink: psr/
-classes:
-    - center
-    - markdown
 ---
 
+{% capture content %}
 {% include fig-standards/index.md %}
+{% endcapture %}
+
+<div class="markdown">
+    {{ content | markdownify }}
+</div>

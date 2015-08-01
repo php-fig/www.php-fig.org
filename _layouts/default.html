@@ -46,17 +46,21 @@
     </div>
 </header>
 
-{% if page.disable_page_banner != true %}
+{% if page.url == '/' %}
+    {{ content }}
+{% else %}
     <div class="page_banner">
         <div class="center">
             <h1 class="page_banner__title">{{ page.title }}</h1>
         </div>
     </div>
-{% endif %}
 
-<div class="{{ page.classes | join }}">
-    {{ content }}
-</div>
+    <div class="center">
+        <div class="page_content">
+            {{ content }}
+        </div>
+    </div>
+{% endif %}
 
 <div class="site_footer_links">
     <div class="center">

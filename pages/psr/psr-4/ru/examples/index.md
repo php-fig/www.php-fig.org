@@ -5,10 +5,11 @@ permalink: psr/psr-4/ru/examples/
 title: Примеры реализации PSR-4
 disclaimer: true
 additional:
- - name: PSR-4 — Автозагрузчик
+ - name: PSR-4: Автозагрузчик
    path: /pages/psr/psr-4/ru
- - name: PSR-4 метадокумент
+ - name: Метадокумент PSR-4
    path: /pages/psr/psr-4/ru/meta
  - name: Примеры реализации PSR-4
 ---
+
 {% include fig-standards/accepted/ru/PSR-4-autoloader-examples.md %}

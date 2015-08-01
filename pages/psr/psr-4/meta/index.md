@@ -4,10 +4,11 @@ layout: psr
 permalink: psr/psr-4/meta/
 title: PSR-4 Meta Document
 additional:
- - name: PSR-4 — Autoloader
+ - name: PSR-4: Autoloader
    path: /pages/psr/psr-4
  - name: PSR-4 Meta Document
  - name: Example Implementations of PSR-4
    path: /pages/psr/psr-4/examples
 ---
+
 {% include fig-standards/accepted/PSR-4-autoloader-meta.md %}

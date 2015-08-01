@@ -4,8 +4,9 @@ layout: psr
 permalink: psr/psr-2/meta/
 title: PSR-2 Meta Document
 additional:
- - name: PSR-2 — Coding Style Guide
+ - name: PSR-2: Coding Style Guide
    path: /pages/psr/psr-2
  - name: PSR-2 Meta Document
 ---
+
 {% include fig-standards/accepted/PSR-2-coding-style-guide-meta.md %}

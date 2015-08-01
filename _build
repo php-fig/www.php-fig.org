@@ -15,6 +15,7 @@ LANG_MAP = {
   pt_BR: 'Brazilian Portuguese',
   fr:    'French',
   it:    'Italian',
+  pl:    'Polish',
   ru:    'Russian',
   sl:    'Slovenian',
   es:    'Spanish'
@@ -83,7 +84,7 @@ class Psrs
       end
 
       title = File.read(filename).split(/[\n\r]/).first.sub(/^#\s*/, '')
-      title = "PSR-#{num} — #{title}" unless title.include?("PSR-#{num}")
+      title = "PSR-#{num}: #{title}" unless title.include?("PSR-#{num}")
 
       {
         num:      num,
@@ -145,7 +146,8 @@ psrs.pages.each do |page|
       end
     end
 
-    f << "---\n"
-    f << "{% include #{page[:inc]} %}\n"
+    f << "---\n\n"
+    f << "{% include #{page[:inc]} %}"
+
   end
 end

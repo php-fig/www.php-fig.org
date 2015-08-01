@@ -5,10 +5,11 @@ permalink: psr/psr-4/sl/meta/
 title: PSR-4 meta dokument
 disclaimer: true
 additional:
- - name: PSR-4 — Avtomatski nalagalnik
+ - name: PSR-4: Avtomatski nalagalnik
    path: /pages/psr/psr-4/sl
  - name: PSR-4 meta dokument
  - name: Primeri izvedbe PSR-4
    path: /pages/psr/psr-4/sl/examples
 ---
+
 {% include fig-standards/accepted/sl/PSR-4-autoloader-meta.md %}

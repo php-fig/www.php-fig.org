@@ -1,14 +1,10 @@
 .faqs {
 
-    @include clearfix;
-
     &__questions {
-        float: left;
-        width: 35%;
     }
 
     &__questions_list {
-        margin: 50px 0;
+
     }
 
     &__question_item {
@@ -33,13 +29,15 @@
     }
 
     &__answers {
-        float: left;
-        width: 65%;
-        padding: 0 0 0 50px;
     }
 
     &__answer {
         margin: 50px 0;
+
+        &:first-child,
+        &:last-child {
+            margin: 0;
+        }
     }
 
     &__answer_title {

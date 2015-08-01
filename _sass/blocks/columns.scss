@@ -1,0 +1,36 @@
+.columns {
+
+    @include clearfix;
+
+    &__column {
+        float: left;
+    }
+
+    &__column--1 {
+        width: 8.33%;
+    }
+
+    &__column--4 {
+        width: 33.33%;
+    }
+
+    &__column--6 {
+        width: 50%;
+    }
+
+    &__column--8 {
+        width: 66.66%;
+    }
+
+    &__column--10 {
+        width: 83.33%;
+    }
+
+    &__column--padding_left {
+        padding-left: 50px;
+    }
+
+    &__column--padding_right {
+        padding-right: 50px;
+    }
+}
