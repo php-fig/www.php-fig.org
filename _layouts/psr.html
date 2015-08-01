@@ -14,31 +14,39 @@ layout: default
     </div>
     <div class="columns__column columns__column--4 columns__column--padding_left">
 
-        {% if page.translations %}
+        {% if page.additional %}
             <nav class="sidebar">
-                <h2>Available translations:</h2>
-                <ul>
-                    {% for lang in page.translations %}
-                        {% if lang.path %}
-                            <li><a href="{{ lang.path | remove: "/pages" }}">{{ lang.name }}</a></li>
+                <h2 class="sidebar__title">Additional Info:</h2>
+                <ul class="sidebar__list">
+                    {% for additional in page.additional %}
+                        {% if additional.path %}
+                            <li class="sidebar__item">
+                                <a class="sidebar__link" href="{{ additional.path | remove: "/pages" }}">{{ additional.name }}</a>
+                            </li>
                         {% else %}
-                            <li><b>{{ lang.name }}</b></li>
+                            <li class="sidebar__item">
+                                <a class="sidebar__link sidebar__link--active" href="">{{ additional.name }}</a>
+                            </li>
                         {% endif %}
                     {% endfor %}
                 </ul>
             </nav>
         {% endif %}
 
-        {% if page.additional %}
+        {% if page.translations %}
             <nav class="sidebar">
-                <h2>Additional Info:</h2>
-                <ul>
-                    {% for additional in page.additional %}
-                    {% if additional.path %}
-                    <li><a href="{{ additional.path }}">{{ additional.name }}</a></li>
-                    {% else %}
-                    <li><b>{{ additional.name }}</b></li>
-                    {% endif %}
+                <h2 class="sidebar__title">Available translations:</h2>
+                <ul class="sidebar__list">
+                    {% for lang in page.translations %}
+                        {% if lang.path %}
+                            <li class="sidebar__item">
+                                <a class="sidebar__link" href="{{ lang.path | remove: "/pages" }}">{{ lang.name }}</a>
+                            </li>
+                        {% else %}
+                            <li class="sidebar__item">
+                                <a class="sidebar__link sidebar__link--active" href="">{{ lang.name }}</a>
+                            </li>
+                        {% endif %}
                     {% endfor %}
                 </ul>
             </nav>
