@@ -108,13 +108,11 @@ Do not combine separate membership requests in a single thread; one request per 
         <h4><a target="_blank" href="http://www.horde.org/">Horde</a></h4>
         Jan Schneider (<a href="https://twitter.com/yunosh">@yunosh</a>)
     </li>
-    
+
     <li>
         <h4><a target="_blank" href="https://github.com/zendtech/IbmiToolkit/">IBMi Toolkit</a></h4>
         Adam Culp (<a href="https://twitter.com/adamculp">@adamculp</a>)
     </li>
-    
-    
 
     <li>
         <h4><a target="_blank" href="http://jackalope.github.com">Jackalope</a></h4>
@@ -196,10 +194,14 @@ Do not combine separate membership requests in a single thread; one request per 
         Evert Pot (<a href="http://twitter.com/evertp/">@evertp</a>)
     </li>
 
-
     <li>
         <h4><a target="_blank" href="https://sculpin.io/">Sculpin</a></h4>
         Beau D. Simensen (<a href="http://twitter.com/beausimensen/">@beausimensen</a>)
+    </li>
+
+    <li>
+        <h4><a target="_blank" href="http://www.silverstripe.org/">SilverStripe</a></h4>
+        Christopher Pitt (<a href="https://twitter.com/assertchris/">@assertchris</a>)
     </li>
 
     <li>
@@ -211,7 +213,6 @@ Do not combine separate membership requests in a single thread; one request per 
         <h4><a target="_blank" href="http://www.tedivm.com/stash/">Stash</a></h4>
         Robert Hafner (<a href="http://twitter.com/tedivm/">@tedivm</a>)
     </li>
-
 
     <li>
         <h4><a target="_blank" href="http://developers.sugarcrm.com/wordpress">SugarCRM</a></h4>
