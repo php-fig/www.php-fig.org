@@ -224,7 +224,7 @@ Do not combine separate membership requests in a single thread; one request per 
     </li>
 
     <li>
-        <h4><a target="_blank" href="http://flow.typo3.org/">TYPO3 Flow</a></h4>
+        <h4><a target="_blank" href="http://neos.io/">Neos</a> and <a target="_blank" href="http://flow.typo3.org/">Flow</a></h4>
         Karsten Dambekalns (<a href="http://twitter.com/kdambekalns/">@kdambekalns</a>)
     </li>
 
