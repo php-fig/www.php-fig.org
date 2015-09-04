@@ -213,7 +213,7 @@ Do not combine separate membership requests in a single thread; one request per 
     </li>
     
     <li>
-        <h4><a target="_blank" href="http://www.stormpath.com/">Stormpath</a></h4>
+        <h4><a target="_blank" href="http://www.stormpath.com/">Stormpath PHP SDK</a></h4>
         Brian Retterer (<a href="http://twitter.com/bretterer/">@bretterer</a>)
     </li>
 
