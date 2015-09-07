@@ -199,7 +199,7 @@ Do not combine separate membership requests in a single thread; one request per 
 
     <li>
         <h4><a target="_blank" href="https://sculpin.io/">Sculpin</a></h4>
-        Beau D. Simensen (<a href="http://twitter.com/beausimensen/">@beausimensen</a>)
+        Chris Tankersley (<a href="http://twitter.com/dragonmantank/">@dragonmantank</a>)
     </li>
 
     <li>
