@@ -165,6 +165,11 @@ Do not combine separate membership requests in a single thread; one request per 
     </li>
 
     <li>
+        <h4><a target="_blank" href="http://phpixie.com/">PHPixie</a></h4>
+        Roman Tsiupa (<a href="http://twitter.com/dracony_gimp/">@dracony_gimp</a>)
+    </li>
+    
+    <li>
         <h4><a target="_blank" href="http://www.ppi.io/">PPI Framework</a></h4>
         Paul Dragoonis (<a href="http://twitter.com/dr4goonis/">@dr4goonis</a>)
     </li>
