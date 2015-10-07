@@ -59,7 +59,7 @@ will represent a wider selection of projects.
 
 ## <a id="who-are-these-voting-members"></a>Who are these voting members?
 
-The full list of voting members can be seen [here](https://github.com/php-fig/fig-standards#voting-members).
+The full list of voting members can be seen [here](http://www.php-fig.org/#member-projects).
 
 
 ## <a id="do-voting-members-have-to-comply-to-the-standards"></a>Do voting members have to comply to the standards?
