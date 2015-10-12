@@ -33,5 +33,10 @@ Contributing
 
     ... and open `http://localhost:4000` in your browser to check it out!
 
+
+Important: if you have this problem like in Windows: Liquid Exception: incompatible character encodings: UTF-8 and IBM437
+Just type: chcp 65001
+Done. Hope this can help some people
+
  [issue]: https://github.com/php-fig/php-fig.github.com/issues
  [edit]:  https://github.com/blog/905-edit-like-an-ace
