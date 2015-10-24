@@ -1,33 +1,15 @@
 .home_features {
 
-    &__list {
-
-    }
-
-    &__item {
-        @include clearfix;
-
-        padding: 50px 0 0 0;
-    }
-
     &__item--interfaces {
         background: #f1ede5;
     }
 
-    &__content {
-        float: left;
-        width: 50%;
-        padding: 0 100px 0 40px;
-    }
-
     &__title {
         position: relative;
-        margin: 25px 0 0 0;
 
         color: #a39989;
         font-family: 'Whitney SSm A', 'Whitney SSm B';
         font-weight: 300;
-        font-size: 40px;
         text-transform: uppercase;
 
         &:before {
@@ -68,11 +50,6 @@
         line-height: 1.6;
     }
 
-    &__editor {
-        float: left;
-        width: 50%;
-    }
-
     &__chrome {
         height: 20px;
         border-radius: 3px 3px 0 0;
@@ -97,6 +74,7 @@
 
     &__code {
         display: block;
+        overflow: hidden;
 
         padding: 25px;
         min-height: 200px;
@@ -106,5 +84,58 @@
         line-height: 1.3;
 
         background: white;
+    }
+
+    @media only screen and (max-width: 767px) {
+
+        &__content {
+            max-width: 550px;
+            margin: 0 auto 25px auto;
+            padding: 50px 0 0 50px;
+        }
+
+        &__title {
+            font-size: 34px;
+        }
+
+        &__editor {
+            margin: 0 auto;
+            max-width: 550px;
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        &__item {
+            @include clearfix;
+
+            padding: 50px 0 0 0;
+        }
+
+        &__content {
+            float: left;
+            width: 50%;
+            padding: 0 50px 0 40px;
+        }
+
+        &__title {
+            margin: 25px 0 0 0;
+            font-size: 34px;
+        }
+
+        &__editor {
+            float: left;
+            width: 50%;
+        }
+    }
+
+    @media only screen and (min-width: 1000px) {
+        &__title {
+            margin: 25px 0 0 0;
+            font-size: 40px;
+        }
+
+        &__content {
+            padding: 0 100px 0 40px;
+        }
     }
 }
