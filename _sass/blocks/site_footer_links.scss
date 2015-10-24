@@ -10,13 +10,13 @@
 
     &__list {
         @include clearfix;
-        margin: 0 0 0 -25px;
+        margin: 0 0 0 -10px;
     }
 
     &__item {
         float: left;
         width: 25%;
-        padding: 0 0 0 25px;
+        padding: 0 0 0 10px;
     }
 
     &__link {
@@ -77,5 +77,24 @@
         height: 20px;
         left: 0;
         top: 2px;
+    }
+
+    @media only screen and (max-width: 767px) {
+
+        &__content {
+            max-width: 600px;
+        }
+
+        &__link {
+            padding: 30px 0 0 0;
+        }
+
+        &__item--twitter &__link:before,
+        &__item--irc &__link:before,
+        &__item--github &__link:before,
+        &__item--mailing_list &__link:before {
+            left: calc(50% - 15px);
+            top: -2px;
+        }
     }
 }
