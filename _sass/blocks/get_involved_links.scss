@@ -3,12 +3,6 @@
     margin: 35px 0;
     padding: 10px 15px;
 
-    color: #aaa69d;
-    font-family: 'Whitney SSm A', 'Whitney SSm B';
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 1;
-
     background: #ffffff;
 
     &__item {
@@ -67,12 +61,23 @@
     }
 
     &__link {
-        color: #8f8b82;
+        color: #aaa69d;
+        font-family: 'Whitney SSm A', 'Whitney SSm B';
+        font-weight: 500;
+        font-size: 30px;
         text-decoration: none;
 
         &:hover {
             color: darken(#8f8b82, 15%);
         }
+    }
+
+    &__link_highlight {
+        color: #8f8b82;
+    }
+
+    &__link:hover &__link_highlight {
+        color: darken(#8f8b82, 15%);
     }
 
 }

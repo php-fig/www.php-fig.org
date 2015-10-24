@@ -1,7 +1,7 @@
 .sidebar {
 
     margin: 50px 0;
-    padding: 0 25px;
+    padding: 0 20px;
 
     &:first-child {
         margin-top: 0;
@@ -15,12 +15,20 @@
         padding: 0 0 5px 0;
 
         color: #5f5b53;
-        font-family: 'Whitney SSm A', 'Whitney SSm B';
-        font-weight: 300;
-        font-size: 24px;
-        text-transform: uppercase;
+        font-family: 'Tungsten A', 'Tungsten B';
+        font-weight: 500;
+        font-size: 30px;
 
         border-bottom: solid 1px #aaa69d;
+    }
+
+    &__description {
+        margin: 25px 0;
+
+        color: #595143;
+        font-family: 'Whitney SSm A', 'Whitney SSm B';
+        font-size: 15px;
+        line-height: 1.5;
     }
 
     &__list {
@@ -35,14 +43,13 @@
         position: relative;
 
         display: block;
-        padding: 11px 40px 10px 15px;
+        padding: 13px 40px 12px 15px;
 
         color: #f9f6f0;
-        font-family: 'Tungsten A', 'Tungsten B';
-        font-weight: 500;
-        font-size: 24px;
+        font-family: 'Whitney SSm A', 'Whitney SSm B';
+        font-weight: bold;
+        font-size: 15px;
         text-decoration: none;
-        text-transform: uppercase;
 
         background-color: #aaa69d;
 
@@ -51,7 +58,7 @@
             content: "";
 
             position: absolute;
-            right: 10px;
+            right: 12px;
             top: 50%;
             margin: -11px 0 0 0;
 

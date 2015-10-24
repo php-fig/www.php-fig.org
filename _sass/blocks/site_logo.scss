@@ -1,9 +1,6 @@
 .site_logo {
 
-    position: absolute;
-    z-index: 100;
-    top: 32px;
-
+    display: block;
     text-decoration: none;
     outline: none;
 
@@ -72,5 +69,23 @@
     &:hover &__long_name {
         opacity: 1;
         bottom: -55px;
+    }
+
+    @media only screen and (max-width: 767px) {
+
+        padding: 25px 0;
+    }
+
+    @media only screen and (min-width: 768px) {
+
+        position: absolute;
+        z-index: 100;
+        top: 32px;
+    }
+
+    @media only screen and (min-width: 1000px) {
+    }
+
+    @media only screen and (min-width: 1140px) {
     }
 }

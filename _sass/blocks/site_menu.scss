@@ -1,31 +1,141 @@
 .site_menu {
 
-    position: absolute;
-    right: 0;
-    top: 50px;
-
-    &__list {
-        @include clearfix;
+    &__dropdown_button {
+        display: none;
     }
 
-    &__item {
-        float: left;
-        margin: 0 0 0 30px;
+    &__dropdown_checkbox {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
     }
 
-    &__link {
-        transition: all .15s;
+    @media only screen and (max-width: 767px) {
 
-        color: #fff4e1;
-        font-family: 'Whitney SSm A', 'Whitney SSm B';
-        font-weight: 500;
-        font-style: normal;
-        font-size: 16px;
-        text-decoration: none;
+        text-align: left;
+
+        &__dropdown_button {
+            position: relative;
+
+            display: block;
+            padding: 12px 25px;
+
+            color: #fff4e1;
+            font-family: 'Whitney SSm A', 'Whitney SSm B';
+            font-weight: bold;
+            font-style: normal;
+            font-size: 14px;
+            text-transform: uppercase;
+
+            background: #65be97;
+
+            &:hover {
+                background: darken(#65be97, 5%);
+            }
+
+            &:after {
+                content: "";
+
+                display: block;
+                width: 0;
+                height: 0;
+
+                position: absolute;
+                right: 15px;
+                top: 16px;
+
+                border-left: 8px solid transparent;
+                border-right: 8px solid transparent;
+
+                border-top: 8px solid #fff4e1;
+            }
+        }
+
+        &__dropdown_checkbox:checked + &__list {
+            display: block;
+        }
+
+        &__list {
+            display: none;
+
+            background: #65be97;
+        }
+
+        &__item {
+            border-bottom: solid 1px darken(#65be97, 10%);
+
+            &:first-child {
+                border-top: solid 1px darken(#65be97, 10%);
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+                border-bottom: none;
+            }
+        }
+
+        &__link {
+            display: block;
+            padding: 8px 25px;
+
+            color: #fff4e1;
+            font-family: 'Whitney SSm A', 'Whitney SSm B';
+            font-weight: 500;
+            font-style: normal;
+            font-size: 14px;
+            text-decoration: none;
+
+            &:hover {
+                background: darken(#65be97, 5%);
+            }
+        }
+
+        &__link--active {
+            color: darken(#65be97, 35%);
+            background: darken(#65be97, 5%);
+        }
     }
 
-    &__link:hover,
-    &__link--active {
-        color: #65be97;
+    @media only screen and (min-width: 768px) {
+
+        position: absolute;
+        right: 0;
+        top: 50px;
+
+        &__list {
+            @include clearfix;
+        }
+
+        &__item {
+            float: left;
+            margin: 0 0 0 15px;
+        }
+
+        &__link {
+            transition: all .15s;
+
+            color: #fff4e1;
+            font-family: 'Whitney SSm A', 'Whitney SSm B';
+            font-weight: 500;
+            font-style: normal;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        &__link:hover,
+        &__link--active {
+            color: #65be97;
+        }
+    }
+
+    @media only screen and (min-width: 1000px) {
+
+        &__item {
+            margin: 0 0 0 30px;
+        }
+
+        &__link {
+            font-size: 16px;
+        }
     }
 }

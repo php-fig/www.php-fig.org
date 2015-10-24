@@ -1,5 +1,12 @@
 .site_header {
 
-    height: 100px;
     background: #0a202b;
+
+    @media only screen and (max-width: 767px) {
+        text-align: center;
+    }
+
+    @media only screen and (min-width: 768px) {
+        height: 100px;
+    }
 }
