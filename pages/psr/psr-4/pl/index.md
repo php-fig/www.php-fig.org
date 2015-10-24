@@ -9,6 +9,8 @@ translations:
    path: /pages/psr/psr-4
  - name: French
    path: /pages/psr/psr-4/fr
+ - name: Italian
+   path: /pages/psr/psr-4/it
  - name: Polish
  - name: Russian
    path: /pages/psr/psr-4/ru

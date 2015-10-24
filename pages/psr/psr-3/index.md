@@ -7,6 +7,8 @@ translations:
  - name: English (official)
  - name: French
    path: /pages/psr/psr-3/fr
+ - name: Italian
+   path: /pages/psr/psr-3/it
  - name: Polish
    path: /pages/psr/psr-3/pl
  - name: Slovenian
