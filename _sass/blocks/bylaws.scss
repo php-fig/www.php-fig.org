@@ -1,13 +1,7 @@
 .bylaws {
 
     @include clearfix;
-    margin: 50px 0 50px -20px;
-
-    &__item {
-        float: left;
-        width: 33.33%;
-        padding: 0 0 20px 20px;
-    }
+    margin: 25px 0;
 
     &__link {
         position: relative;
@@ -42,5 +36,45 @@
             background: #f09f47 url(/img/document_icon.png) center center no-repeat;
             background-size: 24px;
         }
+    }
+
+    @media only screen and (max-width: 767px) {
+
+        &__item {
+            padding: 0 0 20px 0;
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+
+        margin: 50px 0 50px -20px;
+
+        &__item {
+            float: left;
+            width: 50%;
+            padding: 0 0 20px 20px;
+
+            &:nth-child(2n+1) {
+                clear: both;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 1000px) {
+
+        &__item {
+            width: 33.33%;
+
+            &:nth-child(2n+1) {
+                clear: none;
+            }
+
+            &:nth-child(3n+1) {
+                clear: both;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 1140px) {
     }
 }
