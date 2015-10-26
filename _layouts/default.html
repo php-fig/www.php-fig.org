@@ -1,36 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css?{{ site.cachebust }}" media="screen">
-        <link rel="stylesheet" type="text/css" href="/stylesheets/pygment_trac.css?{{ site.cachebust }}" media="screen">
-        <link rel="stylesheet" type="text/css" href="/stylesheets/print.css?{{ site.cachebust }}" media="print">
-        <!--[if lt IE 9]>
-        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    {% if page.url == '/' %}
         <title>{{ page.title }}</title>
-    </head>
-    <body>
-        <header>
-            <div class="inner">
-                <h1><a href="/">www.php-fig.org</a></h1>
-                <h2>PHP Framework Interop Group</h2>
-                <a href="https://github.com/php-fig/fig-standards" class="button"><small>View Our </small>Github Page</a>
-            </div>
-        </header>
-        <div id="content-wrapper">
-            <div class="inner clearfix">
-                <section id="main-content">
-                    {{ content }}
-                </section>
-                {% include sidebar.html %}
+    {% else %}
+        <title>{{ page.title }} - PHP-FIG</title>
+    {% endif %}
+    <meta name="description" content="We're a group of established PHP projects whose goal is to talk about commonalities between our projects and find ways we can work better together.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="/css/all.css?{{ site.cachebust }}">
+    <link rel="stylesheet" href="/css/pygment_trac.css?{{ site.cachebust }}">
+</head>
+<body>
+
+<header class="site_header">
+    <div class="center">
+        <a class="site_logo" href="/">
+            <span class="site_logo__short_name">PHP-FIG</span>
+            <span class="site_logo__long_name">The PHP Framework Interop Group</span>
+        </a>
+        <nav class="site_menu">
+            <label class="site_menu__dropdown_button" for="site_menu__dropdown_checkbox">Menu</label>
+            <input class="site_menu__dropdown_checkbox" id="site_menu__dropdown_checkbox" type="checkbox">
+            <ul class="site_menu__list">
+                <li class="site_menu__item">
+                    <a class="site_menu__link {% if page.url == '/' %}site_menu__link--active{% endif %}" href="/">Home</a>
+                </li>
+                <li class="site_menu__item">
+                    <a class="site_menu__link {% if page.url contains '/psr/' %}site_menu__link--active{% endif %}" href="/psr/">Recommendations (PSRs)</a>
+                </li>
+                <li class="site_menu__item">
+                    <a class="site_menu__link {% if page.url contains '/members/' %}site_menu__link--active{% endif %}" href="/members/">Members</a>
+                </li>
+                <li class="site_menu__item">
+                    <a class="site_menu__link {% if page.url contains '/bylaws/' %}site_menu__link--active{% endif %}" href="/bylaws/">Bylaws</a>
+                </li>
+                <li class="site_menu__item">
+                    <a class="site_menu__link {% if page.url contains '/faqs/' %}site_menu__link--active{% endif %}" href="/faqs/">FAQs</a>
+                </li>
+                <li class="site_menu__item">
+                    <a class="site_menu__link {% if page.url contains '/get-involved/' %}site_menu__link--active{% endif %}" href="/get-involved/">Get Involved</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="page_content">
+    {% if page.url == '/' %}
+        {{ content }}
+    {% else %}
+        <div class="page_banner">
+            <div class="center">
+                <h1 class="page_banner__title">{{ page.title }}</h1>
             </div>
         </div>
-        <script type="text/javascript">
-            var _gaq = _gaq || [];_gaq.push(['_setAccount','UA-1997599-8']);_gaq.push(['_setDomainName','php-fig.org']);_gaq.push(['_trackPageview']);
-            (function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src='https://ssl.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})();
-        </script>
-    </body>
+
+        <div class="center">
+            <div class="page_content__padding">
+                {{ content }}
+            </div>
+        </div>
+    {% endif %}
+</div>
+
+<div class="site_footer_links">
+    <div class="center">
+        <div class="site_footer_links__content">
+            <ul class="site_footer_links__list">
+                <li class="site_footer_links__item site_footer_links__item--twitter">
+                    <a class="site_footer_links__link" href="https://twitter.com/phpfig">Follow us on Twitter</a>
+                </li>
+                <li class="site_footer_links__item site_footer_links__item--irc">
+                    <a class="site_footer_links__link" href="/irc/">Chat on IRC Channel</a>
+                </li>
+                <li class="site_footer_links__item site_footer_links__item--github">
+                    <a class="site_footer_links__link" href="https://github.com/php-fig">Contribute via Github</a>
+                </li>
+                <li class="site_footer_links__item site_footer_links__item--mailing_list">
+                    <a class="site_footer_links__link" href="https://groups.google.com/forum/?fromgroups#!forum/php-fig">Join our mailing list</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<footer class="site_footer">
+    <div class="center">
+        <span class="site_footer__section">&copy; 2015 PHP Framework Interop Group.</span> <span class="site_footer__section">Site design by <a class="site_footer__link" href="https://twitter.com/reinink" target="_blank">Jonathan Reinink</a>.</span>
+    </div>
+</footer>
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/main.js"></script>
+<script type="text/javascript">
+    var _gaq = _gaq || [];_gaq.push(['_setAccount','UA-1997599-8']);_gaq.push(['_setDomainName','php-fig.org']);_gaq.push(['_trackPageview']);
+    (function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src='https://ssl.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})();
+</script>
+
 </html>

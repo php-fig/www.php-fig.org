@@ -1,0 +1,97 @@
+.home_banner {
+
+    background: #256d4e url(/img/home_banner_bg.jpg) center top no-repeat;
+
+    &__content {
+        overflow: hidden;
+    }
+
+    &__title {
+        max-width: 550px;
+
+        color: #f9f2e8;
+        font-family: 'Tungsten A', 'Tungsten B';
+        font-weight: 500;
+        font-size: 70px;
+        text-shadow: 1px 1px 0 #1e5f42;
+    }
+
+    &__intro {
+        margin: 15px 0 0 0;
+        max-width: 550px;
+
+        color: #f9f2e8;
+        font-family: 'Whitney SSm A', 'Whitney SSm B';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 2;
+    }
+
+    &__links {
+        margin: 25px 0 0 0;
+    }
+
+    &__link {
+        transition: all .15s;
+
+        display: inline-block;
+        margin: 0 10px 0 0;
+        padding: 10px 30px;
+
+        color: #4cb88a;
+        font-family: 'Tungsten A', 'Tungsten B';
+        font-weight: 500;
+        font-size: 25px;
+        text-decoration: none;
+
+        border-radius: 3px;
+        background: darken(#1a4c37, 2%);
+
+        &:hover {
+            color: #f9f2e8;
+            background: darken(#1a4c37, 4%);
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        padding: 70px 0;
+        text-align: center;
+        background-size: cover;
+
+        &__title {
+            margin: 0 auto;
+            font-size: 60px;
+        }
+
+        &__intro {
+            margin: 15px auto 0 auto;
+        }
+
+        &__link:first-child {
+            margin-bottom: 10px;
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        height: 545px;
+        background-position: calc(50% + 450px) 50%;
+
+        &__title {
+            margin: 100px 0 0 0;
+        }
+    }
+
+    @media only screen and (min-width: 1000px) {
+        background-position: calc(50% - 60px) 50%;
+
+        &__content {
+            padding: 0 0 0 400px;
+        }
+    }
+
+    @media only screen and (min-width: 1140px) {
+        &__content {
+            padding: 0 0 0 550px;
+        }
+    }
+}
