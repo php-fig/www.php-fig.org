@@ -1,36 +1,44 @@
 .columns {
 
-    @include clearfix;
-
-    &__column {
-        float: left;
+    @media only screen and (max-width: 767px) {
+        &__column {
+            margin: 25px 0;
+        }
     }
 
-    &__column--1 {
-        width: 8.33%;
-    }
+    @media only screen and (min-width: 768px) {
+        @include clearfix;
 
-    &__column--4 {
-        width: 33.33%;
-    }
+        &__column {
+            float: left;
+        }
 
-    &__column--6 {
-        width: 50%;
-    }
+        &__column--1 {
+            width: 8.33%;
+        }
 
-    &__column--8 {
-        width: 66.66%;
-    }
+        &__column--4 {
+            width: 33.33%;
+        }
 
-    &__column--10 {
-        width: 83.33%;
-    }
+        &__column--6 {
+            width: 50%;
+        }
 
-    &__column--padding_left {
-        padding-left: 75px;
-    }
+        &__column--8 {
+            width: 66.66%;
+        }
 
-    &__column--padding_right {
-        padding-right: 75px;
+        &__column--10 {
+            width: 83.33%;
+        }
+
+        &__column--padding_left {
+            padding-left: 75px;
+        }
+
+        &__column--padding_right {
+            padding-right: 75px;
+        }
     }
 }

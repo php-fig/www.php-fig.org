@@ -50,6 +50,29 @@
         line-height: 1.6;
     }
 
+    &__links {
+        margin: 15px 0 25px 0;
+    }
+
+    &__link {
+        display: inline-block;
+        margin: 0 5px 5px 0;
+        padding: 5px 8px;
+
+        color: #746a5b;
+        font-family: 'Whitney SSm A', 'Whitney SSm B';
+        font-size: 13px;
+        text-decoration: none;
+
+        border-radius: 3px;
+        background: #d4cfc6;
+
+        &:hover {
+            color: white;
+            background: #a39989;
+        }
+    }
+
     &__chrome {
         height: 20px;
         border-radius: 3px 3px 0 0;
