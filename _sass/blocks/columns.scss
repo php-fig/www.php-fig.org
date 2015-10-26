@@ -34,6 +34,26 @@
         }
 
         &__column--padding_left {
+            padding-left: 25px;
+        }
+
+        &__column--padding_right {
+            padding-right: 25px;
+        }
+    }
+
+    @media only screen and (min-width: 1000px) {
+        &__column--padding_left {
+            padding-left: 50px;
+        }
+
+        &__column--padding_right {
+            padding-right: 50px;
+        }
+    }
+
+    @media only screen and (min-width: 1140px) {
+        &__column--padding_left {
             padding-left: 75px;
         }
 

@@ -86,4 +86,28 @@
             background-color: darken(#f09f47, 5%);
         }
     }
+
+    @media only screen and (min-width: 768px) {
+        padding: 0 10px;
+
+        &__list {
+            margin: 10px 0;
+        }
+
+        &__link {
+            font-size: 13px;
+        }
+    }
+
+    @media only screen and (min-width: 1000px) {
+        padding: 0 20px;
+
+        &__list {
+            margin: 25px 0;
+        }
+
+        &__link {
+            font-size: 15px;
+        }
+    }
 }
