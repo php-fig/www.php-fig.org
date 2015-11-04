@@ -14,7 +14,7 @@
     }
 
     h2 {
-        margin: 35px 0 15px 0;
+        margin: 40px 0 25px 0;
 
         color: #3ea377;
         font-family: 'Tungsten A', 'Tungsten B';
@@ -29,12 +29,21 @@
         &:last-child {
             margin-bottom: 0;
         }
+
+        a {
+            color: #3ea377;
+
+            &:hover {
+                text-decoration: none;
+                border-bottom: dotted 1px #3ea377;
+            }
+        }
     }
 
     h3 {
         margin: 35px 0 25px 0;
 
-        font-size: 18px;
+        font-size: 20px;
         line-height: 1.25;
         font-weight: 700;
 
@@ -45,6 +54,28 @@
         &:last-child {
             margin-bottom: 0;
         }
+
+        a {
+            color: #595143;
+
+            &:hover {
+                text-decoration: none;
+                border-bottom: dotted 1px #595143;
+            }
+        }
+    }
+
+    h4 {
+        @extend h3;
+
+        margin: 30px 0 25px 0;
+        font-size: 18px;
+    }
+
+    h5 {
+        @extend h4;
+
+        font-size: 16px;
     }
 
     p {
