@@ -5,8 +5,6 @@ permalink: psr/psr-7/
 title: PSR-7: HTTP message interfaces
 translations:
  - name: English (official)
- - name: Slovenian
-   path: /pages/psr/psr-7/sl
 additional:
  - name: PSR-7: HTTP message interfaces
  - name: PSR-7: HTTP Message Meta Document

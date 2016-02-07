@@ -5,16 +5,6 @@ permalink: psr/psr-3/
 title: PSR-3: Logger Interface
 translations:
  - name: English (official)
- - name: French
-   path: /pages/psr/psr-3/fr
- - name: Italian
-   path: /pages/psr/psr-3/it
- - name: Polish
-   path: /pages/psr/psr-3/pl
- - name: Slovenian
-   path: /pages/psr/psr-3/sl
- - name: Spanish
-   path: /pages/psr/psr-3/es
 redirect_from: /psr/3/
 ---
 

@@ -5,16 +5,6 @@ permalink: psr/psr-4/
 title: PSR-4: Autoloader
 translations:
  - name: English (official)
- - name: French
-   path: /pages/psr/psr-4/fr
- - name: Italian
-   path: /pages/psr/psr-4/it
- - name: Polish
-   path: /pages/psr/psr-4/pl
- - name: Russian
-   path: /pages/psr/psr-4/ru
- - name: Slovenian
-   path: /pages/psr/psr-4/sl
 additional:
  - name: PSR-4: Autoloader
  - name: PSR-4 Meta Document
