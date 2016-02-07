@@ -5,20 +5,6 @@ permalink: psr/psr-0/
 title: PSR-0: Autoloading Standard
 translations:
  - name: English (official)
- - name: Brazilian Portuguese
-   path: /pages/psr/psr-0/pt-br
- - name: French
-   path: /pages/psr/psr-0/fr
- - name: Italian
-   path: /pages/psr/psr-0/it
- - name: Polish
-   path: /pages/psr/psr-0/pl
- - name: Russian
-   path: /pages/psr/psr-0/ru
- - name: Slovenian
-   path: /pages/psr/psr-0/sl
- - name: Spanish
-   path: /pages/psr/psr-0/es
 redirect_from: /psr/0/
 ---
 

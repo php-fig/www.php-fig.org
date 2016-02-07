@@ -5,20 +5,6 @@ permalink: psr/psr-1/
 title: PSR-1: Basic Coding Standard
 translations:
  - name: English (official)
- - name: Brazilian Portuguese
-   path: /pages/psr/psr-1/pt-br
- - name: French
-   path: /pages/psr/psr-1/fr
- - name: Italian
-   path: /pages/psr/psr-1/it
- - name: Polish
-   path: /pages/psr/psr-1/pl
- - name: Russian
-   path: /pages/psr/psr-1/ru
- - name: Slovenian
-   path: /pages/psr/psr-1/sl
- - name: Spanish
-   path: /pages/psr/psr-1/es
 redirect_from: /psr/1/
 ---
 
