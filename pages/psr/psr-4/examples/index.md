@@ -6,9 +6,9 @@ title: Example Implementations of PSR-4
 additional:
  - name: PSR-4: Autoloader
    path: /pages/psr/psr-4
+ - name: Example Implementations of PSR-4
  - name: PSR-4 Meta Document
    path: /pages/psr/psr-4/meta
- - name: Example Implementations of PSR-4
 ---
 
 {% include fig-standards/accepted/PSR-4-autoloader-examples.md %}
