@@ -7,10 +7,10 @@ translations:
  - name: English (official)
 additional:
  - name: PSR-4: Autoloader
- - name: Example Implementations of PSR-4
-   path: /pages/psr/psr-4/examples
  - name: PSR-4 Meta Document
    path: /pages/psr/psr-4/meta
+ - name: Example Implementations of PSR-4
+   path: /pages/psr/psr-4/examples
 redirect_from: /psr/4/
 ---
 
