@@ -6,8 +6,8 @@ machine:
   environment:
     NOKOGIRI_USE_SYSTEM_LIBRARIES: true # speeds up installation of html-proofer
   ruby:
-    version: 2.1.4
+    version: 2.4
 test:
   override:
     - bundle exec jekyll build
-    - bundle exec htmlproof ./_site
+    - bundle exec htmlproofer ./_site
