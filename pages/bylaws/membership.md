@@ -1,7 +1,7 @@
 ---
 layout: bylaw
-title: Membership
-permalink: bylaws/membership/
+title: Mission and Structure
+permalink: bylaws/mission-and-structure/
 ---
 
-{% include fig-standards/bylaws/003-membership.md %}
+{% include fig-standards/bylaws/001-mission-and-structure.md %}
