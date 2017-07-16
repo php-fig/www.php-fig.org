@@ -4,7 +4,7 @@ layout: psr
 permalink: psr/psr-6/meta/
 title: PSR-6: PSR-Cache Meta Document
 additional:
- - name: PSR-6: # Introduction
+ - name: PSR-6: Caching Interface
    path: /pages/psr/psr-6
  - name: PSR-6: PSR-Cache Meta Document
 ---
