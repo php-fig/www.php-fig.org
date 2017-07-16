@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '~> 2.4'
+
 gem 'github-pages'
-gem 'html-proofer', '~>1.5'
+gem 'html-proofer'
 gem 'jekyll-redirect-from'
