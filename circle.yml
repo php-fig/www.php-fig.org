@@ -10,4 +10,4 @@ machine:
 test:
   override:
     - bundle exec jekyll build
-    - bundle exec htmlproofer ./_site
+    - bundle exec htmlproofer --url-ignore 'foo-meta.md#errata-1-foo' ./_site
