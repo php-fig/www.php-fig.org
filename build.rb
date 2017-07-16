@@ -20,6 +20,7 @@ LANG_MAP = {
   sl:    'Slovenian',
   es:    'Spanish'
 }
+TRANSLATIONS_ENABLED = false
 
 fail 'Run "git submodule init"' unless File.directory?(PSR_DIR)
 
@@ -111,7 +112,7 @@ psrs.pages.each do |page|
     f << "title: #{page[:title]}\n"
     f << "disclaimer: true\n" unless page[:lang] == :en
 
-    unless page[:is_extra]
+    unless page[:is_extra] || ! TRANSLATIONS_ENABLED
       translations = psrs.translations_for(page[:num])
       unless translations.empty?
         f << "translations:\n"
