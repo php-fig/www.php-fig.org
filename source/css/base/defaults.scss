@@ -1,0 +1,32 @@
+@import "//cloud.typography.com/6655974/614628/css/fonts.css";
+@import "//fonts.googleapis.com/css?family=Source+Code+Pro";
+
+html {
+    background: #226146;
+}
+
+* {
+    box-sizing: border-box;
+
+    &:before,
+    &:after {
+        box-sizing: border-box;
+    }
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    &:before,
+    &:after {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+::selection {
+    background: #f09f47;
+    color: white;
+    text-shadow: none;
+}

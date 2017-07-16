@@ -1,0 +1,37 @@
+{% extends 'default' %}
+
+{% block inner_page %}
+<div class="columns">
+    <div class="columns__column columns__column--8">
+        {% if page.disclaimer %}
+            {% include disclaimer.html %}
+        {% endif %}
+
+        <div class="markdown">
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+    <div class="columns__column columns__column--4 columns__column--padding_left">
+
+        {% if page.additional %}
+            <nav class="sidebar">
+                <h2 class="sidebar__title">Additional Info:</h2>
+                <ul class="sidebar__list">
+                    {% for additional in page.additional %}
+                        {% if additional.path %}
+                            <li class="sidebar__item">
+                                <a class="sidebar__link" href="{{ additional.path | trim('/pages', 'left') }}">{{ additional.name }}</a>
+                            </li>
+                        {% else %}
+                            <li class="sidebar__item">
+                                <a class="sidebar__link sidebar__link--active" href="">{{ additional.name }}</a>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </nav>
+        {% endif %}
+
+    </div>
+</div>
+{% endblock %}

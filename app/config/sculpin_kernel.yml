@@ -1,0 +1,19 @@
+sculpin_content_types:
+  psrs:
+    singular_name: psr
+    type: path
+    path: psr
+
+services:
+  aptoma_markdown_engine:
+    class: Aptoma\Twig\Extension\MarkdownEngine\MichelfMarkdownEngine
+  sculpin.twig.markdown_extensions:
+    class: Aptoma\Twig\Extension\MarkdownExtension
+    arguments:
+      $markdownEngine: '@aptoma_markdown_engine'
+    tags:
+      - { name: twig.extension }
+  ramsey.twig.codeblock_extension:
+    class: Ramsey\Twig\CodeBlock\CodeBlockExtension
+    tags:
+      - { name: twig.extension }

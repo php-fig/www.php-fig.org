@@ -1,0 +1,83 @@
+.get_involved_links {
+
+    margin: 35px 0;
+    padding: 10px 15px;
+
+    background: #ffffff;
+
+    &__item {
+        position: relative;
+        padding: 20px 0 20px 95px;
+        border-bottom: solid 1px #ddd9d2;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        &:before {
+            content: "";
+
+            display: block;
+            width: 50px;
+
+            position: absolute;
+            left: 25px;
+            top: 0;
+
+            background-size: cover;
+        }
+    }
+
+    &__item--twitter {
+        &:before {
+            background-image: url(/img/twitter_icon.png);
+            height: 42px;
+            top: 10px;
+        }
+    }
+
+    &__item--irc {
+        &:before {
+            background-image: url(/img/irc_icon.png);
+            height: 48px;
+            top: 10px;
+        }
+    }
+
+    &__item--github {
+        &:before {
+            background-image: url(/img/github_icon.png);
+            height: 48px;
+            top: 10px;
+        }
+    }
+
+    &__item--mailing_list {
+        &:before {
+            background-image: url(/img/mailing_list_icon.png);
+            height: 37px;
+            top: 15px;
+        }
+    }
+
+    &__link {
+        color: #aaa69d;
+        font-family: 'Whitney SSm A', 'Whitney SSm B';
+        font-weight: 500;
+        font-size: 30px;
+        text-decoration: none;
+
+        &:hover {
+            color: darken(#8f8b82, 15%);
+        }
+    }
+
+    &__link_highlight {
+        color: #8f8b82;
+    }
+
+    &__link:hover &__link_highlight {
+        color: darken(#8f8b82, 15%);
+    }
+
+}

@@ -1,0 +1,36 @@
+.page_banner {
+
+    background: #256d4e url(/img/page_banner_bg.jpg) center top no-repeat;
+    background-size: cover;
+
+    &__title {
+        color: #f9f2e8;
+        font-family: 'Tungsten A', 'Tungsten B';
+        font-weight: 500;
+        text-shadow: 1px 1px 0 #1e5f42;
+    }
+
+    @media only screen and (max-width: 767px) {
+        padding: 40px 0 30px 0;
+
+        &__title {
+            font-size: 50px;
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        min-height: 170px;
+        padding: 75px 0 35px 0;
+
+        &__title {
+            font-size: 70px;
+        }
+    }
+
+    @media only screen and (min-width: 1000px) {
+    }
+
+    @media only screen and (min-width: 1140px) {
+    }
+
+}
