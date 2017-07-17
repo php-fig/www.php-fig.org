@@ -4,6 +4,9 @@ sculpin_content_types:
     type: path
     path: psr
 
+sculpin:
+  ignore: ["**/*.scss"]
+
 services:
   aptoma_markdown_engine:
     class: Aptoma\Twig\Extension\MarkdownEngine\MichelfMarkdownEngine
