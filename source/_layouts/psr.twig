@@ -1,6 +1,6 @@
-{% extends 'default' %}
+{% extends 'page' %}
 
-{% block inner_page %}
+{% block page %}
 <div class="columns">
     <div class="columns__column columns__column--8">
         {% if page.disclaimer %}
@@ -8,7 +8,7 @@
         {% endif %}
 
         <div class="markdown">
-            {% block content %}{% endblock %}
+            {% block psr_content %}{% endblock %}
         </div>
     </div>
     <div class="columns__column columns__column--4 columns__column--padding_left">

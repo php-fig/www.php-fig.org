@@ -56,21 +56,7 @@
 </header>
 
 <div class="page_content">
-    {% if page.url == '/.' %}
-        {% block content %}{% endblock %}
-    {% else %}
-        <div class="page_banner">
-            <div class="center">
-                <h1 class="page_banner__title">{{ page.title }}</h1>
-            </div>
-        </div>
-
-        <div class="center">
-            <div class="page_content__padding">
-                {% block inner_page %}{% endblock %}
-            </div>
-        </div>
-    {% endif %}
+    {% block content %}{% endblock %}
 </div>
 
 <div class="site_footer_links">

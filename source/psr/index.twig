@@ -1,11 +1,12 @@
 ---
-layout: default
-title:  PHP Standards Recommendations
+layout: page
+title: PHP Standards Recommendations
 permalink: psr/
 ---
 
-{% set content = include('fig-standards/index.md') %}
-
+{% block page %}
 <div class="markdown">
-    {{ content | markdown }}
+    {% set index = include('fig-standards/index.md') %}
+    {{ index | markdown }}
 </div>
+{% endblock %}
