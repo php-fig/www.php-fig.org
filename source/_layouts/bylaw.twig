@@ -4,7 +4,10 @@
 <div class="columns">
     <div class="columns__column columns__column--8">
         <div class="markdown">
-            {% block bylaw_content %}{% endblock %}
+            {% block bylaw %}
+                {% set content = include(page.markdown_source) %}
+                {{ content | markdown }}
+            {% endblock %}
         </div>
     </div>
     <div class="columns__column columns__column--4 columns__column--padding_left">
