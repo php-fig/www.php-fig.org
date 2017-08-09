@@ -1,8 +1,16 @@
 sculpin_content_types:
+  posts:
+    enabled: false
   psrs:
     singular_name: psr
+    permalink: psr/:slug_title
     type: path
     path: psr
+  bylaws:
+    singular_name: bylaw
+    permalink: bylaws/:slug_title
+    type: path
+    path: bylaws
 
 sculpin:
   ignore: ["**/*.scss"]
