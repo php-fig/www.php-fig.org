@@ -1,4 +1,5 @@
 /output_*
 /vendor
+/_www
 *.map
 .sass-cache

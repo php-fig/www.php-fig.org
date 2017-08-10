@@ -1,7 +1,14 @@
 name: php-fig-website
 type: php:7.1
+
 build:
   flavor: composer
+
+dependencies:
+  python:
+    Pygments: '2.2.0'
+  ruby:
+    sass: '3.5.1'
 
 web:
   locations:
@@ -24,3 +31,4 @@ disk: 1024
 hooks:
   build: |
     vendor/bin/sculpin generate
+    sass source/_sass/all.scss:output_dev/css/all.css --style=expanded
