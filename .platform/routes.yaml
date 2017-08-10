@@ -1,0 +1,10 @@
+https://www.{default}/:
+  type: redirect
+  to: https://{default}/
+https://{default}/:
+  type: upstream
+  upstream: php-fig-website:http
+  cache:
+    enabled: true
+  ssi:
+    enabled: false

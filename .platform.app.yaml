@@ -1,0 +1,26 @@
+name: php-fig-website
+type: php:7.1
+build:
+  flavor: composer
+
+web:
+  locations:
+    "/":
+      root: "output_dev"
+      # Index files to use if one is not provided in the URL.
+      index:
+        - "index.html"
+      expires: 300s
+      scripts: true
+      allow: false
+      rules:
+        \.(css|js|gif|jpe?g|png|ttf|eot|woff2?|otf|html|ico|svg?)$:
+          allow: true
+        ^/robots\.txt$:
+          allow: true
+
+disk: 1024
+
+hooks:
+  build: |
+    vendor/bin/sculpin generate
