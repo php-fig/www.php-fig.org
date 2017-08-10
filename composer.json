@@ -1,5 +1,6 @@
 {
     "require": {
+        "php": "^7.1",
         "sculpin/sculpin": "@dev",
         "dflydev/embedded-composer": "@dev",
         "dflydev/embedded-composer-console": "@dev",
