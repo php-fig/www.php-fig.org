@@ -16,12 +16,12 @@ sculpin:
   ignore: ["**/*.scss"]
 
 services:
-  aptoma_markdown_engine:
+  aptoma.twig.markdown_engine:
     class: Aptoma\Twig\Extension\MarkdownEngine\MichelfMarkdownEngine
-  sculpin.twig.markdown_extensions:
+  aptoma.twig.markdown_extension:
     class: Aptoma\Twig\Extension\MarkdownExtension
     arguments:
-      $markdownEngine: '@aptoma_markdown_engine'
+      $markdownEngine: '@aptoma.twig.markdown_engine'
     tags:
       - { name: twig.extension }
   ramsey.twig.codeblock_extension:
