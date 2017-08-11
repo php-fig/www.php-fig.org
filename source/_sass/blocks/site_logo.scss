@@ -6,7 +6,7 @@
 
     &__short_name {
         color: #fff4e1;
-        font-family: 'Tungsten A', 'Tungsten B';
+        font-family: $titleFont;
         font-weight: 500;
         font-size: 40px;
 
@@ -39,7 +39,7 @@
         bottom: -50px;
 
         color: #562e03;
-        font-family: 'Whitney SSm A', 'Whitney SSm B';
+        font-family: $baseFont;
         font-weight: 500;
         font-size: 12px;
         line-height: 1.1;

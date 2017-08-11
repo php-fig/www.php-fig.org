@@ -21,7 +21,7 @@
             padding: 12px 25px;
 
             color: #fff4e1;
-            font-family: 'Whitney SSm A', 'Whitney SSm B';
+            font-family: $baseFont;
             font-weight: bold;
             font-style: normal;
             font-size: 14px;
@@ -79,7 +79,7 @@
             padding: 8px 25px;
 
             color: #fff4e1;
-            font-family: 'Whitney SSm A', 'Whitney SSm B';
+            font-family: $baseFont;
             font-weight: 500;
             font-style: normal;
             font-size: 14px;
@@ -115,7 +115,7 @@
             transition: all .15s;
 
             color: #fff4e1;
-            font-family: 'Whitney SSm A', 'Whitney SSm B';
+            font-family: $baseFont;
             font-weight: 500;
             font-style: normal;
             font-size: 14px;

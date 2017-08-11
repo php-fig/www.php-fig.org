@@ -10,7 +10,7 @@
         max-width: 550px;
 
         color: #f9f2e8;
-        font-family: 'Tungsten A', 'Tungsten B';
+        font-family: $titleFont;
         font-weight: 500;
         font-size: 70px;
         text-shadow: 1px 1px 0 #1e5f42;
@@ -21,7 +21,7 @@
         max-width: 550px;
 
         color: #f9f2e8;
-        font-family: 'Whitney SSm A', 'Whitney SSm B';
+        font-family: $baseFont;
         font-weight: 400;
         font-size: 16px;
         line-height: 2;
@@ -39,7 +39,7 @@
         padding: 10px 30px;
 
         color: #4cb88a;
-        font-family: 'Tungsten A', 'Tungsten B';
+        font-family: $titleFont;
         font-weight: 500;
         font-size: 25px;
         text-decoration: none;

@@ -1,7 +1,7 @@
 .markdown {
 
     color: #595143;
-    font-family: 'Whitney SSm A', 'Whitney SSm B';
+    font-family: $baseFont;
     font-size: 18px;
     line-height: 1.75;
 
@@ -17,7 +17,7 @@
         margin: 40px 0 25px 0;
 
         color: #3ea377;
-        font-family: 'Tungsten A', 'Tungsten B';
+        font-family: $titleFont;
         font-weight: 500;
         font-size: 32px;
         line-height: 1.25;
@@ -208,7 +208,7 @@
         padding: 10px 20px;
 
         color: white;
-        font-family: 'Tungsten A', 'Tungsten B';
+        font-family: $titleFont;
         font-weight: 500;
         font-size: 26px;
         line-height: 1;
@@ -221,7 +221,7 @@
     code {
         padding: 3px 5px;
 
-        font-family: 'Source Code Pro';
+        font-family: $codeFont;
         font-size: 16px;
         letter-spacing: -0.02em;
 

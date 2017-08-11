@@ -15,7 +15,7 @@
         padding: 0 0 5px 0;
 
         color: #5f5b53;
-        font-family: 'Tungsten A', 'Tungsten B';
+        font-family: $titleFont;
         font-weight: 500;
         font-size: 30px;
 
@@ -26,7 +26,7 @@
         margin: 25px 0;
 
         color: #595143;
-        font-family: 'Whitney SSm A', 'Whitney SSm B';
+        font-family: $baseFont;
         font-size: 15px;
         line-height: 1.5;
     }
@@ -46,7 +46,7 @@
         padding: 13px 40px 12px 15px;
 
         color: #f9f6f0;
-        font-family: 'Whitney SSm A', 'Whitney SSm B';
+        font-family: $baseFont;
         font-weight: bold;
         font-size: 15px;
         text-decoration: none;
