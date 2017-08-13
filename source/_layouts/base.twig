@@ -58,7 +58,7 @@
 </header>
 
 <div class="page_content">
-    {% block content %}{% endblock %}
+    {% block wrapper %}{% block content %}{% endblock %}{% endblock %}
 </div>
 
 <div class="site_footer_links">

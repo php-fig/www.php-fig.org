@@ -1,6 +1,6 @@
 {% extends 'base' %}
 
-{% block content %}
+{% block wrapper %}
 <div class="page_banner">
     <div class="center">
         <h1 class="page_banner__title">{{ page.title }}</h1>
@@ -9,7 +9,7 @@
 
 <div class="center">
     <div class="page_content__padding">
-        {% block page %}{% endblock %}
+        {{ page.blocks.content | raw }}
     </div>
 </div>
 {% endblock %}
