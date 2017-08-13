@@ -14,6 +14,8 @@ web:
   locations:
     "/":
       root: "output_dev"
+      index:
+        - "index.html"
       expires: 300s
       scripts: true
       allow: false
