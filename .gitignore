@@ -1,5 +1,6 @@
 /output_*
 /vendor
 /_www
+/source/css/all.css
 *.map
 .sass-cache
