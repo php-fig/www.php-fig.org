@@ -60,9 +60,6 @@ class Bylaw
         file_put_contents($this->dest, $this->createContent());
     }
 
-    /**
-     * @return string
-     */
     private function createContent(): string
     {
         $relSource = str_replace(self::PREFIX, '', $this->source);
