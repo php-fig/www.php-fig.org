@@ -35,22 +35,22 @@
             <input class="site_menu__dropdown_checkbox" id="site_menu__dropdown_checkbox" type="checkbox">
             <ul class="site_menu__list">
                 <li class="site_menu__item">
-                    <a class="site_menu__link {% if page.url == '/' %}site_menu__link--active{% endif %}" href="/">Home</a>
+                    <a class="site_menu__link {% if page.url == '/.' %}site_menu__link--active{% endif %}" href="/">Home</a>
                 </li>
                 <li class="site_menu__item">
-                    <a class="site_menu__link {% if '/psr' in page.url %}site_menu__link--active{% endif %}" href="/psr/">Recommendations (PSRs)</a>
+                    <a class="site_menu__link {% if page.url matches '#^/psr#' %}site_menu__link--active{% endif %}" href="/psr">Recommendations (PSRs)</a>
                 </li>
                 <li class="site_menu__item">
-                    <a class="site_menu__link {% if '/members' in page.url %}site_menu__link--active{% endif %}" href="/members/">Members</a>
+                    <a class="site_menu__link {% if page.url matches '#^/members#' %}site_menu__link--active{% endif %}" href="/members">Members</a>
                 </li>
                 <li class="site_menu__item">
-                    <a class="site_menu__link {% if '/bylaws' in page.url %}site_menu__link--active{% endif %}" href="/bylaws/">Bylaws</a>
+                    <a class="site_menu__link {% if page.url matches '#^/bylaws#' %}site_menu__link--active{% endif %}" href="/bylaws">Bylaws</a>
                 </li>
                 <li class="site_menu__item">
-                    <a class="site_menu__link {% if '/faqs' in page.url %}site_menu__link--active{% endif %}" href="/faqs/">FAQs</a>
+                    <a class="site_menu__link {% if page.url matches '#^/faqs#' %}site_menu__link--active{% endif %}" href="/faqs">FAQs</a>
                 </li>
                 <li class="site_menu__item">
-                    <a class="site_menu__link {% if '/get-involved' in page.url %}site_menu__link--active{% endif %}" href="/get-involved/">Get Involved</a>
+                    <a class="site_menu__link {% if page.url matches '#^/get-involved#' %}site_menu__link--active{% endif %}" href="/get-involved">Get Involved</a>
                 </li>
             </ul>
         </nav>
