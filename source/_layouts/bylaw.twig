@@ -14,30 +14,11 @@
         <nav class="sidebar">
             <h2 class="sidebar__title">Bylaws index:</h2>
             <ul class="sidebar__list">
+            {% for bylaw in data.bylaws %}
                 <li class="sidebar__item">
-                    <a class="sidebar__link {% if '/bylaws/mission-and-structure' in page.url %}sidebar__link--active{% endif %}" href="/bylaws/mission-and-structure/">Mission and Structure</a>
+                    <a class="sidebar__link {% if bylaw.url == page.url %}sidebar__link--active{% endif %}" href="{{ bylaw.url }}">{{ bylaw.title }}</a>
                 </li>
-                <li class="sidebar__item">
-                    <a class="sidebar__link {% if '/bylaws/psr-workflow' in page.url %}sidebar__link--active{% endif %}" href="/bylaws/psr-workflow/">PSR Workflow</a>
-                </li>
-                <li class="sidebar__item">
-                    <a class="sidebar__link {% if '/bylaws/voting-protocol' in page.url %}sidebar__link--active{% endif %}" href="/bylaws/voting-protocol/">Voting Protocol</a>
-                </li>
-                <li class="sidebar__item">
-                    <a class="sidebar__link {% if '/bylaws/elections-and-vacancies' in page.url %}sidebar__link--active{% endif %}" href="/bylaws/elections-and-vacancies/">Elections and Vacancies</a>
-                </li>
-                <li class="sidebar__item">
-                    <a class="sidebar__link {% if '/bylaws/licensing-policies' in page.url %}sidebar__link--active{% endif %}" href="/bylaws/licensing-policies/">Licensing Policies</a>
-                </li>
-                <li class="sidebar__item">
-                    <a class="sidebar__link {% if '/bylaws/psr-amendments' in page.url %}sidebar__link--active{% endif %}" href="/bylaws/psr-amendments/">PSR Amendments</a>
-                </li>
-                <li class="sidebar__item">
-                    <a class="sidebar__link {% if '/bylaws/psr-naming-conventions' in page.url %}sidebar__link--active{% endif %}" href="/bylaws/psr-naming-conventions/">PSR Naming Conventions</a>
-                </li>
-                <li class="sidebar__item">
-                    <a class="sidebar__link {% if '/bylaws/fig-3-transition' in page.url %}sidebar__link--active{% endif %}" href="/bylaws/fig-3-transition/">FIG 3.0 Transition</a>
-                </li>
+            {% endfor %}
             </ul>
         </nav>
     </div>
