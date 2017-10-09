@@ -79,28 +79,23 @@ class Page
     public function renderContent(): string
     {
         $frontMatter = $this->meta;
+        $frontMatter['related'] = [];
+        $self = [ 'name' => $this->getMeta()['title'], ];
 
-        switch ($this->type) {
-            case self::TYPE_BYLAW :
-                $frontMatter['use'] = [ 'bylaws' ];
-                break;
-            case self::TYPE_PSR :
-            case self::TYPE_PSR_RELATED :
-                $frontMatter['related'] = [];
-                $self = [ 'name' => $this->getMeta()['title'], ];
+        foreach ($this->related as $related) {
+            $frontMatter['related'][] = [
+                'name' => $related->getMeta()['title'],
+                'permalink' => $related->getMeta()['permalink']
+            ];
+        }
 
-                foreach ($this->related as $related) {
-                    $frontMatter['related'][] = [
-                        'name' => $related->getMeta()['title'],
-                        'permalink' => $related->getMeta()['permalink']
-                    ];
-                }
-                if ($this->type === self::TYPE_PSR) {
-                    array_unshift($frontMatter['related'], $self);
-                }
-                if ($this->type === self::TYPE_PSR_RELATED) {
-                    $frontMatter['related'][] = $self;
-                }
+        switch($this->type) {
+            case self::TYPE_BYLAW:
+                $frontMatter['use'] = [ 'bylaws' ]; break;
+            case self::TYPE_PSR:
+                array_unshift($frontMatter['related'], $self); break;
+            case self::TYPE_PSR_RELATED:
+                $frontMatter['related'][] = $self; break;
         }
 
         $yamlFrontMatter = rtrim(Yaml::dump($frontMatter));
