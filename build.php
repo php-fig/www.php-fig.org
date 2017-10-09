@@ -23,7 +23,7 @@ require 'vendor/autoload.php';
 
     if ($createBylaws) {
         echo 'Creating bylaws...', PHP_EOL;
-        [ $bylaws, $skippedSomeBylaws ] = createEntries(Bylaw::class, BYLAWS_GLOB, $overwrite);
+        [ $bylaws, $skippedSomeBylaws ] = createPages(Page::BYLAWS_GLOB, $overwrite);
 
         $numBylaws = count($bylaws);
         echo "Created {$numBylaws} bylaws", PHP_EOL, PHP_EOL;
@@ -31,14 +31,14 @@ require 'vendor/autoload.php';
 
     if ($createPsr) {
         echo 'Creating PSRs...', PHP_EOL;
-        [ $psr, $skippedSomePsr ] = createEntries(Psr::class, PSR_GLOB, $overwrite);
+        [ $psr, $skippedSomePsr ] = createPages(Page::PSR_GLOB, $overwrite);
 
         $numPsr = count($psr);
         echo "Created {$numPsr} PSRs", PHP_EOL, PHP_EOL;
     }
 
     if ($skippedSomeBylaws || $skippedSomePsr) {
-        echo "use -f flag to overwrite skipped files", PHP_EOL;
+        echo 'use -f flag to overwrite skipped files', PHP_EOL;
     }
 
 })($argv);
@@ -64,55 +64,53 @@ function parseArgs(array $argv): array
     return [ $overwrite, $createBylaws, $createPsr ];
 }
 
-function createEntries(string $class, string $pattern, bool $overwrite): array
+function createPages(string $globPattern, bool $overwrite): array
 {
-    $sources = glob($pattern);
+    $sources = glob($globPattern);
 
-    $entries = [];
+    $pages = array_map(function(string $source) {
+        return new Page($source);
+    }, $sources);
 
-    foreach ($sources as $source) {
-        /** @var Psr|Bylaw $entry */
-        $entry = $class::fromSource($source);
+    setRelations($pages);
 
-        echo "Creating '$entry'... ";
+    $writtenPages = array_map(function(Page $page) use ($overwrite) {
+        echo "Writing '$page'... ";
 
-        if ($entry->alreadyExists() && ! $overwrite) {
-            echo "Skipping, file already exists.", PHP_EOL;
-            continue;
+        if (! $overwrite && file_exists($page->getDest())) {
+            echo 'Skipping, file already exists.', PHP_EOL;
+            return;
         }
 
-        $entry->writeToDest();
-        $entries[] = $entry;
-        echo "Ok.", PHP_EOL;
-    }
+        $page->writeToDest();
+        echo 'OK.', PHP_EOL;
+    }, $pages);
 
-    return [ $entries, count($entries) < count($sources) ];
+    $skippedSome = count($writtenPages) < count($pages);
+
+    return [ $writtenPages, $skippedSome ];
 }
 
-function createPsr(string $source): Psr
-{
-    $match = preg_match('/(psr-\d+)(?:-(\w+(?:-\w+)*)+)?(?:-(meta|example))?\.md$/i', $source, $matches);
+/**
+ * @param Page[] $pages
+ */
+function setRelations(array $pages) {
+    $groupedPages = array_reduce($pages, function(array $pages, Page $page) : array {
+        switch ($page->getType()) {
+            case Page::TYPE_PSR:
+                $pages['psr'][$page->getMeta()['psr_number']] = $page;
+                break;
+            case Page::TYPE_PSR_RELATED:
+                $pages['related'][$page->getMeta()['psr_number']] = $page;
+                break;
+        }
 
-    if (! $match) {
-        throw new \InvalidArgumentException(sprintf("Source doesn't match pattern: %s", $source));
-    }
+        return $pages;
+    }, [ 'psr' => [], 'related' => [] ]);
 
-    $psrNumber = strtolower($matches[1]);
-    $shortName = $matches[2] ?? '';
-    $type      = $matches[3] ?? 'psr';
 
-    $file = fopen($source, 'r');
-    $title = rtrim(ltrim(fgets($file), '# '));
-    fclose($file);
-
-    if (strpos($title, $psrNumber) !== 0) {
-        $title = $psrNumber . ': ' . $title;
-    }
-
-    $dest = PSR_DIR . $psrNumber . '-' . $shortName . '.twig';
-    $dest = strtolower($dest);
-
-    if ($type !== 'psr') {
-        return new static($title, $source, $dest, $related);
+    foreach ($groupedPages['related'] as $related)  {
+        $groupedPages['psr'][$related->getMeta()['psr_number']]->addRelated($related);
+        $related->addRelated($groupedPages['psr'][$related->getMeta()['psr_number']]);
     }
 }
