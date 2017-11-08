@@ -2,7 +2,7 @@
 
 {% block content %}
 <div class="columns">
-    <div class="columns__column columns__column--{{ page.additional ? 8 : 12 }}">
+    <div class="columns__column columns__column--{{ page.related ? 8 : 12 }}">
         <div class="markdown">
             {% block psr %}
                 {% set content = include(page.markdown_source) %}
@@ -10,21 +10,16 @@
             {% endblock %}
         </div>
     </div>
-    {% if page.additional %}
+    {% if page.related %}
     <div class="columns__column columns__column--4 columns__column--padding_left">
         <nav class="sidebar">
             <h2 class="sidebar__title">Additional Info:</h2>
             <ul class="sidebar__list">
-                {% for additional in page.additional %}
-                    {% if additional.path %}
-                        <li class="sidebar__item">
-                            <a class="sidebar__link" href="{{ additional.path }}">{{ additional.name }}</a>
-                        </li>
-                    {% else %}
-                        <li class="sidebar__item">
-                            <a class="sidebar__link sidebar__link--active" href="">{{ additional.name }}</a>
-                        </li>
-                    {% endif %}
+                {% for related in page.related %}
+                    <li class="sidebar__item">
+                        <a class="sidebar__link {% if related.permalink == '' %}sidebar__link--active{% endif %}"
+                           href="{{ related.permalink }}">{{ related.name }}</a>
+                    </li>
                 {% endfor %}
             </ul>
         </nav>
