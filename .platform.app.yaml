@@ -5,10 +5,10 @@ build:
   flavor: composer
 
 dependencies:
-  python:
-    Pygments: '2.2.0'
   ruby:
     sass: '3.5.1'
+    kramdown: '*'
+    rouge: '*\'
 
 web:
   locations:
