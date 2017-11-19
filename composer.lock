@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "caf4fcef71a4e8f26629d5ac851d5d85",
+    "content-hash": "ae48585f2a27ac7c18318d29d94aeba1",
     "packages": [
         {
             "name": "aptoma/twig-markdown",
@@ -665,7 +665,7 @@
                 "embedded",
                 "extensibility"
             ],
-            "time": "2016-05-21 00:49:42"
+            "time": "2016-05-21T00:49:42+00:00"
         },
         {
             "name": "dflydev/placeholder-resolver",
@@ -1152,113 +1152,6 @@
             "time": "2016-10-10T12:19:37+00:00"
         },
         {
-            "name": "ramsey/pygments",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ramsey/pygments.git",
-                "reference": "b2cafbd4bf198789611ff8457384b7975a4c5d4d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ramsey/pygments/zipball/b2cafbd4bf198789611ff8457384b7975a4c5d4d",
-                "reference": "b2cafbd4bf198789611ff8457384b7975a4c5d4d",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.5 || ^7.0",
-                "symfony/process": "^3.0"
-            },
-            "require-dev": {
-                "jakub-onderka/php-parallel-lint": "^0.9.2",
-                "mockery/mockery": "^0.9.9",
-                "phpunit/phpunit": "^4.8.35",
-                "squizlabs/php_codesniffer": "^2.8",
-                "symfony/finder": "^3.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Ramsey\\Pygments\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Kazuyuki Hayashi",
-                    "email": "hayashi@valnur.net"
-                },
-                {
-                    "name": "Ben Ramsey",
-                    "email": "ben@benramsey.com",
-                    "homepage": "https://benramsey.com"
-                }
-            ],
-            "description": "A PHP wrapper for Pygments, the Python syntax highlighter, forked from kzykhys/pygments.",
-            "keywords": [
-                "highlight",
-                "pygments",
-                "syntax"
-            ],
-            "time": "2017-03-28T00:58:59+00:00"
-        },
-        {
-            "name": "ramsey/twig-codeblock",
-            "version": "2.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ramsey/twig-codeblock.git",
-                "reference": "bf3a940af4c5d5a66b1e66e9464fccc29579b23f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ramsey/twig-codeblock/zipball/bf3a940af4c5d5a66b1e66e9464fccc29579b23f",
-                "reference": "bf3a940af4c5d5a66b1e66e9464fccc29579b23f",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.6 || ^7.0",
-                "ramsey/pygments": "^1.0",
-                "twig/twig": "^1.15 || ^2.0"
-            },
-            "require-dev": {
-                "jakub-onderka/php-parallel-lint": "^0.9.2",
-                "mockery/mockery": "^0.9.9",
-                "phpunit/phpunit": "^5.7",
-                "squizlabs/php_codesniffer": "^2.8"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Ramsey\\Twig\\CodeBlock\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Ben Ramsey",
-                    "email": "ben@benramsey.com",
-                    "homepage": "http://benramsey.com"
-                }
-            ],
-            "description": "A Twig extension for defining blocks of code for syntax highlighting (with Pygments) and more.",
-            "keywords": [
-                "extension",
-                "highlighting",
-                "pygmentize",
-                "pygments",
-                "syntax",
-                "twig"
-            ],
-            "time": "2017-04-18T07:37:34+00:00"
-        },
-        {
             "name": "react/event-loop",
             "version": "v0.4.3",
             "source": {
@@ -1638,7 +1531,7 @@
                 "site",
                 "static"
             ],
-            "time": "2017-03-24 09:09:03"
+            "time": "2017-03-24T09:09:03+00:00"
         },
         {
             "name": "sculpin/sculpin-theme-composer-plugin",
@@ -2375,16 +2268,16 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.4.0",
+            "version": "v1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "f29dca382a6485c3cbe6379f0c61230167681937"
+                "reference": "2ec8b39c38cb16674bbf3fea2b6ce5bf117e1296"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/f29dca382a6485c3cbe6379f0c61230167681937",
-                "reference": "f29dca382a6485c3cbe6379f0c61230167681937",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/2ec8b39c38cb16674bbf3fea2b6ce5bf117e1296",
+                "reference": "2ec8b39c38cb16674bbf3fea2b6ce5bf117e1296",
                 "shasum": ""
             },
             "require": {
@@ -2396,7 +2289,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.4-dev"
+                    "dev-master": "1.6-dev"
                 }
             },
             "autoload": {
@@ -2430,24 +2323,24 @@
                 "portable",
                 "shim"
             ],
-            "time": "2017-06-09T14:24:12+00:00"
+            "time": "2017-10-11T12:05:26+00:00"
         },
         {
             "name": "symfony/process",
-            "version": "v3.3.6",
+            "version": "v3.3.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "07432804942b9f6dd7b7377faf9920af5f95d70a"
+                "reference": "a56a3989fb762d7b19a0cf8e7693ee99a6ffb78d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/07432804942b9f6dd7b7377faf9920af5f95d70a",
-                "reference": "07432804942b9f6dd7b7377faf9920af5f95d70a",
+                "url": "https://api.github.com/repos/symfony/process/zipball/a56a3989fb762d7b19a0cf8e7693ee99a6ffb78d",
+                "reference": "a56a3989fb762d7b19a0cf8e7693ee99a6ffb78d",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.9"
+                "php": "^5.5.9|>=7.0.8"
             },
             "type": "library",
             "extra": {
@@ -2479,7 +2372,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2017-07-13T13:05:09+00:00"
+            "time": "2017-11-13T15:31:11+00:00"
         },
         {
             "name": "symfony/yaml",
@@ -2594,16 +2487,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v2.4.3",
+            "version": "v2.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "eab7c3288ae6603d7d6f92b531626af2b162d1f2"
+                "reference": "eddb97148ad779f27e670e1e3f19fb323aedafeb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/eab7c3288ae6603d7d6f92b531626af2b162d1f2",
-                "reference": "eab7c3288ae6603d7d6f92b531626af2b162d1f2",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/eddb97148ad779f27e670e1e3f19fb323aedafeb",
+                "reference": "eddb97148ad779f27e670e1e3f19fb323aedafeb",
                 "shasum": ""
             },
             "require": {
@@ -2656,7 +2549,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2017-06-07T18:47:58+00:00"
+            "time": "2017-09-27T18:10:31+00:00"
         },
         {
             "name": "webignition/disallowed-character-terminated-string",
