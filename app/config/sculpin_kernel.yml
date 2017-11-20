@@ -23,7 +23,7 @@ services:
   fig.website.external_process_markdown_engine:
     class: Fig\Website\ExternalProcessMarkdownEngine
     arguments:
-      $command: "kramdown --syntax-highlighter rouge"
+      $command: "bundle exec kramdown --syntax-highlighter rouge"
   aptoma.twig.markdown_extension:
     class: Aptoma\Twig\Extension\MarkdownExtension
     arguments:
