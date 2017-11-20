@@ -8,7 +8,8 @@ dependencies:
   ruby:
     sass: '3.5.1'
     kramdown: '*'
-    rouge: '*\'
+    rouge: '*'
+    html-proofer: '*'
 
 web:
   locations:
@@ -31,3 +32,4 @@ hooks:
   build: |
     sass source/_sass/all.scss:source/css/all.css --style=expanded
     vendor/bin/sculpin generate -n
+    htmlproofer output_dev --url-ignore 'foo-meta.md#errata-1-foo'
