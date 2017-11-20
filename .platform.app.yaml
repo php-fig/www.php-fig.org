@@ -4,10 +4,6 @@ type: php:7.1
 build:
   flavor: composer
 
-dependencies:
-  ruby:
-    bundler: "*"
-
 web:
   locations:
     "/":
@@ -27,6 +23,7 @@ disk: 1024
 
 hooks:
   build: |
+    gem install bundler
     bundle install
     bundle exec sass source/_sass/all.scss:source/css/all.css --style=compressed
     vendor/bin/sculpin generate -n
