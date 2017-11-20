@@ -6,7 +6,7 @@ build:
 
 dependencies:
   ruby:
-    bundler
+    bundler: "*"
 
 web:
   locations:
