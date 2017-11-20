@@ -63,7 +63,7 @@ class ExternalProcessMarkdownEngine implements MarkdownEngineInterface
      */
     public function getName()
     {
-        return 'Kramdown';
+        return __CLASS__;
     }
 
     private function createDefaultProcess(...$args): Process
