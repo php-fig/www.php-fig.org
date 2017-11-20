@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "~> 2.4"
+ruby "~> 2.1"
 
 gem "sass", "~> 3.5"
 gem "kramdown", "~> 1.15"
