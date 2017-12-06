@@ -17,7 +17,7 @@ class Page
     const PSR_DIR       = 'source/_psr/';
     const BYLAWS_GLOB   = self::INCLUDES_DIR . 'fig-standards/bylaws/*.md';
     const PSR_GLOB      = self::INCLUDES_DIR . 'fig-standards/accepted/*.md';
-    const PSR_PATTERN   = '#accepted/(psr-\d+)(?:-(?:\w+(?:-\w+)*?)+)?(?:-(meta|example))?\.md$#i';
+    const PSR_PATTERN   = '#accepted/(psr-\d+)(?:-(?:\w+(?:-\w+)*?)+)?(?:-(meta|examples))?\.md$#i';
     const BYLAW_PATTERN = '#bylaws/(\d+)-(?:\w+(?:-\w+)*)+\.md$#i';
 
     const TYPE_BYLAW       = 'bylaw';
