@@ -95,22 +95,24 @@ function createPages(string $globPattern, bool $overwrite): array
  * @param Page[] $pages
  */
 function setRelations(array $pages) {
-    $groupedPages = array_reduce($pages, function(array $pages, Page $page) : array {
-        switch ($page->getType()) {
-            case Page::TYPE_PSR:
-                $pages['psr'][$page->getMeta()['psr_number']] = $page;
-                break;
-            case Page::TYPE_PSR_RELATED:
-                $pages['related'][$page->getMeta()['psr_number']] = $page;
-                break;
+    $groups = array_reduce($pages, function(array $group, Page $page) : array {
+        $psrNumber = $page->getMeta()['psr_number'] ?? null;
+
+        if (! $psrNumber) {
+            return $group;
         }
 
-        return $pages;
-    }, [ 'psr' => [], 'related' => [] ]);
+        $group[$psrNumber][] = $page;
 
+        return $group;
+    }, []);
 
-    foreach ($groupedPages['related'] as $related)  {
-        $groupedPages['psr'][$related->getMeta()['psr_number']]->addRelated($related);
-        $related->addRelated($groupedPages['psr'][$related->getMeta()['psr_number']]);
+    foreach ($groups as $psrNumber => $group)  { /** @var Page[] $group */
+        foreach ($group as $page) { /** @var Page $page */
+            $siblings = array_filter($group, function(Page $sibling) use ($page) {
+                return $page !== $sibling;
+            });
+            $page->setRelated($siblings);
+        }
     }
 }

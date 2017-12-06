@@ -133,9 +133,12 @@ CONTENT;
         return $this->type;
     }
 
-    public function addRelated(Page $page)
+    /**
+     * @param Page[] $pages
+     */
+    public function setRelated(array $pages)
     {
-        $this->related[] = $page;
+        $this->related = $pages;
     }
 
     public function __toString(): string
