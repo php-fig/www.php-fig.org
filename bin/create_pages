@@ -13,32 +13,30 @@ if (version_compare(PHP_VERSION, '7.1.0', '<')) {
     exit(1);
 }
 
+chdir(dirname(__DIR__));
+
 require 'vendor/autoload.php';
 
 (function(array $argv) {
 
     [ $overwrite, $createBylaws, $createPsr ] = parseArgs($argv);
 
-    $skippedSomeBylaws = $skippedSomePsr = false;
-
     if ($createBylaws) {
         echo 'Creating bylaws...', PHP_EOL;
-        [ $bylaws, $skippedSomeBylaws ] = createPages(Page::BYLAWS_GLOB, $overwrite);
+        [ $writtenBylawsCount, $skippedBylawsCount ] = createPages(Page::BYLAWS_GLOB, $overwrite);
 
-        $numBylaws = count($bylaws);
-        echo "Created {$numBylaws} bylaws", PHP_EOL, PHP_EOL;
+        echo "Created {$writtenBylawsCount} bylaw pages", PHP_EOL, PHP_EOL;
     }
 
     if ($createPsr) {
         echo 'Creating PSRs...', PHP_EOL;
-        [ $psr, $skippedSomePsr ] = createPages(Page::PSR_GLOB, $overwrite);
+        [ $writtenPsrCount, $skippedPsrCount ] = createPages(Page::PSR_GLOB, $overwrite);
 
-        $numPsr = count($psr);
-        echo "Created {$numPsr} PSRs", PHP_EOL, PHP_EOL;
+        echo "Created {$writtenPsrCount} PSR pages", PHP_EOL, PHP_EOL;
     }
 
-    if ($skippedSomeBylaws || $skippedSomePsr) {
-        echo 'use -f flag to overwrite skipped files', PHP_EOL;
+    if ($skippedBylawsCount || $skippedPsrCount) {
+        echo 'use -f flag to overwrite existing files', PHP_EOL;
     }
 
 })($argv);
@@ -74,21 +72,23 @@ function createPages(string $globPattern, bool $overwrite): array
 
     setRelations($pages);
 
-    $writtenPages = array_map(function(Page $page) use ($overwrite) {
+    $writtenCount = 0;
+    $skippedCount = 1;
+    foreach ($pages as $page) { /** @var Page $page */
         echo "Writing '$page'... ";
 
         if (! $overwrite && file_exists($page->getDest())) {
-            echo 'Skipping, file already exists.', PHP_EOL;
-            return;
+            echo 'File already exists.', PHP_EOL;
+            $skippedCount++;
+            continue;
         }
 
         $page->writeToDest();
         echo 'OK.', PHP_EOL;
-    }, $pages);
+        $writtenCount++;
+    }
 
-    $skippedSome = count($writtenPages) < count($pages);
-
-    return [ $writtenPages, $skippedSome ];
+    return [ $writtenCount, $skippedCount ];
 }
 
 /**
