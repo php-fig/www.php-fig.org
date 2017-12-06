@@ -27,5 +27,4 @@ hooks:
     bundle install
     vendor/bin/sculpin generate -n
     bundle exec sass source/_sass/all.scss:output_dev/css/all.css --style=compressed
-# todo: find a way to execute htmlproofer without making the whole build fail, and issue some kind of warning instead
-#    bundle exec htmlproofer output_dev --url-ignore 'foo-meta.md#errata-1-foo'
+    bundle exec htmlproofer output_dev --url-ignore 'foo-meta.md#errata-1-foo' --disable-external
