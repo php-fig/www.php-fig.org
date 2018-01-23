@@ -24,6 +24,10 @@ services:
     class: Fig\Website\ExternalProcessMarkdownEngine
     arguments:
       $command: "bundle exec kramdown --syntax-highlighter rouge"
+  fig.website.link_processor_extension:
+    class: Fig\Website\TwigLinkProcessor
+    tags:
+      - { name: twig.extension }
   aptoma.twig.markdown_extension:
     class: Aptoma\Twig\Extension\MarkdownExtension
     arguments:
