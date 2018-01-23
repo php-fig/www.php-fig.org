@@ -1,8 +1,8 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
 set -e
 
-command -v bundle >/dev/null 2>&1 || gem install bundler
+gem install bundler
 bundle install
 vendor/bin/sculpin generate -n
 bundle exec sass source/_sass/all.scss:output_dev/css/all.css --style=compressed
