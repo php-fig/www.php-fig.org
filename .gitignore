@@ -1,6 +1,5 @@
 /output_*
 /vendor
-/source/_includes/fig-standards
 /source/css/all.css
 *.map
 .sass-cache
