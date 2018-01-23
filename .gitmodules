@@ -1,3 +1,0 @@
-[submodule "fig-standards"]
-	path = source/_includes/fig-standards
-	url = https://github.com/php-fig/fig-standards.git
