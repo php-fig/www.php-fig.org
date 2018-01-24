@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ae48585f2a27ac7c18318d29d94aeba1",
+    "content-hash": "1c7d8192d340140e70681c5329665962",
     "packages": [
         {
             "name": "aptoma/twig-markdown",
@@ -1437,16 +1437,16 @@
         },
         {
             "name": "sculpin/sculpin",
-            "version": "dev-develop",
+            "version": "dev-patched-develop",
             "source": {
                 "type": "git",
-                "url": "https://github.com/sculpin/sculpin.git",
-                "reference": "ef2c0a3f66261c01be3a254f5889045b911ae182"
+                "url": "https://github.com/stefanotorresi/sculpin.git",
+                "reference": "f114e66cdb66c9207104c3f6f6bfd1407ff13b4a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sculpin/sculpin/zipball/ef2c0a3f66261c01be3a254f5889045b911ae182",
-                "reference": "ef2c0a3f66261c01be3a254f5889045b911ae182",
+                "url": "https://api.github.com/repos/stefanotorresi/sculpin/zipball/f114e66cdb66c9207104c3f6f6bfd1407ff13b4a",
+                "reference": "f114e66cdb66c9207104c3f6f6bfd1407ff13b4a",
                 "shasum": ""
             },
             "require": {
@@ -1508,7 +1508,28 @@
                     "Sculpin\\": "src/Sculpin/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "scripts": {
+                "check": [
+                    "@cs-check",
+                    "@phpstan",
+                    "@test"
+                ],
+                "cs-check": [
+                    "phpcs"
+                ],
+                "cs-fix": [
+                    "phpcbf"
+                ],
+                "phpstan": [
+                    "phpstan analyse -l 4 src/"
+                ],
+                "test": [
+                    "phpunit --colors=always"
+                ],
+                "test-coverage": [
+                    "phpdbg -qrr vendor/bin/phpunit --coverage-clover clover.xml --coverage-text --colors=always"
+                ]
+            },
             "license": [
                 "MIT"
             ],
@@ -1531,7 +1552,10 @@
                 "site",
                 "static"
             ],
-            "time": "2017-03-24T09:09:03+00:00"
+            "support": {
+                "source": "https://github.com/stefanotorresi/sculpin/tree/backport-slug-fixes"
+            },
+            "time": "2018-01-24T13:26:12+00:00"
         },
         {
             "name": "sculpin/sculpin-theme-composer-plugin",
@@ -2738,7 +2762,14 @@
         }
     ],
     "packages-dev": [],
-    "aliases": [],
+    "aliases": [
+        {
+            "alias": "3.0",
+            "alias_normalized": "3.0.0.0",
+            "version": "dev-patched-develop",
+            "package": "sculpin/sculpin"
+        }
+    ],
     "minimum-stability": "stable",
     "stability-flags": {
         "sculpin/sculpin": 20,
