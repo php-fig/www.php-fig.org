@@ -35,10 +35,10 @@ git clone --recursive https://github.com/php-fig/php-fig.github.com
 While the project was ported from [Jekyll][jekyll] to [Sculpin][sculpin] to use PHP, some Ruby dependencies are still present. This will probably change in the future.
     
 ```bash
-gem install bundler
-bundle install --path vendor
-composer install
+bin/install.sh
 ```
+
+will install both PHP Composer packages and Ruby bundled gems.
 
   [jekyll]: https://github.com/mojombo/jekyll
   [sculpin]: https://sculpin.io
@@ -46,11 +46,11 @@ composer install
 
 ## Build
 
-A script is provided to run all the main tasks at once.
-
 ```bash
 bin/build.sh
 ```
+
+will compile the sources into `output_dev`. 
 
 
 ## Run
@@ -62,20 +62,29 @@ vendor/bin/sculpin serve
 
 ## Using Docker
 
-A multistage `Dockerfile` is provided, in case you want to build and/or run everything without installing any dependency whatsoever.
+A multistage `Dockerfile` is provided, in case you want to build and/or run everything without installing any dependency whatsoever. Docker version 17.09.0-ce or newer is required.
 
 The final image is a simple NGINX instance:
 
 ```bash
 docker build . -t fig-website
 docker run --rm -p 80:80 fig-website
-// browse the website at http://localhost
+# browse the website at http://localhost
 ```
 
-However, you can use the `build` target with an interactive shell to access a fully provisioned PHP+Ruby environment:
+However, you can use the `dev` target, which provides an interactive terminal to access a fully provisioned PHP+Ruby environment.
+
+If you want to develop in the Docker runtime, you'll have mount the project root as a volume, expose port 8000, explicitly run the install/build process, and run the PHP built-in server:
 
 ```bash
-docker build . --target build -t fig-website-build
-docker run --rm -ti fig-website-build sh
-// do stuff in the container
+docker build . --target dev -t fig-website-dev
+docker run --rm -ti -p 80:8000 -v $PWD:/fig-website fig-website-dev 
+# inside the container terminal
+install.sh
+build.sh
+sculpin serve
 ```
+
+Note that:
+ - inside the container, relevant executables are in the global `PATH`
+ - the container is executed with user and group with id `1000` by default, which will likely match your main host user. You can change the id via the `UID` and `GID` build-time variables (`--build-arg`).
