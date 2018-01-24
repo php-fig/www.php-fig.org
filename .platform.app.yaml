@@ -23,6 +23,7 @@ disk: 1024
 
 hooks:
   build: |
+    set -e
     gem install bundler
-    bundle install
+    bin/install.sh
     bin/build.sh
