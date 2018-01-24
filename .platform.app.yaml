@@ -22,4 +22,7 @@ web:
 disk: 1024
 
 hooks:
-  build: bin/build.sh
+  build: |
+    gem install bundler
+    bundle install
+    bin/build.sh
