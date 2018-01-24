@@ -62,16 +62,20 @@ vendor/bin/sculpin serve
 
 ## Using Docker
 
-A multistage `Dockerfile` is provided, in case you want to build and/or run everything without installing any dependency whatsoever:
+A multistage `Dockerfile` is provided, in case you want to build and/or run everything without installing any dependency whatsoever.
+
+The final image is a simple NGINX instance:
 
 ```bash
 docker build . -t fig-website
 docker run --rm -p 80:80 fig-website
+// browse the website at http://localhost
 ```
 
-The final image is a simple NGINX instance, however you can use the `build` target with an interactive shell to access a fully provisioned PHP+Ruby environment:
+However, you can use the `build` target with an interactive shell to access a fully provisioned PHP+Ruby environment:
 
 ```bash
 docker build . --target build -t fig-website-build
 docker run --rm -ti fig-website-build sh
+// do stuff in the container
 ```
