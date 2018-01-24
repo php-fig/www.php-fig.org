@@ -1,0 +1,118 @@
+#!/usr/bin/env php
+<?php
+/**
+ * @license See the file LICENSE for copying permission
+ */
+
+declare(strict_types=1);
+
+namespace Fig\Website;
+
+if (version_compare(PHP_VERSION, '7.1.0', '<')) {
+    fwrite(STDERR, "PHP minimum version required is 7.1.0, current is ".PHP_VERSION.PHP_EOL);
+    exit(1);
+}
+
+chdir(dirname(__DIR__));
+
+require 'vendor/autoload.php';
+
+(function(array $argv) {
+
+    [ $overwrite, $createBylaws, $createPsr ] = parseArgs($argv);
+
+    if ($createBylaws) {
+        echo 'Creating bylaws...', PHP_EOL;
+        [ $writtenBylawsCount, $skippedBylawsCount ] = createPages(Page::BYLAWS_GLOB, $overwrite);
+
+        echo "Created {$writtenBylawsCount} bylaw pages", PHP_EOL, PHP_EOL;
+    }
+
+    if ($createPsr) {
+        echo 'Creating PSRs...', PHP_EOL;
+        [ $writtenPsrCount, $skippedPsrCount ] = createPages(Page::PSR_GLOB, $overwrite);
+
+        echo "Created {$writtenPsrCount} PSR pages", PHP_EOL, PHP_EOL;
+    }
+
+    if ($skippedBylawsCount || $skippedPsrCount) {
+        echo 'use -f flag to overwrite existing files', PHP_EOL;
+    }
+
+})($argv);
+
+function parseArgs(array $argv): array
+{
+    $overwrite    = false;
+    $createBylaws = false;
+    $createPsr    = false;
+
+    foreach ($argv as $arg) {
+        switch ($arg) {
+            case '-f': $overwrite = true; break;
+            case 'psr': $createPsr = true; break;
+            case 'bylaws': $createBylaws = true; break;
+        }
+    }
+
+    if (! ($createBylaws || $createPsr)) {
+        $createPsr = $createBylaws = true;
+    }
+
+    return [ $overwrite, $createBylaws, $createPsr ];
+}
+
+function createPages(string $globPattern, bool $overwrite): array
+{
+    $sources = glob($globPattern);
+
+    $pages = array_map(function(string $source) {
+        return new Page($source);
+    }, $sources);
+
+    setRelations($pages);
+
+    $writtenCount = 0;
+    $skippedCount = 1;
+    foreach ($pages as $page) { /** @var Page $page */
+        echo "Writing '$page'... ";
+
+        if (! $overwrite && file_exists($page->getDest())) {
+            echo 'File already exists.', PHP_EOL;
+            $skippedCount++;
+            continue;
+        }
+
+        $page->writeToDest();
+        echo 'OK.', PHP_EOL;
+        $writtenCount++;
+    }
+
+    return [ $writtenCount, $skippedCount ];
+}
+
+/**
+ * @param Page[] $pages
+ */
+function setRelations(array $pages) {
+    $groups = array_reduce($pages, function(array $group, Page $page) : array {
+        $psrNumber = $page->getMeta()['psr_number'] ?? null;
+
+        if (! $psrNumber) {
+            return $group;
+        }
+
+        $group[$psrNumber][] = $page;
+
+        return $group;
+    }, []);
+
+    foreach ($groups as $psrNumber => $group)  { /** @var Page[] $group */
+        foreach ($group as $page) { /** @var Page $page */
+            $siblings = array_filter($group, function(Page $sibling) use ($page) {
+                return $page !== $sibling;
+            });
+            $page->setRelated($siblings);
+        }
+    }
+}

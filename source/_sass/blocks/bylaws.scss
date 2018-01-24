@@ -1,0 +1,80 @@
+.bylaws {
+
+    @include clearfix;
+    margin: 25px 0;
+
+    &__link {
+        position: relative;
+
+        display: block;
+        padding: 15px 15px 15px 70px;
+        min-height: 50px;
+
+        color: #595143;
+        font-family: $baseFont;
+        font-size: 18px;
+        line-height: 1.1;
+        text-decoration: none;
+
+        background: white;
+
+        &:hover {
+            color: darken(#f09f47, 10%);
+        }
+
+        &:before {
+            content: "";
+
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            display: block;
+            width: 50px;
+            height: 100%;
+
+            background: #f09f47 url(/img/document_icon.png) center center no-repeat;
+            background-size: 24px;
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+
+        &__item {
+            padding: 0 0 20px 0;
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+
+        margin: 50px 0 50px -20px;
+
+        &__item {
+            float: left;
+            width: 50%;
+            padding: 0 0 20px 20px;
+
+            &:nth-child(2n+1) {
+                clear: both;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 1000px) {
+
+        &__item {
+            width: 33.33%;
+
+            &:nth-child(2n+1) {
+                clear: none;
+            }
+
+            &:nth-child(3n+1) {
+                clear: both;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 1140px) {
+    }
+}

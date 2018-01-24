@@ -1,0 +1,29 @@
+name: php-fig-website
+type: php:7.1
+
+build:
+  flavor: composer
+
+web:
+  locations:
+    "/":
+      root: "output_dev"
+      index:
+        - "index.html"
+      expires: 300s
+      scripts: true
+      allow: false
+      rules:
+        \.(css|js|gif|jpe?g|png|ttf|eot|woff2?|otf|html|ico|svg?)$:
+          allow: true
+        ^/(robots|humans)\.txt$:
+          allow: true
+
+disk: 1024
+
+hooks:
+  build: |
+    set -e
+    gem install bundler
+    bin/install.sh
+    bin/build.sh

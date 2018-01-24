@@ -1,0 +1,21 @@
+{
+    "require": {
+        "php": "^7.1",
+        "sculpin/sculpin": "dev-patched-develop as 3.0",
+        "dflydev/embedded-composer": "@dev",
+        "dflydev/embedded-composer-console": "@dev",
+        "dflydev/embedded-composer-core": "@dev",
+        "aptoma/twig-markdown": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fig\\Website\\": "app/lib"
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/stefanotorresi/sculpin"
+        }
+    ]
+}

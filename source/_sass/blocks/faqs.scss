@@ -1,0 +1,78 @@
+.faqs {
+
+    &__questions {
+    }
+
+    &__questions_list {
+
+    }
+
+    &__question_item {
+        padding: 8px 0;
+        border-bottom: solid 1px #e0dacf;
+
+        &:last-child {
+            border: none;
+        }
+    }
+
+    &__question_link {
+        color: #595143;
+        font-family: $baseFont;
+        font-size: 17px;
+        line-height: 1.4;
+        text-decoration: none;
+
+        &:hover {
+            color: darken(#f09f47, 10%);
+        }
+    }
+
+    &__answers {
+    }
+
+    &__answer {
+        margin: 50px 0;
+
+        &:first-child,
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+    &__answer_title {
+        margin: 0;
+
+        color: #3ea377;
+        font-family: $titleFont;
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 1.25;
+    }
+
+    &__answer_content {
+        @extend .markdown;
+
+        position: relative;
+
+        margin: 10px 0 0 0;
+        padding: 20px 25px 20px 75px;
+
+        background: white;
+
+        &:before {
+            content: "";
+
+            display: block;
+            width: 50px;
+            height: 50px;
+
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            background: #f09f47 url(/img/checkmark_icon.png) center center no-repeat;
+            background-size: 30px;
+        }
+    }
+}

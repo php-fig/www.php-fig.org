@@ -1,0 +1,16 @@
+---
+title: Bylaws
+use: [bylaws]
+---
+
+<div class="markdown">
+    <p class="lead_in">The PHP-FIG is a collaborative project that's worked on by community members all around the world. Our bylaws help us act consistently and inline with our agreed upon processes.</p>
+</div>
+
+<ul class="bylaws">
+    {% for bylaw in data.bylaws %}
+        <li class="bylaws__item">
+            <a class="bylaws__link" href="{{ bylaw.url }}">{{ bylaw.title }}</a>
+        </li>
+    {% endfor %}
+</ul>

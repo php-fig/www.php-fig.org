@@ -1,0 +1,82 @@
+.site_logo {
+
+    display: block;
+    text-decoration: none;
+    outline: none;
+
+    &__short_name {
+        color: #fff4e1;
+        font-family: $titleFont;
+        font-weight: 400;
+        font-size: 30px;
+
+        &:before {
+            content: "";
+
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+
+            position: relative;
+            top: 3px;
+            margin: 0 8px 0 0;
+
+            background: url(/img/logo_icon.png);
+            background-size: cover;
+        }
+    }
+
+    &__long_name {
+        opacity: 0;
+        transition: all .15s;
+        pointer-events: none;
+
+        min-width: 180px;
+        padding: 11px 15px 9px 15px;
+
+        position: absolute;
+        left: 43px;
+        bottom: -50px;
+
+        color: #562e03;
+        font-family: $baseFont;
+        font-size: 12px;
+        line-height: 1.1;
+        text-align: center;
+        text-transform: uppercase;
+
+        border-radius: 3px;
+        background: #f09f47;
+
+        &:before {
+            content: "";
+
+            display: block;
+            width: 0;
+            height: 0;
+
+            position: absolute;
+            left: 35px;
+            top: -8px;
+
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 8px solid #f09f47;
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        padding: 25px 0;
+    }
+
+    @media only screen and (min-width: 768px) {
+        position: absolute;
+        z-index: 100;
+        top: 32px;
+
+        &:hover &__long_name {
+            opacity: 1;
+            bottom: -55px;
+        }
+    }
+}
