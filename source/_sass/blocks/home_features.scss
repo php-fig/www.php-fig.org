@@ -51,7 +51,10 @@
     }
 
     &__links {
-        margin: 15px 0 25px 0;
+        margin: 15px 0;
+        > li {
+            display: inline;
+        }
     }
 
     &__link {
