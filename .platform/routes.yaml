@@ -8,3 +8,6 @@ https://www.{default}/:
 https://{default}/:
   type: redirect
   to: https://www.{default}/
+http://{default}/:
+  type: redirect
+  to: https://www.{default}/
