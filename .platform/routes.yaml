@@ -3,11 +3,21 @@ https://www.{default}/:
   upstream: php-fig-website:http
   cache:
     enabled: true
-  ssi:
-    enabled: false
+
 https://{default}/:
   type: redirect
   to: https://www.{default}/
-http://{default}/:
-  type: redirect
-  to: https://www.{default}/
+
+# todo: remove as soon as DNS propagates and LetsEncrypt can verify the domain
+http://www.{default}/:
+  type: upstream
+  upstream: php-fig-website:http
+  cache:
+    enabled: true
+# /todo
+
+# todo: uncomment as soon as DNS propagates and LetsEncrypt can verify the domain
+#http://{default}/:
+#  type: redirect
+#  to: https://www.{default}/
+# /todo
