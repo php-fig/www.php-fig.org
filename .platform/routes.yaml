@@ -8,16 +8,10 @@ https://{default}/:
   type: redirect
   to: https://www.{default}/
 
-# todo: remove as soon as DNS propagates and LetsEncrypt can verify the domain
 http://www.{default}/:
-  type: upstream
-  upstream: php-fig-website:http
-  cache:
-    enabled: true
-# /todo
+  type: redirect
+  to: https://www.{default}/
 
-# todo: uncomment as soon as DNS propagates and LetsEncrypt can verify the domain
-#http://{default}/:
-#  type: redirect
-#  to: https://www.{default}/
-# /todo
+http://{default}/:
+  type: redirect
+  to: https://www.{default}/
