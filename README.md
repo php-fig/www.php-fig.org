@@ -78,7 +78,7 @@ If you want to develop in the Docker runtime, you'll have mount the project root
 
 ```bash
 docker build . --target dev -t fig-website-dev
-docker run --rm -ti -p 80:8000 -v $PWD:/fig-website fig-website-dev 
+docker run --rm -ti -p 8000:8000 -v $PWD:/fig-website fig-website-dev 
 # inside the container terminal
 install.sh
 build.sh
