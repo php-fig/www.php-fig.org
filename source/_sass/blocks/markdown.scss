@@ -1,0 +1,251 @@
+.markdown {
+
+    color: #595143;
+    font-family: $baseFont;
+    font-size: 18px;
+    line-height: 1.75;
+
+    // H1 titles within markdown pages are automatically
+    // hidden, since the page titles are given some
+    // extra design on the website. They can be
+    // found in the ".page_banner" block.
+    h1 {
+        display: none;
+    }
+
+    h2 {
+        margin: 40px 0 25px 0;
+
+        color: #3ea377;
+        font-family: $titleFont;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.25;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        a {
+            color: #3ea377;
+
+            &:hover {
+                text-decoration: none;
+                border-bottom: dotted 1px #3ea377;
+            }
+        }
+    }
+
+    h3 {
+        margin: 35px 0 25px 0;
+
+        font-size: 20px;
+        line-height: 1.25;
+        font-weight: 700;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        a {
+            color: #595143;
+
+            &:hover {
+                text-decoration: none;
+                border-bottom: dotted 1px #595143;
+            }
+        }
+    }
+
+    h4 {
+        @extend h3;
+
+        margin: 30px 0 25px 0;
+        font-size: 18px;
+    }
+
+    h5 {
+        @extend h4;
+
+        font-size: 16px;
+    }
+
+    p {
+        margin: 25px 0;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    h2 ~ p {
+        margin-top: 15px;
+    }
+
+    ul,
+    ol {
+        margin: 20px 0;
+        padding: 0 0 0 30px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    ul {
+        list-style-type: disc;
+    }
+
+    ol {
+        list-style-type: decimal;
+    }
+
+    li {
+        margin: 10px 0;
+        line-height: 1.6;
+    }
+
+    a {
+        color: darken(#f09f47, 10%);
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    strong {
+        font-weight: 700;
+    }
+
+    em {
+        font-style: italic;
+    }
+
+    .responsive-table {
+        overflow: auto;
+    }
+
+    dt {
+        margin: 15px 0 0 0;
+    }
+
+    dd {
+        margin: 0 0 0 25px;
+    }
+
+    table {
+        width: 100%;
+        background: white;
+
+        tr {
+            th {
+                padding: 15px 20px;
+
+                color: #6e6a61;
+                font-size: 14px;
+                line-height: 1;
+                font-weight: bold;
+                text-align: left;
+                text-transform: uppercase;
+
+                background: #d4cfc6;
+            }
+
+            td {
+                padding: 10px 20px;
+
+                font-size: 16px;
+                line-height: 1.5;
+
+                border-bottom: solid 1px #e4e1da;
+            }
+
+            &:last-child {
+                td {
+                    border-bottom: none;
+                }
+            }
+        }
+
+        @media only screen and (max-width: 767px) {
+
+            tr {
+
+                th {
+                    padding: 10px 5px;
+                    font-size: 13px;
+                }
+
+                td {
+                    padding: 5px;
+
+                    font-size: 15px;
+                    line-height: 1.25;
+                }
+            }
+        }
+    }
+
+    .table_title {
+        margin: 35px 0 0 0;
+        padding: 10px 20px;
+
+        color: white;
+        font-family: $titleFont;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 1;
+        text-transform: uppercase;
+
+        background: #f09f47;
+    }
+
+    // Other
+    code {
+        padding: 3px 5px;
+
+        font-family: $codeFont;
+        font-size: 16px;
+        letter-spacing: -0.02em;
+
+        border: solid 1px darken(#f9f6f0, 5%);
+        background: white;
+    }
+
+    pre.highlight {
+        padding: 10px 0 15px 15px;
+        overflow: auto;
+
+        line-height: 1.5;
+
+        border: solid 1px darken(#f9f6f0, 5%);
+        background: white;
+
+        code {
+            font-size: 15px;
+            padding: 0;
+            border: none;
+        }
+    }
+
+    .lead_in {
+        font-size: 24px;
+    }
+}

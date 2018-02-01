@@ -1,0 +1,100 @@
+.site_footer_links {
+
+    padding: 30px 0;
+    background: #1a4c37;
+
+    &__content {
+        margin: 0 auto;
+        max-width: 800px;
+    }
+
+    &__list {
+        @include clearfix;
+        margin: 0 0 0 -10px;
+    }
+
+    &__item {
+        float: left;
+        width: 25%;
+        padding: 0 0 0 10px;
+    }
+
+    &__link {
+        transition: all .15s;
+
+        display: inline-block;
+        position: relative;
+        padding: 0 0 0 35px;
+
+        color: #4cb88a;
+        font-family: $titleFont;
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+
+        &:before {
+            content: "";
+
+            display: block;
+            height: 26px;
+
+            position: absolute;
+
+            background-image: url(/img/arrow_icon.png);
+            background-size: cover;
+        }
+
+        &:hover {
+            color: #fff4e1;
+        }
+    }
+
+    &__item--twitter &__link:before {
+        background-image: url(/img/twitter_footer_icon.png);
+        width: 31px;
+        left: -3px;
+        top: -1px;
+    }
+
+    &__item--irc &__link:before {
+        background-image: url(/img/irc_footer_icon.png);
+        width: 28px;
+        left: 0;
+        top: -2px;
+    }
+
+    &__item--github &__link:before {
+        background-image: url(/img/github_footer_icon.png);
+        width: 27px;
+        left: 0;
+        top: -2px;
+    }
+
+    &__item--mailing_list &__link:before {
+        background-image: url(/img/mailing_list_footer_icon.png);
+        width: 27px;
+        height: 20px;
+        left: 0;
+        top: 2px;
+    }
+
+    @media only screen and (max-width: 767px) {
+
+        &__content {
+            max-width: 600px;
+        }
+
+        &__link {
+            padding: 30px 0 0 0;
+        }
+
+        &__item--twitter &__link:before,
+        &__item--irc &__link:before,
+        &__item--github &__link:before,
+        &__item--mailing_list &__link:before {
+            left: calc(50% - 15px);
+            top: -2px;
+        }
+    }
+}

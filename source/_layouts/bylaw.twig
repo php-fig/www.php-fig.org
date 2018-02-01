@@ -1,0 +1,26 @@
+{% extends 'page' %}
+
+{% block content %}
+<div class="columns">
+    <div class="columns__column columns__column--8">
+        <div class="markdown">
+            {% block bylaw %}
+                {% set content = include(page.markdown_source) %}
+                {{ content | markdown }}
+            {% endblock %}
+        </div>
+    </div>
+    <div class="columns__column columns__column--4 columns__column--padding_left">
+        <nav class="sidebar">
+            <h2 class="sidebar__title">Bylaws index:</h2>
+            <ul class="sidebar__list">
+            {% for bylaw in data.bylaws %}
+                <li class="sidebar__item">
+                    <a class="sidebar__link {% if bylaw.url == page.url %}sidebar__link--active{% endif %}" href="{{ bylaw.url }}">{{ bylaw.title }}</a>
+                </li>
+            {% endfor %}
+            </ul>
+        </nav>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,29 @@
+.site_footer {
+
+    padding: 40px 0;
+    background: #226146;
+
+    color: #4cb88a;
+    font-family: $baseFont;
+    font-size: 14px;
+    text-align: center;
+
+    &__link {
+        color: #7cddb4;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    @media only screen and (max-width: 999px) {
+        &__section {
+            display: block;
+
+            & + & {
+                margin-top: 5px;
+            }
+        }
+    }
+}

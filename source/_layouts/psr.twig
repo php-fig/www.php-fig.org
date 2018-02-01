@@ -1,0 +1,29 @@
+{% extends 'page' %}
+
+{% block content %}
+<div class="columns">
+    <div class="columns__column columns__column--{{ page.related ? 8 : 12 }}">
+        <div class="markdown">
+            {% block psr %}
+                {% set content = include(page.markdown_source) %}
+                {{ content | markdown }}
+            {% endblock %}
+        </div>
+    </div>
+    {% if page.related %}
+    <div class="columns__column columns__column--4 columns__column--padding_left">
+        <nav class="sidebar">
+            <h2 class="sidebar__title">Additional Info:</h2>
+            <ul class="sidebar__list">
+                {% for related in page.related %}
+                    <li class="sidebar__item">
+                        <a class="sidebar__link {% if related.permalink == '' %}sidebar__link--active{% endif %}"
+                           href="{{ related.permalink }}">{{ related.name }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

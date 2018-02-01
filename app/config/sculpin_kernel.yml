@@ -1,0 +1,36 @@
+sculpin_content_types:
+  posts:
+    enabled: false
+  pages:
+    singular_name: page
+    permalink: :basename
+    type: path
+    path: _pages
+  psr:
+    permalink: psr/:basename
+    type: path
+    path: _psr
+  bylaws:
+    singular_name: bylaw
+    permalink: bylaws/:slug_title
+    type: path
+    path: _bylaws
+
+sculpin:
+  ignore: ["**/*.scss"]
+
+services:
+  fig.website.external_process_markdown_engine:
+    class: Fig\Website\ExternalProcessMarkdownEngine
+    arguments:
+      $command: "bundle exec kramdown -i GFM --syntax-highlighter rouge"
+  fig.website.link_processor_extension:
+    class: Fig\Website\TwigLinkProcessor
+    tags:
+      - { name: twig.extension }
+  aptoma.twig.markdown_extension:
+    class: Aptoma\Twig\Extension\MarkdownExtension
+    arguments:
+      $markdownEngine: '@fig.website.external_process_markdown_engine'
+    tags:
+      - { name: twig.extension }
