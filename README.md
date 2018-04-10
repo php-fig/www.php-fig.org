@@ -15,10 +15,10 @@ This is the source for [www.php-fig.org][php-fig.org]. It is a static site gener
     open a pull request. The site will be recompiled as soon as your pull
     request is merged.
 
- - If you'd like to run the site locally o generate the HTML files, you'll need to install the dependencies.  
-    The templates are built by directly including the Markdown sources from the [fig standards repo][fig-standards], which is provided as a git submodule.  
+ - If you'd like to run the site locally o generate the HTML files, you'll need to install the dependencies.
+    The templates are built by directly including the Markdown sources from the [fig standards repo][fig-standards], which is provided as a git submodule.
 
-    [issue]: https://github.com/php-fig/php-fig.github.com/issues
+    [issue]: https://github.com/php-fig/www.php-fig.org/issues
     [edit]:  https://github.com/blog/905-edit-like-an-ace
     [fig-standards]: https://github.com/php-fig/fig-standards
 
@@ -26,14 +26,14 @@ This is the source for [www.php-fig.org][php-fig.org]. It is a static site gener
 ## Clone
 Note the `--recursive` flag to clone the submodule too.
 ```bash
-git clone --recursive https://github.com/php-fig/php-fig.github.com
+git clone --recursive https://github.com/php-fig/www.php-fig.org
 ```
 
 
 ## Install
 
 While the project was ported from [Jekyll][jekyll] to [Sculpin][sculpin] to use PHP, some Ruby dependencies are still present. This will probably change in the future.
-    
+
 ```bash
 bin/install.sh
 ```
@@ -50,7 +50,7 @@ will install both PHP Composer packages and Ruby bundled gems.
 bin/build.sh
 ```
 
-will compile the sources into `output_dev`. 
+will compile the sources into `output_dev`.
 
 
 ## Run
@@ -78,7 +78,7 @@ If you want to develop in the Docker runtime, you'll have mount the project root
 
 ```bash
 docker build . --target dev -t fig-website-dev
-docker run --rm -ti -p 8000:8000 -v $PWD:/fig-website fig-website-dev 
+docker run --rm -ti -p 8000:8000 -v $PWD:/fig-website fig-website-dev
 # inside the container terminal
 install.sh
 build.sh
