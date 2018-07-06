@@ -24,6 +24,17 @@ disk: 1024
 hooks:
   build: |
     set -e
+    curl -sS https://platform.sh/cli/installer | php
     gem install bundler
     bin/install.sh
     bin/build.sh
+
+
+crons:
+    renewcert:
+        # Force a redeploy at 6 am (UTC) on the 14th and 28th of every month.
+        spec: '0 6 14,28 * *'
+        cmd: |
+            if [ "$PLATFORM_BRANCH" = master ]; then
+                platform redeploy --yes --no-wait
+            fi
