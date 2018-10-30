@@ -1,9 +1,32 @@
 .home_banner {
+    position: relative;
 
-    background: #256d4e url(/img/home_banner_bg.jpg) center top no-repeat;
+    &__background {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: $bannerBgColor url(/img/home_banner_bg.jpg) center top no-repeat;
+        &:before {
+            content: "";
+            top: 0;
+            left: 0;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(to right, $bannerBgColor 10%, rgba(255,255,255,0) 20%, rgba(255,255,255,0) 80%, $bannerBgColor 90%);
+            @media only screen and (max-width: $xlargeVP) {
+                display: none;
+            }
+        }
+    }
 
     &__content {
         overflow: hidden;
+        z-index: 1;
+        position: relative;
     }
 
     &__title {
@@ -72,7 +95,7 @@
         }
     }
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: $smallVP) {
         height: 545px;
         background-position: calc(50% + 450px) 50%;
 
@@ -81,7 +104,7 @@
         }
     }
 
-    @media only screen and (min-width: 1000px) {
+    @media only screen and (min-width: $mediumVP) {
         background-position: calc(50% - 60px) 50%;
 
         &__content {
@@ -89,9 +112,15 @@
         }
     }
 
-    @media only screen and (min-width: 1140px) {
+    @media only screen and (min-width: $largeVP) {
         &__content {
             padding: 0 0 0 550px;
+        }
+    }
+
+    @media only screen and (min-width: $xlargeVP) {
+        &__content {
+            padding: 0 0 0 800px;
         }
     }
 }
