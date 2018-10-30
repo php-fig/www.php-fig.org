@@ -58,10 +58,8 @@ $object = new ClassName();
                     <ul class="home_features__links">
                         <li><a class="home_features__link" href="/psr/psr-3/">PSR-3: Logger Interface</a></li>
                         <li><a class="home_features__link" href="/psr/psr-6/">PSR-6: Caching Interface</a></li>
-                        <li><a class="home_features__link" href="/psr/psr-7/">PSR-7: HTTP Message Interfaces</a></li>
                         <li><a class="home_features__link" href="/psr/psr-11/">PSR-11: Container Interface</a></li>
                         <li><a class="home_features__link" href="/psr/psr-13/">PSR-13: Hypermedia Links</a></li>
-                        <li><a class="home_features__link" href="/psr/psr-15/">PSR-15: HTTP Handlers</a></li>
                         <li><a class="home_features__link" href="/psr/psr-16/">PSR-16: Simple Cache</a></li>
                     </ul>
                 </div>
@@ -82,6 +80,42 @@ namespace Psr\Log;
  * Describes a logger instance
  */
 interface LoggerInterface
+{
+~~~
+                        {% endfilter %}
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="home_features__item home_features__item--interfaces">
+            <div class="center">
+                <div class="home_features__content">
+                    <h2 class="home_features__title">HTTP</h2>
+                    <p class="home_features__description">Interoperable standards and interfaces to have an agnostic approach to handling HTTP requests and responses, both on client and server side.</p>
+                    <ul class="home_features__links">
+                        <li><a class="home_features__link" href="/psr/psr-7/">PSR-7: HTTP Message Interfaces</a></li>
+                        <li><a class="home_features__link" href="/psr/psr-15/">PSR-15: HTTP Handlers</a></li>
+                        <li><a class="home_features__link" href="/psr/psr-17/">PSR-17: HTTP Factories</a></li>
+                        <li><a class="home_features__link" href="/psr/psr-18/">PSR-18: HTTP Client</a></li>
+                    </ul>
+                </div>
+                <div class="home_features__editor">
+                    <div class="home_features__chrome">
+                        <div class="home_features__chrome_dot"></div>
+                        <div class="home_features__chrome_dot"></div>
+                        <div class="home_features__chrome_dot"></div>
+                    </div>
+                    <div class="home_features__code">
+                        {% filter markdown %}
+~~~php
+<?php
+
+namespace Psr\Http\Message;
+
+/**
+ * Representation of an outgoing, client-side request.
+ */
+interface RequestInterface extends MessageInterface
 {
 ~~~
                         {% endfilter %}
