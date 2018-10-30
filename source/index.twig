@@ -108,10 +108,15 @@ interface LoggerInterface
                     <div class="home_features__code">
                         {% filter markdown %}
 ~~~php
-$request = $request
-    ->withMethod('OPTIONS')
-    ->withRequestTarget('*')
-    ->withUri(new Uri('https://example.org/'));
+<?php
+
+namespace Psr\Log;
+
+/**
+ * Representation of an outgoing, client-side request.
+ */
+interface RequestInterface extends MessageInterface
+{
 ~~~
                         {% endfilter %}
                     </div>
