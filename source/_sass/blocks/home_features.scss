@@ -1,6 +1,6 @@
 .home_features {
 
-    &__item--interfaces {
+    &__item:nth-child(even) {
         background: #f1ede5;
     }
 
