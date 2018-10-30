@@ -8,7 +8,7 @@
     margin-right: auto;
     padding: 0 15px;
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: $smallVP) {
 
         padding: 0;
         width: 738px;
@@ -18,7 +18,7 @@
         */
     }
 
-    @media only screen and (min-width: 1000px) {
+    @media only screen and (min-width: $mediumVP) {
 
         width: 960px;
         /*
@@ -27,9 +27,18 @@
         */
     }
 
-    @media only screen and (min-width: 1140px) {
+    @media only screen and (min-width: $largeVP) {
 
         width: 1100px;
+        /*
+            Min padding: 40px
+            Max padding: ~
+        */
+    }
+
+    @media only screen and (min-width: $xlargeVP) {
+
+        width: 1600px;
         /*
             Min padding: 40px
             Max padding: ~
