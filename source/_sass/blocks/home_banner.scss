@@ -1,23 +1,32 @@
 .home_banner {
-    &__wrapper {
-        position: relative;
-    }
-    &:before {
+    position: relative;
+
+    &__background {
         content: "";
+        position: absolute;
         top: 0;
         left: 0;
-        position: absolute;
         height: 100%;
         width: 100%;
-        background: linear-gradient(to right, $bannerBgColor 10%, rgba(255,255,255,0) 20%, rgba(255,255,255,0) 80%, $bannerBgColor 90%);
-        @media only screen and (max-width: $xlargeVP) {
-            display: none;
+        background: $bannerBgColor url(/img/home_banner_bg.jpg) center top no-repeat;
+        &:before {
+            content: "";
+            top: 0;
+            left: 0;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(to right, $bannerBgColor 10%, rgba(255,255,255,0) 20%, rgba(255,255,255,0) 80%, $bannerBgColor 90%);
+            @media only screen and (max-width: $xlargeVP) {
+                display: none;
+            }
         }
     }
-    background: $bannerBgColor url(/img/home_banner_bg.jpg) center top no-repeat;
 
     &__content {
         overflow: hidden;
+        z-index: 1;
+        position: relative;
     }
 
     &__title {
