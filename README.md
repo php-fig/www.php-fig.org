@@ -59,6 +59,10 @@ will compile the sources into `output_dev`.
 vendor/bin/sculpin serve
 ```
 
+## Updating the submodule
+This site uses the master branch of the [main PHP-FIG repository](https://github.com/php-fig/fig-standards) as a Git submodule to pull content from it. 
+If you need to update it, you can use the `bin/update_submodule.sh` script to pull new commits. Afterwards, you can commit
+the differences in this repo, to push the updates afterwards.
 
 ## Using Docker
 
