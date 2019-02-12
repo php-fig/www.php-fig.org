@@ -24,6 +24,9 @@ disk: 1024
 hooks:
   build: |
     set -e
+    cat /etc/*release
+    php -v
+    ruby -v
     curl -sS https://platform.sh/cli/installer | php
     gem install bundler
     bin/install.sh
