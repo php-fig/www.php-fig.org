@@ -1,5 +1,5 @@
 name: php-fig-website
-type: php:7.1
+type: php:7.3
 
 build:
   flavor: composer
@@ -20,10 +20,6 @@ web:
           allow: true
 
 disk: 1024
-
-dependencies:
-  ruby:
-    sass: '~> 3.5'
 
 hooks:
   build: |
