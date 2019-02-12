@@ -21,6 +21,10 @@ web:
 
 disk: 1024
 
+dependencies:
+  ruby:
+    sass: '~> 3.5'
+
 hooks:
   build: |
     set -e
