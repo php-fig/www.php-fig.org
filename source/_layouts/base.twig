@@ -37,7 +37,7 @@
                     <a class="site_menu__link {% if page.url == '/.' %}site_menu__link--active{% endif %}" href="/">Home</a>
                 </li>
                 <li class="site_menu__item">
-                    <a class="site_menu__link" href="https://medium.com/php-fig">Blog</a>
+                    <a class="site_menu__link {% if page.url matches '#^/blog#' %}site_menu__link--active{% endif %}" href="/blog">Blog</a>
                 </li>
                 <li class="site_menu__item">
                     <a class="site_menu__link {% if page.url matches '#^/psr#' %}site_menu__link--active{% endif %}" href="/psr">PSRs</a>

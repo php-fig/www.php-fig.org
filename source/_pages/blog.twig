@@ -1,0 +1,35 @@
+---
+layout: page
+title: Blog
+generator: pagination
+pagination:
+  max_per_page: 1
+use:
+- posts
+---
+<div class="columns">
+    <div class="columns__column columns__column--8">
+        {% for post in page.pagination.items %}
+            <div class="markdown">
+                <h2>
+                    <a class="post__link" href="{{ post.url }}">{{ post.title }}</a>
+                </h2>
+                {{ post.content | markdown }}
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="columns__column columns__column--4 columns__column--padding_left">
+        <nav class="sidebar">
+            <h2 class="sidebar__title">Recent posts:</h2>
+            <ul class="sidebar__list">
+                {% for recent in data.posts %}
+                    <li class="sidebar__item">
+                        <a class="sidebar__link {% if recent.permalink.relativeUrlPath == '' %}sidebar__link--active{% endif %}"
+                           href="{{ recent.permalink.relativeUrlPath }}">{{ recent.title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </div>
+</div>
