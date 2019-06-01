@@ -1,1 +1,24 @@
 {% extends 'page' %}
+
+{% block contents %}
+
+    {% if page.avatar %}
+        <img src="{{ page.avatar }}" alt=""/>
+    {% endif %}
+
+    {% if page.bio %}
+        <p class="sidebar__description">{{ page.bio }}</p>
+    {% endif %}
+
+    {% if page.twitter %}
+        <a class="sidebar__link" href="https://twitter.com/{{ page.twitter }}" target="_blank">
+            @{{ page.twitter }} on Twitter
+        </a>
+    {% endif %}
+
+    {% for post in data.posts if post.author and page.identifier == post.author %}
+        {% include 'post-preview.twig' with {skipAuthor: true} %}
+    {% endfor %}
+
+
+{% endblock %}
