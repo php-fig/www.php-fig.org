@@ -9,7 +9,9 @@
 
 <div class="center">
     <div class="page_content__padding">
-        {{ page.blocks.content | raw }}
+        {% block contents %}
+            {{ page.blocks.content | raw }}
+        {% endblock %}
     </div>
 </div>
 {% endblock %}

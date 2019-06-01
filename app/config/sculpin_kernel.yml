@@ -13,6 +13,11 @@ sculpin_content_types:
     permalink: :basename
     type: path
     path: _pages
+  authors:
+    singular_name: author
+    permalink: :basename
+    type: page
+    path: _authors
   psr:
     permalink: psr/:basename
     type: path
@@ -38,6 +43,11 @@ services:
   aptoma.twig.markdown_extension:
     class: Aptoma\Twig\Extension\MarkdownExtension
     arguments:
-      $markdownEngine: '@fig.website.external_process_markdown_engine'
+#      $markdownEngine: '@fig.website.fast'
+      $markdownEngine: 'fig.website.external_process_markdown_engine'
     tags:
       - { name: twig.extension }
+
+  # used in development, much faster than fig.website.external_process_markdown_engine
+  fig.website.michelf_markdown_engine:
+    class: Aptoma\Twig\Extension\MarkdownEngine\MichelfMarkdownEngine
