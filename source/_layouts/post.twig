@@ -4,7 +4,9 @@
 
 
     <div class="columns__column columns__column--8">
-        {{ page.blocks.content | raw }}
+        <div class="markdown">
+            {{ page.blocks.content | markdown }}
+        </div>
     </div>
 
 
