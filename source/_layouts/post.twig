@@ -2,11 +2,13 @@
 
 {% block contents %}
 
-
     <div class="columns__column columns__column--8">
         <div class="markdown">
             {{ page.blocks.content| markdown }}
         </div>
+
+        {% include 'post-tags.twig' with {post: page} %}
+
     </div>
 
 

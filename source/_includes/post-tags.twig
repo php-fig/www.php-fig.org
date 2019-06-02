@@ -1,0 +1,7 @@
+{% if post.tags %}
+    <div class="post__tags">
+        {% for tag in post.tags %}
+            <a href="/blog/tags/{{ tag|url_encode(true) }}" class="post__tags__tag">{{ tag }}</a>
+        {% endfor %}
+    </div>
+{% endif %}
