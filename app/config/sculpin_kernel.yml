@@ -15,7 +15,7 @@ sculpin_content_types:
     path: _pages
   authors:
     singular_name: author
-    permalink: :basename
+    permalink: /authors/:basename
     type: page
     path: _authors
   psr:
@@ -43,8 +43,8 @@ services:
   aptoma.twig.markdown_extension:
     class: Aptoma\Twig\Extension\MarkdownExtension
     arguments:
-#      $markdownEngine: '@fig.website.fast'
-      $markdownEngine: 'fig.website.external_process_markdown_engine'
+      $markdownEngine: '@fig.website.michelf_markdown_engine'
+#      $markdownEngine: 'fig.website.external_process_markdown_engine'
     tags:
       - { name: twig.extension }
 

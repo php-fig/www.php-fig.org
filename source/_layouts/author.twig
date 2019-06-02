@@ -2,23 +2,38 @@
 
 {% block contents %}
 
-    {% if page.avatar %}
-        <img src="{{ page.avatar }}" alt=""/>
-    {% endif %}
+    <div class="author">
+        {% if page.avatar %}
+            <div class="columns__column columns__column--2">
+                <img class="author__avatar" src="{{ page.avatar }}" alt=""/>
+            </div>
+        {% endif %}
 
-    {% if page.bio %}
-        <p class="sidebar__description">{{ page.bio }}</p>
-    {% endif %}
-
-    {% if page.twitter %}
-        <a class="sidebar__link" href="https://twitter.com/{{ page.twitter }}" target="_blank">
-            @{{ page.twitter }} on Twitter
-        </a>
-    {% endif %}
-
-    {% for post in data.posts if post.author and page.identifier == post.author %}
-        {% include 'post-preview.twig' with {skipAuthor: true} %}
-    {% endfor %}
+        {% if page.bio %}
+            <div class="columns__column columns__column--4">
+                <p class="author__description">{{ page.bio }}</p>
+            </div>
+        {% endif %}
 
 
+            <div class="columns__column columns__column--4">
+                {% if page.twitter %}
+                    <a class="author__link" href="https://twitter.com/{{ page.twitter }}" target="_blank">
+                        @{{ page.twitter }} on Twitter
+                    </a>
+                {% endif %}
+                {% if page.web %}
+                    <a class="author__link" href="{{ page.web }}" target="_blank">
+                      {{ page.web }}
+                    </a>
+                {% endif %}
+            </div>
+
+        <div class="author__posts">
+            <h2 class="author__posts__subtitle">Articles by {{ page.title }}</h2>
+            {% for post in data.posts if post.author and page.identifier == post.author %}
+                {% include 'post-preview.twig' with {skipAuthor: true} %}
+            {% endfor %}
+        </div>
+    </div>
 {% endblock %}
