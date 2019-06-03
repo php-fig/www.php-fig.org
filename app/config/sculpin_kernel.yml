@@ -42,11 +42,6 @@ services:
   aptoma.twig.markdown_extension:
     class: Aptoma\Twig\Extension\MarkdownExtension
     arguments:
-      $markdownEngine: '@fig.website.michelf_markdown_engine'
-#      $markdownEngine: 'fig.website.external_process_markdown_engine'
+      $markdownEngine: '@fig.website.external_process_markdown_engine'
     tags:
       - { name: twig.extension }
-
-  # used in development, much faster than fig.website.external_process_markdown_engine
-  fig.website.michelf_markdown_engine:
-    class: Aptoma\Twig\Extension\MarkdownEngine\MichelfMarkdownEngine
