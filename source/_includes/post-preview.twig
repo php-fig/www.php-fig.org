@@ -3,7 +3,7 @@
         <a class="post__link" href="{{ post.url }}">{{ post.title }}</a>
     </h2>
 
-    {{ (post.content | markdown|striptags)[0:320] }}...
+    {{ (post.content | markdown | striptags)[0:320] }}...
 
     <div class="blog-list__meta">
         <span  class="blog-list__meta__date">
