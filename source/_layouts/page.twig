@@ -3,7 +3,11 @@
 {% block wrapper %}
 <div class="page_banner">
     <div class="center">
-        <h1 class="page_banner__title">{{ page.title }}</h1>
+        <h1 class="page_banner__title">
+            {% block page_title %}
+            {{ page.title }}
+            {% endblock %}
+        </h1>
     </div>
 </div>
 
