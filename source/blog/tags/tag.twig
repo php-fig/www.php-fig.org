@@ -1,0 +1,46 @@
+---
+layout: page
+title: Tag Archive
+generator: [posts_tag_index, pagination]
+pagination:
+    provider: page.tag_posts
+use:
+- posts_tags
+
+---
+{% block contents %}
+    <div class="columns blog-list">
+        <div class="columns__column columns__column--8">
+            {% for post in page.pagination.items %}
+                {% include 'post-preview.twig' %}
+            {% endfor %}
+
+            {% include 'pagination.twig' %}
+        </div>
+        <div class="columns__column columns__column--4 columns__column--padding_left">
+            <nav class="sidebar">
+                <h2 class="sidebar__title">Other tags:</h2>
+                <ul class="sidebar__list">
+                    {% for tag,posts in data.posts_tags %}
+                        <li class="sidebar__item">
+                            <a class="sidebar__link {% if page.url == '/blog/tags/' ~ (tag|url_encode(true))~'/' %}sidebar__link--active{% endif %}"
+                               href="/blog/tags/{{ tag|url_encode(true) }}">{{ tag }} ({{ posts|length }})</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </nav>
+        </div>
+    </div>
+{% endblock %}
+
+{% block head_meta %}
+    <meta name="robots" content="noindex, follow">
+{% endblock %}
+
+{%- block title -%}
+    {{ page.tag }} - {{ parent() }}
+{%- endblock -%}
+
+ {% block page_title %}
+     {{ page.title }}: {{ page.tag }}
+ {% endblock %}

@@ -1,0 +1,82 @@
+.author {
+    &__posts {
+        clear: both;
+
+        &__subtitle {
+            margin: 35px 0;
+            padding: 0 0 5px 0;
+
+            color: #5f5b53;
+            font-family: $titleFont;
+            font-weight: 400;
+            font-size: 22px;
+
+            border-bottom: solid 1px #aaa69d;
+        }
+    }
+
+
+    &__avatar {
+        width: 100%;
+        padding-right: 20px;
+        padding-bottom: 25px;
+        max-width: 250px;
+    }
+    &__description {
+        margin-bottom: 25px;
+
+        color: #595143;
+        font-family: $baseFont;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    &__link {
+        position: relative;
+
+        display: block;
+        padding: 13px 40px 12px 15px;
+
+        color: #f9f6f0;
+        font-family: $baseFont;
+        font-weight: bold;
+        font-size: 15px;
+        text-decoration: none;
+
+        background-color: #aaa69d;
+
+
+        &:after {
+            content: "";
+
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            margin: -11px 0 0 0;
+
+            display: block;
+            width: 20px;
+            height: 23px;
+
+            background: url(/img/arrow_right_brown_icon.png) no-repeat;
+            background-size: cover;
+        }
+
+        &:hover {
+            background-color: lighten(#aaa69d, 5%);
+        }
+    }
+
+    &__link--active {
+        background-color: #f09f47;
+
+        &:after {
+            background-image: url(/img/arrow_right_orange_icon.png);
+        }
+
+        &:hover {
+            background-color: darken(#f09f47, 5%);
+        }
+    }
+
+}

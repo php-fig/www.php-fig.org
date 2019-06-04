@@ -31,6 +31,21 @@
         line-height: 1.5;
     }
 
+    &__author{
+        &__avatar {
+            width: 100%;
+            padding-right: 20px;
+            padding-bottom: 25px;
+        }
+        .sidebar__description {
+            margin-top: 0;
+        }
+        .sidebar__list {
+            clear: both;
+        }
+    }
+
+
     &__list {
         margin: 25px 0;
     }

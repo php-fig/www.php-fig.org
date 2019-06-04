@@ -4,3 +4,4 @@
 *.map
 .sass-cache
 .bundle
+app/config/sculpin_kernel_dev.yml

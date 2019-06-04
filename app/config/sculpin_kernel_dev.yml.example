@@ -1,0 +1,17 @@
+# This enables a faster markdown syntax highlighter to be used on development
+# To enable it, copy this file and name it  "sculpin_kernel_dev.yml"
+
+imports:
+  - sculpin_kernel.yml
+
+services:
+  aptoma.twig.markdown_extension:
+    class: Aptoma\Twig\Extension\MarkdownExtension
+    arguments:
+      $markdownEngine: '@fig.website.michelf_markdown_engine'
+    tags:
+      - { name: twig.extension }
+
+  fig.website.michelf_markdown_engine:
+    class: Aptoma\Twig\Extension\MarkdownEngine\MichelfMarkdownEngine
+    public: false

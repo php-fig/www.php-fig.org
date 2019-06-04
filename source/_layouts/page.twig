@@ -3,13 +3,19 @@
 {% block wrapper %}
 <div class="page_banner">
     <div class="center">
-        <h1 class="page_banner__title">{{ page.title }}</h1>
+        <h1 class="page_banner__title">
+            {% block page_title %}
+            {{ page.title }}
+            {% endblock %}
+        </h1>
     </div>
 </div>
 
 <div class="center">
     <div class="page_content__padding">
-        {{ page.blocks.content | raw }}
+        {% block contents %}
+            {{ page.blocks.content | raw }}
+        {% endblock %}
     </div>
 </div>
 {% endblock %}

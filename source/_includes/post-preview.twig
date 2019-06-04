@@ -1,0 +1,20 @@
+<article class="markdown">
+    <h2>
+        <a class="post__link" href="{{ post.url }}">{{ post.title }}</a>
+    </h2>
+
+    {{ (post.content | markdown | striptags)[0:320] }}...
+
+    <div class="blog-list__meta">
+        <span  class="blog-list__meta__date">
+            {{ post.date|date('F jS Y') }}
+        </span>
+        {% if skipAuthor is empty %}
+            {% for author in data.authors if post.author and author.identifier is same as(post.author) %}
+                - <a class="blog-list__meta__author" href="{{ author.url }}">{{ author.title }}</a>
+            {% endfor %}
+        {% endif %}
+
+        {% include 'post-tags.twig' %}
+    </div>
+</article>

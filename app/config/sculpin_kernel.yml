@@ -7,12 +7,16 @@ sculpin_content_types:
     taxonomies:
       - tags
       - categories
-    enabled: true
   pages:
     singular_name: page
     permalink: :basename
     type: path
     path: _pages
+  authors:
+    singular_name: author
+    permalink: authors/:basename
+    type: path
+    path: _authors
   psr:
     permalink: psr/:basename
     type: path

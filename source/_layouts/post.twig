@@ -1,5 +1,20 @@
 {% extends 'page' %}
 
-{% block content %}
-TEST
+{% block contents %}
+
+    <div class="columns__column columns__column--8">
+        <div class="markdown">
+            {{ page.blocks.content| markdown }}
+        </div>
+
+        {% include 'post-tags.twig' with {post: page} %}
+    </div>
+
+    {% for author in data.authors if page.author and author.identifier == page.author %}
+        <div class="columns__column columns__column--4 columns__column--padding_left">
+            <nav class="sidebar">
+                {% include 'post-author.twig' %}
+            </nav>
+        </div>
+    {% endfor %}
 {% endblock %}

@@ -1,0 +1,19 @@
+{% if page.pagination.previous_page or page.pagination.next_page %}
+    <ul class="pagination__link">
+        {% if page.pagination.previous_page %}
+            <li>
+                <a class="pagination__link__new" href="{{ page.pagination.previous_page.url }}">
+                    Newer Posts
+                </a>
+            </li>
+        {% endif %}
+
+        {% if page.pagination.next_page %}
+            <li>
+                <a class="pagination__link__old" href="{{ page.pagination.next_page.url }}">
+                    Older Posts
+                </a>
+            </li>
+        {% endif %}
+    </ul>
+{% endif %}
