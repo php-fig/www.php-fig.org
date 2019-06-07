@@ -7,7 +7,7 @@ description: >-
 date: '2017-10-23T16:13:16.888Z'
 categories: []
 keywords: []
-slug: /php-fig/hello-world-the-php-fig-blog-58a5ba8f3a0a
+slug: hello-world-the-php-fig-blog
 tags:
   - php-fig
   - first-post

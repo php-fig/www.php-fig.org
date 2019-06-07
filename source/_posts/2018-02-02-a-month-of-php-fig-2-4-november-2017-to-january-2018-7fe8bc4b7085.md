@@ -7,7 +7,7 @@ description: >-
 date: '2018-02-02T20:46:14.263Z'
 categories: []
 keywords: []
-slug: /php-fig/a-month-of-php-fig-2-4-november-2017-to-january-2018-7fe8bc4b7085
+slug: a-month-of-php-fig-2-4-november-2017-to-january-2018
 tags:
   - php-fig
 author: railto

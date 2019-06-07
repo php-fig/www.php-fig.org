@@ -7,7 +7,7 @@ description: >-
 date: '2017-10-30T14:52:59.272Z'
 categories: []
 keywords: []
-slug: /php-fig/a-month-of-php-fig-1-october-2017-af253682ef5b
+slug: a-month-of-php-fig-1-october-2017
 tags:
   - php-standard
   - standard

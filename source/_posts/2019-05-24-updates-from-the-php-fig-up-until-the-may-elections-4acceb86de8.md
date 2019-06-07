@@ -7,7 +7,7 @@ description: >-
 date: '2019-05-24T14:11:13.604Z'
 categories: []
 keywords: []
-slug: /php-fig/updates-from-the-php-fig-up-until-the-may-elections-4acceb86de8
+slug: updates-from-the-php-fig-up-until-the-may-elections
 tags:
   - php-fig
   - psr-14

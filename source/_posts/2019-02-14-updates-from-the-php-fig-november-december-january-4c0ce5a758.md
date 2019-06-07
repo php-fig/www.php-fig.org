@@ -7,7 +7,7 @@ description: >-
 date: '2019-02-14T15:59:51.093Z'
 categories: []
 keywords: []
-slug: /php-fig/updates-from-the-php-fig-november-december-january-4c0ce5a758
+slug: updates-from-the-php-fig-november-december-january
 tags:
   - php-fig
   - psr-12

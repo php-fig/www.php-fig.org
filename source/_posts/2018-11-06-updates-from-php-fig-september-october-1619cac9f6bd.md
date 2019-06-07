@@ -7,7 +7,7 @@ description: >-
 date: '2018-11-06T15:22:50.408Z'
 categories: []
 keywords: []
-slug: /php-fig/updates-from-php-fig-september-october-1619cac9f6bd
+slug: updates-from-php-fig-september-october
 tags:
   - php-fig
 author: alessandrolai

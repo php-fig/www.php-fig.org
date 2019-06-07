@@ -7,7 +7,7 @@ description: >-
 date: '2018-11-17T11:54:02.561Z'
 categories: []
 keywords: []
-slug: /php-fig/psr-18-the-php-standard-for-http-clients-3254c58752bb
+slug: psr-18-the-php-standard-for-http-clients
 tags:
   - http
   - http-client

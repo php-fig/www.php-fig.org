@@ -7,7 +7,7 @@ description: >-
 date: '2018-09-05T16:03:48.342Z'
 categories: []
 keywords: []
-slug: /php-fig/summer-updates-from-php-fig-june-july-august-6c931ae0efac
+slug: summer-updates-from-php-fig-june-july-august
 tags:
   - php-fig
   - psr

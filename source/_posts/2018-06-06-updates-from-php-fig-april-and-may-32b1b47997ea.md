@@ -7,7 +7,7 @@ description: >-
 date: '2018-06-06T16:50:10.742Z'
 categories: []
 keywords: []
-slug: /php-fig/updates-from-php-fig-april-and-may-32b1b47997ea
+slug: updates-from-php-fig-april-and-may
 tags:
   - php-fig
   - php-development
