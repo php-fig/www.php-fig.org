@@ -81,6 +81,12 @@
     p {
         margin: 25px 0;
 
+        > img:first-child {
+            max-width: 60%;
+            display: block;
+            margin: 0 auto;
+        }
+
         &:first-child {
             margin-top: 0;
         }
