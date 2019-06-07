@@ -19,15 +19,6 @@ use:
 ---
 
 ![The PSR-6 amendment pull request](/img/blog/1__NX38BGDhuoRqXuCDLQnGYA.png)
-The PSR-6 amendment pull request
-
-# Updates from PHP-FIG: February and March
-
-[![Go to the profile of Alessandro Lai](https://cdn-images-1.medium.com/fit/c/100/100/1*5PzpX2hxXd91UHLvJCAf4Q.jpeg)](https://medium.com/@alessandro.lai85?source=post_header_lockup)
-
-[Alessandro Lai](https://medium.com/@alessandro.lai85)BlockedUnblockFollowFollowing
-
-Apr 3, 2018
 
 Continuing in our habit of frequent posts to update the community, here we are to see what happened inside the PHP-FIG in the last two months.
 

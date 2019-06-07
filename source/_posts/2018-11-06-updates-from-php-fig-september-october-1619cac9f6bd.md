@@ -17,14 +17,6 @@ use:
   - posts
 ---
 
-# [Updates from PHP-FIG:](https://medium.com/php-fig/updates-from-php-fig-april-and-may-32b1b47997ea?source=collection_home---4------2---------------------) September & October
-
-[![Go to the profile of Alessandro Lai](https://cdn-images-1.medium.com/fit/c/100/100/1*5PzpX2hxXd91UHLvJCAf4Q.jpeg)](https://medium.com/@alessandro.lai85?source=post_header_lockup)
-
-[Alessandro Lai](https://medium.com/@alessandro.lai85)BlockedUnblockFollowFollowing
-
-Nov 6, 2018
-
 Another two months are passed, and here we are with a new recap of what happened inside the PHP-FIG. Let’s dive in!
 
 #### PSR-18: HTTP client
@@ -33,7 +25,7 @@ At the last moment of October, **a new PSR has been accepted**! This time it’s
 
 We also took advantage of this change to refresh the homepage of our site, splitting the list of PSRs in a new group dedicated to HTTP, which now counts four different standard recommendations: 7, 15, 17 & 18. Take a look!
 
-![](/img/blog/1__8gQ2YWWgZik6Mb7EIwj13g.png)
+![Http message interfaces](/img/blog/1__8gQ2YWWgZik6Mb7EIwj13g.png)
 
 #### PHPDoc back on track
 

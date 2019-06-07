@@ -18,14 +18,6 @@ use:
   - posts
 ---
 
-# Summer updates from PHP-FIG: June, July & August
-
-[![Go to the profile of Alessandro Lai](https://cdn-images-1.medium.com/fit/c/100/100/1*5PzpX2hxXd91UHLvJCAf4Q.jpeg)](https://medium.com/@alessandro.lai85?source=post_header_lockup)
-
-[Alessandro Lai](https://medium.com/@alessandro.lai85)BlockedUnblockFollowFollowing
-
-Sep 5, 2018
-
 This time we have waited a bit longer before publishing a recap of the recent news from PHP-FIG, but we have a lot to share; let’s start!
 
 ![The new official page for PSR-17](/img/blog/1__8xZ8Nbd____IOnDMZKwyvRwA.png)

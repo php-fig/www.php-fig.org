@@ -19,14 +19,6 @@ use:
   - posts
 ---
 
-# Updates from the PHP-FIG: November, December & January
-
-[![Go to the profile of Alessandro Lai](https://cdn-images-1.medium.com/fit/c/100/100/1*5PzpX2hxXd91UHLvJCAf4Q.jpeg)](https://medium.com/@alessandro.lai85?source=post_header_lockup)
-
-[Alessandro Lai](https://medium.com/@alessandro.lai85)BlockedUnblockFollowFollowing
-
-Feb 14
-
 This time I waited a bit longer before drafting a new update post, because a few new things where moving under the hood… Now it’s time to wrap it up!
 
 #### Brace yourselves, elections are coming!

@@ -11,22 +11,13 @@ slug: /php-fig/hello-world-the-php-fig-blog-58a5ba8f3a0a
 tags:
   - php-fig
   - first-post
-author: alessandrolai
 layout: post
 use:
   - authors
   - posts
 ---
 
-# Hello world: The PHP-FIG blog
-
-[![Go to the profile of PHP FIG](https://cdn-images-1.medium.com/fit/c/100/100/0*5cGu0NFDAMvRExvc.png)](https://medium.com/@phpfig?source=post_header_lockup)
-
-[PHP FIG](https://medium.com/@phpfig)BlockedUnblockFollowFollowing
-
-Oct 23, 2017
-
-![](/img/blog/1__yX6dcMv__dCXRsSpm4c8fGA.jpeg)
+![computer and code screen](/img/blog/1__yX6dcMv__dCXRsSpm4c8fGA.jpeg)
 
 A lot goes on within the PHP-FIG but one of the biggest problems we have is communicating with the rest of the PHP community what’s going on.
 

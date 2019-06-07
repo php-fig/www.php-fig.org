@@ -19,14 +19,6 @@ use:
   - posts
 ---
 
-# Updates from the PHP-FIG: up until the May elections
-
-[![Go to the profile of Alessandro Lai](https://cdn-images-1.medium.com/fit/c/100/100/1*5PzpX2hxXd91UHLvJCAf4Q.jpeg)](https://medium.com/@alessandro.lai85?source=post_header_lockup)
-
-[Alessandro Lai](https://medium.com/@alessandro.lai85)BlockedUnblockFollowFollowing
-
-May 24
-
 And we’re back with another update on what’s going on in the PHP-FIG! This time we have just two news, but big ones!
 
 ### PSR-14 has been approved

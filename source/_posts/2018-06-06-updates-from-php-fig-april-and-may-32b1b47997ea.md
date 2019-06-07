@@ -18,14 +18,6 @@ use:
   - posts
 ---
 
-# Updates from PHP-FIG: April and May
-
-[![Go to the profile of Alessandro Lai](https://cdn-images-1.medium.com/fit/c/100/100/1*5PzpX2hxXd91UHLvJCAf4Q.jpeg)](https://medium.com/@alessandro.lai85?source=post_header_lockup)
-
-[Alessandro Lai](https://medium.com/@alessandro.lai85)BlockedUnblockFollowFollowing
-
-Jun 6, 2018
-
 Here we are again, with another bi-monthly update about the state of the affairs here at PHP-FIG. In the last two months, two PHP-FIG meetups where held, during the [PHPDay (Verona, Italy)](https://2018.phpday.it/) and [PHP\[tek\] (Atlanta, US)](https://tek.phparch.com/) conferences.
 
 ![PHP-FIG stickers, shared at the PHPDay front desk](/img/blog/1__RTnGfyj7sZVVHFhmhga7OQ.jpeg)

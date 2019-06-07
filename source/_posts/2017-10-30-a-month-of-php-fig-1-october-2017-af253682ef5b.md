@@ -12,24 +12,16 @@ tags:
   - php-standard
   - standard
   - php-fig
-author: alessandrolai
+author: michaelcullumuk
 layout: post
 use:
   - authors
   - posts
 ---
 
-# A month of PHP-FIG #1: October 2017
-
-[![Go to the profile of Michael Cullum](https://cdn-images-1.medium.com/fit/c/100/100/1*O5-MmG2fIp-iUvWe7Da6qA.jpeg)](https://medium.com/@michaelcullumuk?source=post_header_lockup)
-
-[Michael Cullum](https://medium.com/@michaelcullumuk)BlockedUnblockFollowFollowing
-
-Oct 30, 2017
-
 As part of the effort to communicate better what’s going on within the PHP-FIG we’re starting a new series of ‘A month of PHP-FIG’ articles to be released towards the end of each month, each being a 2 minute read or less.
 
-![](/img/blog/1__Zi1MOUQmtRXs3y7mhCLnGA.png)
+![Github screenshot](/img/blog/1__Zi1MOUQmtRXs3y7mhCLnGA.png)
 
 This month has been a busy month for the PHP-FIG. We’ve kickstarted a couple of PSRs with PSR-12¹ being [formally re-introduced into the draft stage](https://groups.google.com/forum/#!topic/php-fig/Luk-F3x6T2g); internally we’ve started the voting for the [secretary elections](https://groups.google.com/forum/#!topic/php-fig/KwarBrWfsSs) for two secretary posts; and lots of ideas have been flowing to try and get a number of PSRs moving again.
 

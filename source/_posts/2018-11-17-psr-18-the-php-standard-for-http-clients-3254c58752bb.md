@@ -12,21 +12,12 @@ tags:
   - http
   - http-client
   - interoperability
-author: alessandrolai
+author: davidbu
 layout: post
 use:
   - authors
   - posts
 ---
-
-# PSR-18: The PHP standard for HTTP clients
-
-[![Go to the profile of David Buchmann](https://cdn-images-1.medium.com/fit/c/100/100/0*5ti667chDSfm_2B4)](https://medium.com/@davidbu?source=post_header_lockup)
-
-[David Buchmann](https://medium.com/@davidbu)BlockedUnblockFollowFollowing
-
-Nov 17, 2018
-
 A couple of days ago, the PHP Framework Interoperability Group (PHP-FIG) approved the PSR-18 “HTTP Client” standard. This standard was the last missing piece to build applications that need to send HTTP requests to a server in an HTTP client agnostic way.
 
 First, [PSR-7 “HTTP message interfaces”](https://www.php-fig.org/psr/psr-7/) defined how HTTP requests and responses are represented. For server applications that need to handle incoming requests and send a response, this was generally enough. The application bootstrap creates the request instance with a PSR-7 implementation and passes it into the application, which in turn can return any instance of a PSR-7 response. Middleware and other libraries can be reused as long as they rely on the PSR-7 interfaces.
@@ -40,27 +31,37 @@ Libraries should not care about the implementation of the HTTP client, as long a
 PSR-18 defines a very small interface for sending HTTP requess and receiving the response. It also defines how the HTTP client implementation has to behave in regard to error handling and exceptions, redirections and similar things, so that consumers can rely on a reproducable behaviour. Bootstrapping the client with the necessary set up parameters is done in the application, and then inject the client to the consumer:
 
 ```
-use Psr\Http\Client\ClientInterface;use Psr\Http\Client\ClientExceptionInterface;use Psr\Http\Message\RequestFactoryInterface;
-```
-
-```
-class WebConsumer{    /**     * @var ClientInterface     */    private $httpClient;
-```
-
-```
-    /**     * @var RequestFactoryInterface     */    private $httpRequestFactory;
-```
-
-```
-    public function __construct(        ClientInterface $httpClient,        RequestFactoryInterface $httpRequestFactory    ) {        $this->httpClient = $httpClient;        $this->httpRequestFactory = $httpRequestFactory;    }
-```
-
-```
-    public function fetchInfo()    {        $request = $this->httpRequestFactory->createRequest('GET', 'https://www.liip.ch/');        try {            $response = $this->httpClient->sendRequest($request);        } catch (ClientExceptionInterface $e) {            throw new DomainException($e);        }
-```
-
-```
-        $response->...    }}
+use Psr\Http\Client\ClientInterface;
+use Psr\Http\Client\ClientExceptionInterface;
+use Psr\Http\Message\RequestFactoryInterface;
+class WebConsumer
+{
+    /**
+     * @var ClientInterface
+     */
+    private $httpClient;
+    /**
+     * @var RequestFactoryInterface
+     */
+    private $httpRequestFactory;
+    public function __construct(
+        ClientInterface $httpClient,
+        RequestFactoryInterface $httpRequestFactory
+    ) {
+        $this->httpClient = $httpClient;
+        $this->httpRequestFactory = $httpRequestFactory;
+    }
+    public function fetchInfo()
+    {
+        $request = $this->httpRequestFactory->createRequest('GET', 'https://www.liip.ch/');
+        try {
+            $response = $this->httpClient->sendRequest($request);
+        } catch (ClientExceptionInterface $e) {
+            throw new DomainException($e);
+        }
+        $response->...
+    }
+}
 ```
 
 The dependencies of this class in the “use” statements are only the PSR interfaces, no need for specific implementations anymore.  

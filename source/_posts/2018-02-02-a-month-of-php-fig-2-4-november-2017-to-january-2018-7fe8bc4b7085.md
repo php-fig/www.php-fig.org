@@ -10,20 +10,12 @@ keywords: []
 slug: /php-fig/a-month-of-php-fig-2-4-november-2017-to-january-2018-7fe8bc4b7085
 tags:
   - php-fig
-author: alessandrolai
+author: railto
 layout: post
 use:
   - authors
   - posts
 ---
-
-# A month of PHP-FIG #2–4: November 2017 to January 2018
-
-[![Go to the profile of Mark Railton](https://cdn-images-1.medium.com/fit/c/100/100/0*eQBjENuh5rPfgYD5.jpeg)](https://medium.com/@railto?source=post_header_lockup)
-
-[Mark Railton](https://medium.com/@railto)BlockedUnblockFollowFollowing
-
-Feb 2, 2018
 
 Back in October 2017, Michael Cullum started a new series on the PHP-FIG blog, ‘A month of PHP-FIG’. Unfortunately as things go, the momentum for this didn’t quite get maintained, but fear not, I’m going to do a recap of the comings and goings of the PHP-FIG for the past 3 months.
 
