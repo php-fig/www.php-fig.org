@@ -22,10 +22,12 @@ use:
             <h2 class="sidebar__title">Recent posts:</h2>
             <ul class="sidebar__list">
                 {% for recent in data.posts %}
+                    {% if loop.index < 8 %}
                     <li class="sidebar__item">
                         <a class="sidebar__link {% if recent.permalink.relativeUrlPath == '' %}sidebar__link--active{% endif %}"
                            href="{{ recent.permalink.relativeUrlPath }}">{{ recent.title }}</a>
                     </li>
+                    {% endif %}
                 {% endfor %}
             </ul>
         </nav>
