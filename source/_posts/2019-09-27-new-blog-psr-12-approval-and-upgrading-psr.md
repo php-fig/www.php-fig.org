@@ -4,7 +4,7 @@ description: >-
  And we’re back with another update on what’s going on in the PHP-FIG! This
  time we have just two news, but big ones! Since the last update, we’ve seen
  the approval of PSR-14, the Event Dispatcher…
-date: '2019-05-24T14:11:13.604Z'
+date: '2019-09-27T14:11:13.604Z'
 categories: []
 keywords: []
 slug: updates-from-the-php-fig-up-until-the-may-elections
@@ -29,7 +29,7 @@ As you may have noticed, **we're now on a different platform**. We've chosen to 
 
 Since the last update, we’ve seen **the approval of PSR-12, the [Extended Coding Style](https://www.php-fig.org/psr/psr-12/)**. This PSR supersedes the old dear PSR-2, adapting it to all the new language features that we've got in the last years. It was a long time coming, since the working group had some troubles along the line, but we finally published it.
 
-You will find that many libraries have already PSR-12 compliant releases, like [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer/releases/tag/3.5.0), [EasyCodingStandard](https://www.tomasvotruba.cz/blog/2018/04/09/try-psr-12-on-your-code-today/) and others are following suit, like [PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer/issues/4502). 
+You will find that many libraries have already PSR-12 compliant releases, like [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer/releases/tag/3.5.0) and [EasyCodingStandard](https://www.tomasvotruba.cz/blog/2018/04/09/try-psr-12-on-your-code-today/), while others are following suit, like [PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer/issues/4502). 
 
 ## PHP-FIG wants your help to modernize PSRs!
 
@@ -51,19 +51,21 @@ Ignoring the internal PHP-FIG process questions for now (as those are largely ir
 
 1. **Just do it**: The sledgehammer approach, this would mean **ignoring the backward compatibility issues** and just releasing a 2.x tag of the interface specs with type hints and a higher PHP minimum version and calling it a day. While certainly the simplest for PHP-FIG, it's not the most viable for the community at large for the reasons described above.
 2. **Use an alternate namespace**: Another proposal has been to **version the namespace** for upgraded PSRs. That is, the Logger specification (PSR-3) currently uses the `\Psr\Log` namespace. So a fully type-enabled new version would be something like `\Psr\Log\V2`. That has the advantage that it would allow both the old and new version to be installed at the same time. However, it has the disadvantage that a library could not easily support both old and new at the same time, at least not without some tricky bridge-interface inheritance dance. It's doubtful that this would make the upgrade process any easier.
-3. The third proposal was recently pushed forward by Stefano Torresi, one of the members of our Core Committee, and it can be summarized in appending a revision number to the PSRs which would match the versions of the corresponding interfaces package, in a way that recalls SemVer; the downside of this approach is that it would change drastically how the PHP-FIG packages are released. You can read about the complete proposal [in Stefano's email to our ML](https://groups.google.com/d/msg/php-fig/OyC3plRYhqg/u03zLMv0BQAJ).
+3. The third proposal was recently pushed forward by Stefano Torresi, one of the members of our Core Committee, and it can be summarized in **appending a revision number to the PSRs** which would match the versions of the corresponding interfaces package, in a way that recalls SemVer; the downside of this approach is that it would change drastically how the PHP-FIG packages are released. You can read about the complete proposal [in Stefano's email to our ML](https://groups.google.com/d/msg/php-fig/OyC3plRYhqg/u03zLMv0BQAJ).
 
 ### What we think will work
 
-Recently, Alessandro Lai and Nicolas Grekas pointed out that **if we target PHP 7.2 and higher only, we get a new loophole**.
+Recently, Alessandro Lai and Nicolas Grekas pointed out that **if we target PHP 7.2 and higher only, we get a new loophole**. Here's the huge Twitter thread that sparked a new proposal:
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Any plans to tag v2 of all PSRs <a href="https://twitter.com/phpfig?ref_src=twsrc%5Etfw">@phpfig</a>, with added type declarations + <a href="https://twitter.com/hashtag/PHP?src=hash&amp;ref_src=twsrc%5Etfw">#PHP</a> &gt;= 7.2? Not having types there is lagging us behind...</p>&mdash; Nicolas Grekas (@nicolasgrekas) <a href="https://twitter.com/nicolasgrekas/status/1174290079105392645?ref_src=twsrc%5Etfw">September 18, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 [PHP 7.2 introduced limited covariance and contravariance](https://wiki.php.net/rfc/parameter-no-type-variance). In plan terms, it means that, as of PHP 7.2, it's legal to have a class implement an interface and **remove** type declarations from method parameters (making them "wider", or more permissive) and to **add** a return type to a method if it doesn't have one defined (making it "narrower", or restricting what can be returned). That opens up the possibility of a two-step upgrade process. The idea would work like this:
 
 * For some existing untyped spec, PHP-FIG releases a **v2 of the package that adds parameter type declarations** and only parameter type declarations. That version of the package requires PHP 7.2 at minimum.
 * PHP-FIG also releases, at the same time, a **v3 of the package that adds return types as well**.
-* An implementing library, in its current version, is automatically compatible with the current v1 of the spec as well as v2, as long as it's running on PHP 7.2 or later. That's because it can safely "drop" the type hints and still be syntactically valid.
-* At its leisure, the implementing library can release its own new version, that adds both parameter *and* return types. The v2 of the library is compatible with both v2 and v3 of the spec, because it can safely add a return type relative to the v2 version.
-* Alternatively, a library can issue its own two-step release, with a v2 that adds just return types (and thus is compatible with v1 and v2 of the spec) and then later a v3 that adds parameter types as well (and thus is compatible with v2 and v3 of the spec).
+* An implementing library, in its current version, is **automatically compatible** with the current v1 of the spec as well as v2, as long as it's running on PHP 7.2 or later. That's because it can safely "drop" the type hints and still be syntactically valid.
+* At its leisure, **the implementing library can release its own new version**, that adds both parameter *and* return types. The v2 of the library is compatible with both v2 and v3 of the spec, because it can safely add a return type relative to the v2 version.
+* Alternatively, a library **can issue its own two-step release**, with a v2 that adds just return types (and thus is compatible with v1 and v2 of the spec) and then later a v3 that adds parameter types as well (and thus is compatible with v2 and v3 of the spec).
 
 **This approach preserves the namespace**, and provides a transitional period such that existing code can always be compatible with multiple versions of the PSR package. That makes it possible to mix and match the v1 and v2 releases of different libraries that depend on the same PSR, and to mix and match v2 and v3 releases of different libraries that depend on the same PSR. While not a perfect migration path, it's still a far smoother process than any other proposal to date.
 
