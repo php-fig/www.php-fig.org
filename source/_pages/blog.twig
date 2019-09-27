@@ -1,0 +1,33 @@
+---
+layout: page
+title: Blog
+generator: pagination
+pagination:
+  max_per_page: 10
+use:
+- posts
+- authors
+---
+<div class="columns blog-list">
+    <div class="columns__column columns__column--8">
+        {% for post in page.pagination.items %}
+            {% include 'post-preview.twig' %}
+        {% endfor %}
+
+        {% include 'pagination.twig' %}
+    </div>
+
+    <div class="columns__column columns__column--4 columns__column--padding_left">
+        <nav class="sidebar">
+            <h2 class="sidebar__title">Recent posts:</h2>
+            <ul class="sidebar__list">
+                {% for recent in data.posts | slice(0, 8) %}
+                    <li class="sidebar__item">
+                        <a class="sidebar__link {% if recent.permalink.relativeUrlPath == '' %}sidebar__link--active{% endif %}"
+                           href="{{ recent.permalink.relativeUrlPath }}">{{ recent.title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </div>
+</div>

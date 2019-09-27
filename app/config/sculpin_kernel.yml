@@ -1,11 +1,22 @@
 sculpin_content_types:
   posts:
-    enabled: false
+    singular_name: post
+    type: path
+    path: _posts
+    permalink: blog/:year/:month/:slug_title
+    taxonomies:
+      - tags
+      - categories
   pages:
     singular_name: page
     permalink: :basename
     type: path
     path: _pages
+  authors:
+    singular_name: author
+    permalink: authors/:basename
+    type: path
+    path: _authors
   psr:
     permalink: psr/:basename
     type: path

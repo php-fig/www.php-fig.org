@@ -3,14 +3,19 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    {% if page.url == '/' %}
-        <title>{{ page.title }}</title>
-    {% else %}
-        <title>{{ page.title }} - PHP-FIG</title>
-    {% endif %}
+
+    <title>
+        {%- block title -%}
+            {{ page.title }}
+
+            {% if page.url != '/' %}
+                 - PHP-FIG
+            {% endif %}
+        {%- endblock -%}
+    </title>
     <meta name="description" content="We're a group of established PHP projects whose goal is to talk about commonalities between our projects and find ways we can work better together.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    {% block head_meta %}{% endblock %}
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
@@ -37,7 +42,7 @@
                     <a class="site_menu__link {% if page.url == '/.' %}site_menu__link--active{% endif %}" href="/">Home</a>
                 </li>
                 <li class="site_menu__item">
-                    <a class="site_menu__link" href="https://medium.com/php-fig">Blog</a>
+                    <a class="site_menu__link {% if page.url matches '#^/blog#' %}site_menu__link--active{% endif %}" href="/blog">Blog</a>
                 </li>
                 <li class="site_menu__item">
                     <a class="site_menu__link {% if page.url matches '#^/psr#' %}site_menu__link--active{% endif %}" href="/psr">PSRs</a>

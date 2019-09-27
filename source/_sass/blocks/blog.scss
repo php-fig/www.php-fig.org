@@ -1,0 +1,63 @@
+.blog-list {
+    &__meta {
+        margin: 25px 0 25px 0;
+        padding: 0 0 10px 0;
+        border-bottom: solid 1px #aaa69d;
+    }
+
+    .post__tags  {
+      display: inline;
+      float: right;
+
+      &__tag{
+        display: inline;
+      }
+
+    }
+
+}
+.post{
+    &__tags {
+        margin-top: 25px;
+        margin-bottom: 25px;
+
+        a {
+          display: inline-block;
+          margin: 0 5px 5px 0;
+          padding: 5px 8px;
+
+          color: #746a5b;
+          font-family: $baseFont;
+          font-size: 13px;
+          text-decoration: none;
+
+          border-radius: 3px;
+          background: #d4cfc6;
+
+          &:hover {
+            color: white;
+            background: #a39989;
+          }
+        }
+    }
+}
+.pagination{
+    &__link a{
+        display: inline-block;
+        margin: 0 5px 5px 0;
+        padding: 5px 8px;
+
+        color: #746a5b;
+        font-family: $baseFont;
+        font-size: 13px;
+        text-decoration: none;
+
+        border-radius: 3px;
+        background: #d4cfc6;
+
+        &:hover {
+            color: white;
+            background: #a39989;
+        }
+    }
+}
