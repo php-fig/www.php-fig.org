@@ -22,7 +22,7 @@ Greetings, PHP. The PHP Framework Interoperability Group is **actively looking f
 
 ### The problem
 
-PHP-FIG has been publishing PHP interface specifications for years now, from the original [PSR-3 logger interface](https://github.com/php-fig/log) in 2016 to the latest, the [PSR-14 Event Dispatcher interfaces](https://github.com/php-fig/event-dispatcher) this last spring. All of them are, naturally, a product of their time. That is, **they were written for the version of PHP that was current** at the time they were released.
+PHP-FIG has been publishing PHP interface specifications for years now, from the original [PSR-3 logger interface](https://github.com/php-fig/log) in 2012 to the latest, the [PSR-14 Event Dispatcher interfaces](https://github.com/php-fig/event-dispatcher) this last spring. All of them are, naturally, a product of their time. That is, **they were written for the version of PHP that was current** at the time they were released.
 
 PHP doesn't stand still, of course, and has added a host of **new features** in the last several years that could impact specifications. Most notable is the introduction of scalar types and return types in PHP 7.0, and of the `object`, `iterable`, and `void` types since then. (As of this writing it seems likely that we'll get union types in PHP 8, which is squeeeee!)
 
