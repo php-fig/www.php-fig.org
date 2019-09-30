@@ -1,6 +1,6 @@
 ---
 title: 'New blog, PSR-12 approval and Upgrading PSRs'
-date: '2019-09-27T14:11:13.604Z'
+date: '2019-09-30T15:40:00.000Z'
 categories: []
 keywords: []
 slug: new-blog-psr-12-approval
