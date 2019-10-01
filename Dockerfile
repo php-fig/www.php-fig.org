@@ -8,7 +8,7 @@ COPY --from=ruby /usr/local /usr/local
 RUN apk add --no-cache yaml build-base libffi-dev libzip-dev git zip bash
 
 # workaround for https://github.com/docker-library/php/issues/240
-RUN apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing/ gnu-libiconv
+RUN apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/community/ gnu-libiconv
 ENV LD_PRELOAD /usr/lib/preloadable_libiconv.so php
 
 RUN docker-php-ext-install -j$(getconf _NPROCESSORS_ONLN) zip
