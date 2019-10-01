@@ -13,7 +13,7 @@
             {% endif %}
         {%- endblock -%}
     </title>
-    <meta name="description" content="We're a group of established PHP projects whose goal is to talk about commonalities between our projects and find ways we can work better together.">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% block head_meta %}{% endblock %}
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -25,6 +25,24 @@
 
     <link rel="preconnect" href="https://ajax.googleapis.com" pr="1.0" />
     <link rel="preconnect" href="https://ssl.google-analytics.com" pr="0.8" />
+
+    <meta property="og:url" content="{{ ('https://www.php-fig.org/' ~ page.url) }}" />
+    <meta name="og:title" content="{{ block('title') |replace({"\n": ''}) | trim }}" />
+
+    <meta name="twitter:title" content="{{ block('title') |replace({"\n": ''}) | trim }}" />
+    <meta name="twitter:site" content="@phpfig" />
+    <meta name="twitter:creator" content="@phpfig" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:image" content="/img/goetas-social.jpg" />
+    <meta property="og:image" content="/img/goetas-social.jpg" />
+
+    <meta property="og:type"  content="{% block og_type %}website{% endblock %}" />
+
+    <meta name="description" content="{% block description_block %}We're a group of established PHP projects whose goal is to talk about commonalities between our projects and find ways we can work better together.{% endblock %}">
+    <meta name="twitter:description" content="{{block('description_block')|replace({"\n": ''}) |trim}}" />
+    <meta name="og:description" content="{{block('description_block')|replace({"\n": ''})|trim}}" />
+
 </head>
 <body>
 
