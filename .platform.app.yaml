@@ -29,6 +29,13 @@ hooks:
     ruby -v
     curl -sS https://platform.sh/cli/installer | php
     gem install bundler
+
+    if [ "$PLATFORM_BRANCH" != master ]; then
+      export DEPLOY_HOST="https://www---$PLATFORM_ENVIRONMENT-$PLATFORM_PROJECT.us.platform.sh"
+      php -r "echo preg_replace('/host:.*/', 'host: ' . getenv('DEPLOY_HOST'), fread(STDIN, 4096));" < app/config/sculpin_site.yml > app/config/sculpin_site.yml.tmp
+      mv app/config/sculpin_site.yml.tmp app/config/sculpin_site.yml
+    fi
+
     bin/install.sh
     bin/build.sh
 
