@@ -1,7 +1,7 @@
 ---
 title: 'Upgrading PSR interface'
 description: >-
-Greetings, PHP. The PHP Framework Interoperability Group is **actively looking for feedback on a way to safely update and modernize several existing PSRs**. We think this is a workable approach, but before embarking on it we want to get feedback from the broader community. That means you.
+    Greetings, PHP. The PHP Framework Interoperability Group is **actively looking for feedback on a way to safely update and modernize several existing PSRs**. We think this is a workable approach, but before embarking on it we want to get feedback from the broader community. That means you.
 date: '2019-10-07T14:11:13.604Z'
 categories: []
 keywords: []
