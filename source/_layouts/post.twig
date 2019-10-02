@@ -20,9 +20,9 @@
 {% endblock %}
 
 {% block description_block %}
-    {% if page.description %}
+    {%- if page.description -%}
         {{ page.description |replace("\n", " ") }}
-    {% else %}
+    {%- else -%}
         {{ parent() }}
-    {% endif %}
+    {%- endif -%}
 {% endblock %}

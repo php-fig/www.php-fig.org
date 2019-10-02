@@ -8,9 +8,7 @@
         {%- block title -%}
             {{ page.title }}
 
-            {% if page.url != '/' %}
-                 - PHP-FIG
-            {% endif %}
+            {%- if page.url != '/' %} - PHP-FIG{%- endif -%}
         {%- endblock -%}
     </title>
 
