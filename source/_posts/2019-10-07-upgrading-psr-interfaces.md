@@ -18,7 +18,7 @@ use:
 
 ## PHP-FIG wants your help to modernize PSRs!
 
-Greetings, PHP. The PHP Framework Interoperability Group is **actively looking for feedback on a way to safely update and modernize several existing PSRs**. We think this is a workable approach, but before embarking on it we want to get feedback from the broader community. That means you.
+Greetings, PHP. The PHP Framework Interoperability Group is actively looking for feedback on a way to safely update and modernize several existing PSRs. We think this is a workable approach, but before embarking on it we want to get feedback from the broader community. That means you.
 
 ### The problem
 
@@ -34,9 +34,9 @@ The challenge, of course, is that technically adding types to an interface is a 
 
 Ignoring the internal PHP-FIG process questions for now (as those are largely irrelevant to this discussion), there have been a few ways to go about upgrading specs that have largely been rejected over the years.
 
-1. **Just do it**: The sledgehammer approach, this would mean **ignoring the backward compatibility issues** and just releasing a 2.x tag of the interface specs with type hints and a higher PHP minimum version and calling it a day. While certainly the simplest for PHP-FIG, it's not the most viable for the community at large for the reasons described above.
-2. **Use an alternate namespace**: Another proposal has been to **version the namespace** for upgraded PSRs. For example, the Logger specification (PSR-3) currently uses the `\Psr\Log` namespace. So a fully type-enabled new version would be something like `\Psr\Log\V2`. That has the advantage that it would allow both the old and new version to be installed at the same time. However, it has the disadvantage that a library could not easily support both old and new at the same time, at least not without some tricky bridge-interface inheritance dance. It's doubtful that this would make the upgrade process any easier.
-3. The third proposal was recently pushed forward by Stefano Torresi, one of the members of our Core Committee, and it can be summarized in **appending a revision number to the PSRs** which would match the versions of the corresponding interfaces package, in a way that recalls SemVer; the downside of this approach is that it would change drastically how the PHP-FIG packages are released. You can read about the complete proposal [in Stefano's email to our ML](https://groups.google.com/d/msg/php-fig/OyC3plRYhqg/u03zLMv0BQAJ).
+1. Just do it: The sledgehammer approach, this would mean ignoring the backward compatibility issues and just releasing a 2.x tag of the interface specs with type hints and a higher PHP minimum version and calling it a day. While certainly the simplest for PHP-FIG, it's not the most viable for the community at large for the reasons described above.
+2. Use an alternate namespace: Another proposal has been to version the namespace for upgraded PSRs. For example, the Logger specification (PSR-3) currently uses the `\Psr\Log` namespace. So a fully type-enabled new version would be something like `\Psr\Log\V2`. That has the advantage that it would allow both the old and new version to be installed at the same time. However, it has the disadvantage that a library could not easily support both old and new at the same time, at least not without some tricky bridge-interface inheritance dance. It's doubtful that this would make the upgrade process any easier.
+3. The third proposal was recently pushed forward by Stefano Torresi, one of the members of our Core Committee, and it can be summarized in appending a revision number to the PSRs which would match the versions of the corresponding interfaces package, in a way that recalls SemVer; the downside of this approach is that it would change drastically how the PHP-FIG packages are released. You can read about the complete proposal [in Stefano's email to our ML](https://groups.google.com/d/msg/php-fig/OyC3plRYhqg/u03zLMv0BQAJ).
 
 ### What we think will work
 
