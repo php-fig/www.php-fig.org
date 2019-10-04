@@ -23,6 +23,7 @@
         max-width: 250px;
     }
     &__description {
+        margin-right: 25px;
         margin-bottom: 25px;
 
         color: #595143;
@@ -36,6 +37,7 @@
 
         display: block;
         padding: 13px 40px 12px 15px;
+        margin-bottom: 0.8em;
 
         color: #f9f6f0;
         font-family: $baseFont;
