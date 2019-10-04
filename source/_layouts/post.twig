@@ -21,7 +21,7 @@
 
 {% block description_block %}
     {%- if page.description -%}
-        {{ page.description |replace("\n", " ") }}
+        {{ page.description |replace({"\n": " "}) }}
     {%- else -%}
         {{ parent() }}
     {%- endif -%}
