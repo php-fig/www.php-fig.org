@@ -29,8 +29,6 @@ hooks:
     ruby -v
     curl -sS https://platform.sh/cli/installer | php
     gem install bundler
-
-    sed -i "s/host:.*/host: https:\/\/www---pr-263-pugnbma-ovkfaqrdltr5s.us.platform.sh/" app/config/sculpin_site.yml
     echo "cachebust: $PLATFORM_PROJECT_ENTROPY" >> app/config/sculpin_site.yml
 
     bin/install.sh
