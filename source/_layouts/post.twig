@@ -8,6 +8,10 @@
         </div>
 
         {% include 'post-tags.twig' with {post: page} %}
+
+        <span  class="blog-post__meta__date">
+            {{ page.date|date('F jS Y') }}
+        </span>
     </div>
 
     {% for author in data.authors if page.author and author.identifier == page.author %}
