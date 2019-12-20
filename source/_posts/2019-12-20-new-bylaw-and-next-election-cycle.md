@@ -28,13 +28,14 @@ Larry Garfield already started working on [using it on PSR-13](https://groups.go
 As always for us, every 8 months we need to start a new election cycle. This is due to [our bylaws](https://www.php-fig.org/bylaws/elections-and-vacancies/), and it helps us to have new people in our ranks, without shuffling all of them at the same time.
 
 We have one secretary and four Core Committee positions up for election. The terms that are ending are currently held by:
+
  * Ian Littman (secretary) 
  * Chris Tankersley (CC)
  * Korvin Szanto (CC)
  * Stefano Torresi (CC)
  * Michael Cullum (CC)
 
-The **nominations period**, due to the festivities, will be a bit long, and it will be open **from December 23rd 2019 to January 9th 2020**. The **elections** will be held immediately after, **from January 10th to January 23rd**. You can find the full announcement on [our mailing list]().
+The **nominations period**, due to the festivities, will be a bit long, and it will be open **from December 20th 2019 to January 9th 2020**. The **elections** will be held immediately after, **from January 10th to January 23rd**. You can find the full announcement on [our mailing list]().
 
 If you are interested in helping and joining us, please reach out to us, through [our mailing list](https://groups.google.com/forum/#!forum/php-fig) or contacting any sitting secretary.
 
@@ -46,7 +47,7 @@ To quote the Bylaws:
 
 > “The Core Committee is a twelve (12) member board of individuals recognized for their technical skill and expertise. The Core Committee is responsible for final decisions regarding what specifications PHP-FIG will consider and those that are approved. The Core Committee is responsible for ensuring a high level of quality and consistency amongst all published specifications, and that all relevant perspectives and use cases are given due consideration.”
  
-The core committee acts as a steering group and handles all entrance votes and, after being completed by working groups, has the final acceptance vote on new PSRs and is responsible for making sure specifications meet the technical direction of the PHP-FIG, are of good quality, and have taken relevant stakeholders into account. The core committee is expected to be able to keep an eye on what is going on in the PHP-FIG. While this doesn't mean reading every mailing list post or every GitHub issue, this does mean having a general awareness of what is going on and regular activity is expected (e.g. they should be voting on every core committee two-week vote unless there are particular circumstances preventing them from doing so).
+The core committee acts as a steering group and handles all entrance votes and, after being completed by working groups, has the final acceptance vote on new PSRs and is responsible for making sure specifications meet the technical direction of the PHP-FIG, are of good quality, and have taken relevant stakeholders into account. The Core Committee is expected to be able to keep an eye on what is going on in the PHP-FIG. While this doesn't mean reading every mailing list post or every GitHub issue, this does mean having a general awareness of what is going on and regular activity is expected (e.g. they should be voting on every core committee two-week vote unless there are particular circumstances preventing them from doing so).
 
  * What does the role of a Secretary entail?
 
