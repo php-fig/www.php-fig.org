@@ -41,7 +41,7 @@ If you are interested in helping and joining us, please reach out to us, through
 
 ### Elections FAQs
 
- * What does the role of a CC member entail?
+#### What does the role of a CC member entail?
 
 To quote the Bylaws:
 
@@ -49,13 +49,13 @@ To quote the Bylaws:
  
 The core committee acts as a steering group and handles all entrance votes and, after being completed by working groups, has the final acceptance vote on new PSRs and is responsible for making sure specifications meet the technical direction of the PHP-FIG, are of good quality, and have taken relevant stakeholders into account. The Core Committee is expected to be able to keep an eye on what is going on in the PHP-FIG. While this doesn't mean reading every mailing list post or every GitHub issue, this does mean having a general awareness of what is going on and regular activity is expected (e.g. they should be voting on every core committee two-week vote unless there are particular circumstances preventing them from doing so).
 
- * What does the role of a Secretary entail?
+### What does the role of a Secretary entail?
 
-The full role can be read from the bylaws here: http://www.php-fig.org/bylaws/mission-and-structure/#secretaries
+The full role can be read from the bylaws here: [http://www.php-fig.org/bylaws/mission-and-structure/#secretaries](http://www.php-fig.org/bylaws/mission-and-structure/#secretaries)
 
 Between the three secretaries they handle all the administration that goes on with the FIG such as votes, the website, GitHub as well as also being responsible for moderation of FIG mediums and representing the PHP-FIG to the wider PHP community. Feel free to reach out to any of the seating Secretaries if you would like to know more about the role.
 
- * What does a Core Committee member look like?
+### What does a Core Committee member look like?
 
 The idea of the core committee is that it should reflect a cross section of the PHP ecosystem and community.
 
