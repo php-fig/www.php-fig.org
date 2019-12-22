@@ -15,13 +15,13 @@ use:
  - posts
 ---
 
-So here we are, just before the festivities, with a couple of good news!
+So here we are, just before the festivities, with a few bits of good news!
 
 ## A new bylaw: PSR evolution
 
-In the [previous blog post](https://www.php-fig.org/blog/2019/10/upgrading-psr-interfaces/), we were discussing how to push forward the PSR intefaces, to keep up with all the new features that PHP is giving us, version after version. I proposed [a new bylaw](https://www.php-fig.org/bylaws/psr-evolution/) which went trough [a long discussions and many revisions on GitHub](https://www.php-fig.org/bylaws/psr-evolution/), but which is now approved and in effect!
+In the [previous blog post](https://www.php-fig.org/blog/2019/10/upgrading-psr-interfaces/), we were discussing how to push forward the PSR interfaces, to keep up with all the new features that PHP is giving us, version after version. I proposed [a new bylaw](https://www.php-fig.org/bylaws/psr-evolution/) which went through [a long discussion and many revisions on GitHub](https://www.php-fig.org/bylaws/psr-evolution/), but which is now approved and in effect!
 
-Larry Garfield already started working on [using it on PSR-13](https://groups.google.com/d/topic/php-fig/tm1WLPUflCY/discussion), as a testbed for this approach; we're confident in it, since it's being used by other big libraries, like Symfony (with [version 5](https://symfony.com/blog/symfony-type-declarations-return-types-and-phpunit-compatibility?amp#added-php-type-declarations)) and Doctrine (with the [next majors of its sub-libraries](https://medium.com/@alcaeus/how-to-break-an-entire-ecosystem-by-publishing-a-release-b6aaab2b8aaa)).
+Larry Garfield has already started working on [using it on PSR-13](https://groups.google.com/d/topic/php-fig/tm1WLPUflCY/discussion), as a testbed for this approach. We're confident in it, since it's being used by other big libraries, like Symfony (with [version 5](https://symfony.com/blog/symfony-type-declarations-return-types-and-phpunit-compatibility?amp#added-php-type-declarations)) and Doctrine (with the [next majors of its sub-libraries](https://medium.com/@alcaeus/how-to-break-an-entire-ecosystem-by-publishing-a-release-b6aaab2b8aaa)).
 
 ## A new election cycle
 
@@ -35,7 +35,7 @@ We have one secretary and four Core Committee positions up for election. The ter
  * Stefano Torresi (CC)
  * Michael Cullum (CC)
 
-The **nominations period**, due to the festivities, will be a bit long, and it will be open **from December 20th 2019 to January 9th 2020**. The **elections** will be held immediately after, **from January 10th to January 23rd**. You can find the full announcement on [our mailing list]().
+The **nominations period**, due to the holidays, will be a bit long, and it will be open **from December 20th 2019 to January 9th 2020**. The **elections** will be held immediately after, **from January 10th to January 23rd**. You can find the full announcement on [our mailing list]().
 
 If you are interested in helping and joining us, please reach out to us, through [our mailing list](https://groups.google.com/forum/#!forum/php-fig) or contacting any sitting secretary.
 
@@ -53,7 +53,7 @@ The core committee acts as a steering group and handles all entrance votes and, 
 
 The full role can be read from the bylaws here: [http://www.php-fig.org/bylaws/mission-and-structure/#secretaries](http://www.php-fig.org/bylaws/mission-and-structure/#secretaries)
 
-Between the three secretaries they handle all the administration that goes on with the FIG such as votes, the website, GitHub as well as also being responsible for moderation of FIG mediums and representing the PHP-FIG to the wider PHP community. Feel free to reach out to any of the seating Secretaries if you would like to know more about the role.
+Between the three secretaries they handle all the administration that goes on with the FIG such as votes, the website, GitHub as well as also being responsible for moderation of FIG mediums and representing the PHP-FIG to the wider PHP community. Feel free to reach out to any of the sitting Secretaries if you would like to know more about the role.
 
 ### What does a Core Committee member look like?
 
@@ -62,10 +62,10 @@ The idea of the core committee is that it should reflect a cross section of the 
 This means it's important to have a range of people including (but not requiring or limited to) those with experience relating to things such as:
   - Large & small framework maintenance
   - Library maintenance
-  - Consumer package maintenance (by consumer package I mean CMS, blogs, forums, etc.)
+  - Consumer package maintenance (by consumer package I mean CMSes, blogs, forums, etc.)
   - HTTP and non-HTTP based PHP
   - Legacy and modern projects
   - PHP internals
   - Specific topics such as Async and Security
 
-However, it is important to note that you are voting for people, not projects, so please do not vote in people because they are the lead on 'Project X'; but rather you might vote for them because they have experience as a framework maintainer or legacy project maintainer and therefore have a different view on things. CC members should be representing the opinion of the wider PHP ecosystem and community as CC members, not of projects they are affiliated with, and some will likely not be affiliated with any project at all. Furthermore, this should not become a popularity contest of 'who is the most well known' but who would make the most well-balanced core committee that accurately represents the interests of you, the member projects and wider PHP community.
+However, it is important to note that you are voting for people, not projects, so please do not vote in people because they are the lead on 'Project X'; but rather you might vote for them because they have experience as a framework maintainer or legacy project maintainer and therefore have a different view on things. CC members should be representing the opinion of the wider PHP ecosystem and community as CC members, not of projects they are affiliated with, and some will likely not be affiliated with any project at all. Furthermore, this should not become a popularity contest of "who is the most well known", but rather who would make the most well-balanced core committee that accurately represents the interests of you, the member projects and wider PHP community.
