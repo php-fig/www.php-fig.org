@@ -5,7 +5,7 @@ COPY --from=ruby /usr/local /usr/local
 
 # since this is an intermediate layer, we can safely use as many RUN layers as we want, and take advantage of granular caching.
 
-RUN apk add --no-cache yaml build-base libffi-dev libzip-dev git zip bash
+RUN apk add --no-cache yaml build-base gmp-dev libffi-dev libzip-dev git zip bash
 
 # workaround for https://github.com/docker-library/php/issues/240
 RUN apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/community/ gnu-libiconv
