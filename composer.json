@@ -1,11 +1,14 @@
 {
     "require": {
         "php": "^7.1",
-        "sculpin/sculpin": "^3.0.0-rc1",
-        "dflydev/embedded-composer": "@dev",
         "aptoma/twig-markdown": "^3.0",
+        "dflydev/embedded-composer": "@dev",
         "league/commonmark": "^1.4",
+        "sculpin/sculpin": "^3.0.0-rc1",
         "spatie/commonmark-highlighter": "^2.1"
+    },
+    "config": {
+        "sort-packages": true
     },
     "autoload": {
         "psr-4": {
