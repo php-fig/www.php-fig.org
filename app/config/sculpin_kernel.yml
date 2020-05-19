@@ -31,17 +31,32 @@ sculpin:
   ignore: ["**/*.scss"]
 
 services:
-  fig.website.external_process_markdown_engine:
-    class: Fig\Website\ExternalProcessMarkdownEngine
-    arguments:
-      $command: "bundle exec kramdown -i GFM --syntax-highlighter rouge --no-hard-wrap"
   fig.website.link_processor_extension:
     class: Fig\Website\TwigLinkProcessor
     tags:
       - { name: twig.extension }
+
   aptoma.twig.markdown_extension:
     class: Aptoma\Twig\Extension\MarkdownExtension
     arguments:
-      $markdownEngine: '@fig.website.external_process_markdown_engine'
+      $markdownEngine: '@League\CommonMark\CommonMarkConverter'
     tags:
       - { name: twig.extension }
+
+  League\CommonMark\GithubFlavoredMarkdownConverter:
+    arguments:
+      - []
+      - '@League\CommonMark\ConfigurableEnvironmentInterface'
+
+  League\CommonMark\ConfigurableEnvironmentInterface:
+    factory: ['\League\CommonMark\Environment', 'createCommonMarkEnvironment']
+    calls:
+      - ['addBlockRenderer', ['\League\CommonMark\Block\Element\FencedCode', '@Spatie\CommonMarkHighlighter\FencedCodeRenderer']]
+      - ['addBlockRenderer', ['\League\CommonMark\Block\Element\IndentedCode', '@Spatie\CommonMarkHighlighter\IndentedCodeRenderer']]
+
+  Spatie\CommonMarkHighlighter\FencedCodeRenderer:
+    arguments:
+      - 'php'
+  Spatie\CommonMarkHighlighter\IndentedCodeRenderer:
+    arguments:
+      - 'php'
