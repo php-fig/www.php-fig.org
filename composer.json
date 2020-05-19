@@ -3,7 +3,9 @@
         "php": "^7.1",
         "sculpin/sculpin": "^3.0.0-rc1",
         "dflydev/embedded-composer": "@dev",
-        "aptoma/twig-markdown": "^3.0"
+        "aptoma/twig-markdown": "^3.0",
+        "league/commonmark": "^1.4",
+        "spatie/commonmark-highlighter": "^2.1"
     },
     "autoload": {
         "psr-4": {
