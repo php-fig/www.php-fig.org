@@ -49,10 +49,10 @@ services:
       - '@League\CommonMark\ConfigurableEnvironmentInterface'
 
   League\CommonMark\ConfigurableEnvironmentInterface:
-    factory: ['\League\CommonMark\Environment', 'createCommonMarkEnvironment']
+    factory: ['League\CommonMark\Environment', 'createCommonMarkEnvironment']
     calls:
-      - ['addBlockRenderer', ['\League\CommonMark\Block\Element\FencedCode', '@Spatie\CommonMarkHighlighter\FencedCodeRenderer']]
-      - ['addBlockRenderer', ['\League\CommonMark\Block\Element\IndentedCode', '@Spatie\CommonMarkHighlighter\IndentedCodeRenderer']]
+      - ['addBlockRenderer', ['League\CommonMark\Block\Element\FencedCode', '@Spatie\CommonMarkHighlighter\FencedCodeRenderer']]
+      - ['addBlockRenderer', ['League\CommonMark\Block\Element\IndentedCode', '@Spatie\CommonMarkHighlighter\IndentedCodeRenderer']]
 
   Spatie\CommonMarkHighlighter\FencedCodeRenderer:
     arguments:
