@@ -1,9 +1,15 @@
 {
     "require": {
-        "php": "^7.1",
-        "sculpin/sculpin": "^3.0.0-rc1",
+        "php": "^7.3",
+        "sculpin/sculpin": "^3.0.3",
         "dflydev/embedded-composer": "@dev",
-        "aptoma/twig-markdown": "^3.0"
+        "aptoma/twig-markdown": "^3.3"
+    },
+    "conflict": {
+        "symfony/process": "<4.4"
+    },
+    "config": {
+        "sort-packages": true
     },
     "autoload": {
         "psr-4": {

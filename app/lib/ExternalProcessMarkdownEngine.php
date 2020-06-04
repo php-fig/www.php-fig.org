@@ -18,7 +18,7 @@ use Symfony\Component\Process\Process;
 class ExternalProcessMarkdownEngine implements MarkdownEngineInterface
 {
     /**
-     * @var string
+     * @var string[]
      */
     private $command;
 
@@ -27,21 +27,10 @@ class ExternalProcessMarkdownEngine implements MarkdownEngineInterface
      */
     private $timeout;
 
-    /**
-     * @var callable
-     */
-    private $createProcess;
-
-    public function __construct(string $command, int $timeout = 20, callable $processFactory = null)
+    public function __construct(array $command, int $timeout = 20)
     {
         $this->command = $command;
         $this->timeout = $timeout;
-
-        if (! $processFactory) {
-            $processFactory = Closure::fromCallable([ $this, 'createDefaultProcess' ]);
-        }
-
-        $this->createProcess = $processFactory;
     }
 
     /**
@@ -49,25 +38,16 @@ class ExternalProcessMarkdownEngine implements MarkdownEngineInterface
      *
      * @throws ProcessFailedException
      */
-    public function transform($content)
+    public function transform($content): string
     {
-        /** @var Process $externalProcess */
-        $externalProcess = ($this->createProcess)($this->command, null, null, $content, $this->timeout);
+        $externalProcess = new Process($this->command, null, null, $content, $this->timeout);
         $externalProcess->mustRun();
 
         return $externalProcess->getOutput();
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function getName()
+    public function getName(): string
     {
         return __CLASS__;
-    }
-
-    private function createDefaultProcess(...$args): Process
-    {
-        return new Process(...$args);
     }
 }

@@ -34,7 +34,13 @@ services:
   fig.website.external_process_markdown_engine:
     class: Fig\Website\ExternalProcessMarkdownEngine
     arguments:
-      $command: "bundle exec kramdown -i GFM --syntax-highlighter rouge --no-hard-wrap"
+      $command: 
+        - 'bundle'
+        - 'exec'
+        - 'kramdown'
+        - '-iGFM'
+        - '--syntax-highlighter=rouge'
+        - '--no-hard-wrap'
   fig.website.link_processor_extension:
     class: Fig\Website\TwigLinkProcessor
     tags:
