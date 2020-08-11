@@ -38,6 +38,7 @@ services:
         - 'bundle'
         - 'exec'
         - 'kramdown'
+        - '-xparser-gfm'
         - '-iGFM'
         - '--syntax-highlighter=rouge'
         - '--no-hard-wrap'
