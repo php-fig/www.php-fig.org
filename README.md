@@ -1,4 +1,4 @@
-www.php-fig.org
+www.php-fig.org an interesting project
 ---------------
 
 This is the source for [www.php-fig.org][php-fig.org]. It is a static site generated with
