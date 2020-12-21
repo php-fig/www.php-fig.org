@@ -26,11 +26,13 @@ However, we do realize the value of real-time, *informal* communication, not jus
 
 We have therefore decided to *open a public PHP-FIG Discord server* for such informal real-time chat. It's more or less set up now, although we'll likely be fiddling with settings for some time. (Such is the nature of Discord.) All interested parties are welcome to join using the link below:
 
-https://discord.gg/RdSV6tnjRa
+[https://discord.gg/RdSV6tnjRa](https://discord.gg/RdSV6tnjRa)
 
 It's also listed on Disboard here:
 
-https://disboard.org/server/788815898948665366
+[https://disboard.org/server/788815898948665366](https://disboard.org/server/788815898948665366)
+
+<iframe src="https://discord.com/widget?id=788815898948665366&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 
 There are channels setup for general PHP-FIG talk and general PHP talk; more channels will undoubtedly be added over time. In particular, Working Groups are free to request both public or private channels for their work as needed. The Secretaries have admin control over the server, although they can appoint other moderators as well.
 
