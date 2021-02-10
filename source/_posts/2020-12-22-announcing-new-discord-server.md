@@ -26,7 +26,7 @@ However, we do realize the value of real-time, *informal* communication, not jus
 
 We have therefore decided to *open a public PHP-FIG Discord server* for such informal real-time chat. It's more or less set up now, although we'll likely be fiddling with settings for some time. (Such is the nature of Discord.) All interested parties are welcome to join using the link below:
 
-[https://discord.gg/RdSV6tnjRa](https://discord.gg/RdSV6tnjRa)
+[https://discord.gg/php-fig](https://discord.gg/php-fig)
 
 It's also listed on Disboard here:
 
