@@ -39,9 +39,17 @@ services:
   aptoma.twig.markdown_extension:
     class: Aptoma\Twig\Extension\MarkdownExtension
     arguments:
-      $markdownEngine: '@League\CommonMark\GithubFlavoredMarkdownConverter'
+      $markdownEngine: '@Fig\Website\NullSafeCommonMarkEngine'
     tags:
       - { name: twig.extension }
+
+  Fig\Website\NullSafeCommonMarkEngine:
+    arguments:
+      - '@Aptoma\Twig\Extension\MarkdownEngine\PHPLeagueCommonMarkEngine'
+
+  Aptoma\Twig\Extension\MarkdownEngine\PHPLeagueCommonMarkEngine:
+    arguments:
+      - '@League\CommonMark\GithubFlavoredMarkdownConverter'
 
   League\CommonMark\GithubFlavoredMarkdownConverter:
     arguments:
@@ -56,7 +64,7 @@ services:
 
   Spatie\CommonMarkHighlighter\FencedCodeRenderer:
     arguments:
-      - 'php'
+      - ['php']
   Spatie\CommonMarkHighlighter\IndentedCodeRenderer:
     arguments:
-      - 'php'
+      - ['php']
