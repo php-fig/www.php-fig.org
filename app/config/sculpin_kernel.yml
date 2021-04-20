@@ -39,7 +39,7 @@ services:
   aptoma.twig.markdown_extension:
     class: Aptoma\Twig\Extension\MarkdownExtension
     arguments:
-      $markdownEngine: '@League\CommonMark\CommonMarkConverter'
+      $markdownEngine: '@League\CommonMark\GithubFlavoredMarkdownConverter'
     tags:
       - { name: twig.extension }
 
