@@ -1,4 +1,6 @@
 {
+    "name": "fig/www.php-fig.org",
+    "description": "The static official site of PHP-FIG",
     "require": {
         "php": "^7.1",
         "aptoma/twig-markdown": "^3.3",
