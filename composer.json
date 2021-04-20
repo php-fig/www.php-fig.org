@@ -4,10 +4,12 @@
     "require": {
         "php": "^7.1",
         "aptoma/twig-markdown": "^3.3",
-        "dflydev/embedded-composer": "@dev",
         "league/commonmark": "^1.4",
         "sculpin/sculpin": "^3.0.3",
         "spatie/commonmark-highlighter": "^2.1"
+    },
+    "replace": {
+        "sculpin/sculpin-theme-composer-plugin": "1.0.2"
     },
     "config": {
         "sort-packages": true
