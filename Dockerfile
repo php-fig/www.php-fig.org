@@ -25,8 +25,6 @@ RUN addgroup -g $GID fig && adduser -D -G fig -u $UID fig \
 WORKDIR /fig-website
 USER fig
 
-RUN composer global require hirak/prestissimo
-
 CMD bash
 
 FROM dev as build
