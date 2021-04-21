@@ -6,3 +6,6 @@ install:
 
 build:
 	docker-compose run --rm php bin/build.sh
+
+html-proofer:
+	docker-compose run --rm html-proofer output_dev --url-ignore 'foo-meta.md#errata-1-foo' --disable-external

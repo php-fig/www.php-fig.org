@@ -13,3 +13,9 @@ services:
       ['sculpin', 'generate', '--watch', '--server']
     ports:
       - 8000:8000
+
+  html-proofer:
+    image: 18fgsa/html-proofer
+    working_dir: /fig-website
+    volumes:
+      - .:/fig-website
