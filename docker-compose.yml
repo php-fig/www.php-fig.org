@@ -1,0 +1,15 @@
+version: '3.5'
+
+services:
+  php:
+    build:
+      context: .
+      target: dev
+    user: fig
+    volumes:
+    - .:/fig-website
+    working_dir: /fig-website
+    command:
+      ['sculpin', 'generate', '--watch', '--server']
+    ports:
+      - 8000:8000
