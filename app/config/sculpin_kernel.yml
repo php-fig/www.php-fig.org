@@ -39,35 +39,9 @@ services:
   aptoma.twig.markdown_extension:
     class: Aptoma\Twig\Extension\MarkdownExtension
     arguments:
-      $markdownEngine: '@Fig\Website\NullSafeCommonMarkEngine'
+      $markdownEngine: '@Aptoma\Twig\Extension\MarkdownEngineInterface'
     tags:
       - { name: twig.extension }
 
-  Fig\Website\NullSafeCommonMarkEngine:
-    arguments:
-      - '@Aptoma\Twig\Extension\MarkdownEngine\PHPLeagueCommonMarkEngine'
-
-  Aptoma\Twig\Extension\MarkdownEngine\PHPLeagueCommonMarkEngine:
-    arguments:
-      - '@League\CommonMark\GithubFlavoredMarkdownConverter'
-
-  League\CommonMark\GithubFlavoredMarkdownConverter:
-    arguments:
-      - []
-      - '@League\CommonMark\ConfigurableEnvironmentInterface'
-
-  League\CommonMark\ConfigurableEnvironmentInterface:
-    factory: ['League\CommonMark\Environment', 'createCommonMarkEnvironment']
-    calls:
-      - ['addExtension', ['@League\CommonMark\Extension\Table\TableExtension']]
-      - ['addBlockRenderer', ['League\CommonMark\Block\Element\FencedCode', '@Spatie\CommonMarkHighlighter\FencedCodeRenderer']]
-      - ['addBlockRenderer', ['League\CommonMark\Block\Element\IndentedCode', '@Spatie\CommonMarkHighlighter\IndentedCodeRenderer']]
-
-  League\CommonMark\Extension\Table\TableExtension: ~
-
-  Spatie\CommonMarkHighlighter\FencedCodeRenderer:
-    arguments:
-      - ['php']
-  Spatie\CommonMarkHighlighter\IndentedCodeRenderer:
-    arguments:
-      - ['php']
+  Aptoma\Twig\Extension\MarkdownEngineInterface:
+    factory: ['Fig\Website\CommonMarkEngineFactory', 'create']
