@@ -1,12 +1,15 @@
 {
+    "name": "fig/www.php-fig.org",
+    "description": "The static official site of PHP-FIG",
     "require": {
         "php": "^7.3",
+        "aptoma/twig-markdown": "^3.3",
+        "league/commonmark": "^1.4",
         "sculpin/sculpin": "^3.0.3",
-        "dflydev/embedded-composer": "@dev",
-        "aptoma/twig-markdown": "^3.3"
+        "spatie/commonmark-highlighter": "^2.1"
     },
-    "conflict": {
-        "symfony/process": "<4.4"
+    "replace": {
+        "sculpin/sculpin-theme-composer-plugin": "1.0.2"
     },
     "config": {
         "sort-packages": true
