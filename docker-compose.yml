@@ -10,7 +10,10 @@ services:
     - .:/fig-website
     working_dir: /fig-website
     command:
-      ['sculpin', 'generate', '--watch', '--server']
+      - 'sculpin'
+      - 'generate'
+      - '--watch'
+      - '--server'
     ports:
       - 8000:8000
 
@@ -19,3 +22,15 @@ services:
     working_dir: /fig-website
     volumes:
       - .:/fig-website
+
+  dart-sass:
+    image: michalklempa/dart-sass:latest
+    user: 1000:1000
+    working_dir: /fig-website
+    volumes:
+      - .:/fig-website
+    command: 
+      - '/opt/dart-sass/sass'
+      - 'source/_sass/all.scss:output_dev/css/all.css'
+      - '--style=compressed'
+      - '--color'
