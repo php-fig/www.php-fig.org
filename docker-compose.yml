@@ -3,6 +3,9 @@ version: '3.5'
 services:
   php:
     build:
+      args:
+        UID: 1234
+        GID: 5678
       context: .
     user: fig
     volumes:
