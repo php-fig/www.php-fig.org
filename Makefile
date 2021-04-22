@@ -1,5 +1,5 @@
 watch: clean install build
-	docker-compose up -d
+	docker-compose up -d php node-sass
 
 clean:
 	rm -rf output_dev/*

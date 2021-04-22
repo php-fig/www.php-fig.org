@@ -19,6 +19,7 @@ services:
   ruby:
     build:
       context: docker/ruby
+    user: 1000:1000
     working_dir: /fig-website
     volumes:
       - .:/fig-website
