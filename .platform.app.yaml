@@ -28,8 +28,6 @@ dependencies:
     node-sass: '^4.9.4'
   php:
     composer/composer: '^2'
-  ruby:
-    html-proofer: '~> 3.7'
 
 hooks:
   build: |
