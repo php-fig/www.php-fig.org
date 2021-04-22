@@ -1,5 +1,5 @@
 name: php-fig-website
-type: php:8.0
+type: php:7.4
 
 build:
   flavor: composer
@@ -29,8 +29,7 @@ dependencies:
   php:
     composer/composer: '^2'
   ruby:
-    bundler: '*'
-    html-proofer: '~> 3.8'
+    html-proofer: '~> 3.7'
 
 hooks:
   build: |
