@@ -23,6 +23,10 @@ web:
 
 disk: 1024
 
+dependencies:
+  nodejs:
+    node-sass: '^4.9.4'
+
 hooks:
   build: |
     set -e
@@ -30,12 +34,11 @@ hooks:
     php -v
     ruby -v
     curl -sS https://platform.sh/cli/installer | php
-    gem install bundler
     echo "cachebust: $PLATFORM_PROJECT_ENTROPY" >> app/config/sculpin_site.yml
 
     bin/install.sh
-    bin/build.sh
-
+    bin/build-php.sh
+    bin/build-sass.sh
 
 crons:
     renewcert:
