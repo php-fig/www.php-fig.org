@@ -1,5 +1,5 @@
 name: php-fig-website
-type: php:7.4
+type: php:8.0
 
 build:
   flavor: composer
@@ -26,6 +26,8 @@ disk: 1024
 dependencies:
   nodejs:
     node-sass: '^4.9.4'
+  php:
+    composer/composer: '^2'
   ruby:
     html-proofer: '~> 3.8'
 
