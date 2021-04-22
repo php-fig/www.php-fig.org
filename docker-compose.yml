@@ -21,6 +21,7 @@ services:
     working_dir: /fig-website
     volumes:
       - .:/fig-website
+    entrypoint: 'sh'
 
   node-sass:
     image: catchdigital/node-sass:8.12.0-alpine

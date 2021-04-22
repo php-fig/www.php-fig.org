@@ -26,6 +26,8 @@ disk: 1024
 dependencies:
   nodejs:
     node-sass: '^4.9.4'
+  ruby:
+    html-proofer: '~> 3.8'
 
 hooks:
   build: |
@@ -39,6 +41,7 @@ hooks:
     bin/install.sh
     bin/build-php.sh
     bin/build-sass.sh
+    bin/html-proofer.sh
 
 crons:
     renewcert:
