@@ -15,7 +15,7 @@ build:
 	docker-compose run --rm node-sass bin/build-sass.sh
 
 html-proofer:
-	@docker-compose run --rm html-proofer bin/html-proofer.sh
+	@docker-compose run --rm ruby bin/html-proofer.sh
 
 shell:
 	@docker-compose run --rm php bash

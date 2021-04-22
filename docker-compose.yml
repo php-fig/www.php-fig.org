@@ -3,10 +3,7 @@ version: '3.5'
 services:
   php:
     build:
-      args:
-        UID: 1234
-        GID: 5678
-      context: .
+      context: docker/php
     user: fig
     volumes:
     - .:/fig-website
@@ -19,8 +16,9 @@ services:
     ports:
       - 8000:8000
 
-  html-proofer:
-    image: 18fgsa/html-proofer
+  ruby:
+    build:
+      context: docker/ruby
     working_dir: /fig-website
     volumes:
       - .:/fig-website

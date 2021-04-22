@@ -2,7 +2,10 @@
 
 set -e
 
-htmlproofer output_dev \
+gem install bundler
+bundle install --path .bundle
+
+bundle exec htmlproofer output_dev \
   --check-html \
   --check-img-http \
   --check-opengraph \
