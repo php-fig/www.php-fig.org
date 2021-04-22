@@ -1,5 +1,5 @@
 name: php-fig-website
-type: php:7.3
+type: php:7.4
 
 build:
   flavor: composer
