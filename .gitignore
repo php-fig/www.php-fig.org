@@ -5,3 +5,4 @@
 .sass-cache
 .bundle
 app/config/sculpin_kernel_dev.yml
+docker-compose.override.yml
