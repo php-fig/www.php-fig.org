@@ -38,7 +38,7 @@ Additionally, you can run `make html-proofer` to run the same checks that are ru
 Note that:
 - you can open a shell inside the PHP container with `make shell`
 - inside the PHP container, relevant executables are in the global `PATH`
-- the container is executed with user and group with id `1000` by default, which will likely match your main host user. You can change the id via the `UID` and `GID` build-time variables; you can configure those locally creating a `docker-compose.override.yml` (which is ignored by Git) containing:
+- the containers are executed with user and group with id `1000` by default, which will likely match your main host user. You can change the id via the `UID` and `GID` build-time variables; you can configure those locally creating a `docker-compose.override.yml` (which is ignored by Git) containing:
 ```yaml
 version: '3.5'
 
