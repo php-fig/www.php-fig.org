@@ -2,7 +2,7 @@
     "name": "fig/www.php-fig.org",
     "description": "The static official site of PHP-FIG",
     "require": {
-        "php": "^7.3",
+        "php": "^8.0",
         "aptoma/twig-markdown": "^3.3",
         "league/commonmark": "^1.4",
         "sculpin/sculpin": "^3.0.3",

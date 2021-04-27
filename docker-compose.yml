@@ -1,0 +1,39 @@
+version: '3.5'
+
+services:
+  php:
+    build:
+      context: docker/php
+    user: fig
+    volumes:
+    - .:/fig-website
+    working_dir: /fig-website
+    command:
+      - 'sculpin'
+      - 'generate'
+      - '--watch'
+      - '--server'
+    ports:
+      - 8000:8000
+
+  ruby:
+    build:
+      context: docker/ruby
+    user: 1000:1000
+    working_dir: /fig-website
+    volumes:
+      - .:/fig-website
+    entrypoint: 'sh'
+
+  node-sass:
+    image: catchdigital/node-sass:8.12.0-alpine
+    user: 1000:1000
+    working_dir: /fig-website
+    volumes:
+      - .:/fig-website
+    command:
+      - 'node-sass'
+      - '--output-style=compressed'
+      - '--watch'
+      - 'source/_sass/all.scss'
+      - 'output_dev/css/all.css'

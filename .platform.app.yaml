@@ -1,5 +1,5 @@
 name: php-fig-website
-type: php:7.3
+type: php:8.0
 
 build:
   flavor: composer
@@ -23,6 +23,12 @@ web:
 
 disk: 1024
 
+dependencies:
+  nodejs:
+    node-sass: '^4.9.4'
+  php:
+    composer/composer: '^2'
+
 hooks:
   build: |
     set -e
@@ -30,12 +36,12 @@ hooks:
     php -v
     ruby -v
     curl -sS https://platform.sh/cli/installer | php
-    gem install bundler
     echo "cachebust: $PLATFORM_PROJECT_ENTROPY" >> app/config/sculpin_site.yml
 
     bin/install.sh
-    bin/build.sh
-
+    bin/build-php.sh
+    bin/build-sass.sh
+    bin/html-proofer.sh
 
 crons:
     renewcert:
