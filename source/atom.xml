@@ -21,7 +21,7 @@ use:
             <link href="{{ site.host }}{{ post.url }}"/>
             <updated>{{ post.date|date('c') }}</updated>
             <id>{{ site.host }}{{ post.url }}</id>
-            <content type="html"><![CDATA[{{ post.blocks.content|raw }}]]></content>
+            <content type="html"><![CDATA[{{ post.blocks.content|striptags('<p><br><em><strong><blockquote><ul><ol><li><img><pre><code><a><h1><h2><h3><h4><h5><h6>')|raw }}]]></content>
 
             {% for author in data.authors if post.author and author.identifier is same as(post.author) %}
             <author>
