@@ -4,7 +4,8 @@ www.php-fig.org
 This is the source for [www.php-fig.org][php-fig.org]. It is a static site generated with
 [Sculpin][sculpin].
 
- [php-fig.org]: http://www.php-fig.org
+ [php-fig.org]: https://www.php-fig.org
+ [sculpin]: https://sculpin.io/
 
 
 # Contributing
