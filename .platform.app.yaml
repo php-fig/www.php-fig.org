@@ -16,7 +16,7 @@ web:
       scripts: true
       allow: false
       rules:
-        \.(css|js|gif|jpe?g|png|ttf|eot|woff2?|otf|html|ico|svg?)$:
+        \.(css|js|gif|jpe?g|png|ttf|eot|woff2?|otf|html|ico|xml|svg?)$:
           allow: true
         ^/(robots|humans)\.txt$:
           allow: true
