@@ -10,7 +10,7 @@ ENV LD_PRELOAD /usr/lib/preloadable_libiconv.so php
 
 RUN curl -sSL https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-ENV PATH /fig-website/bin:/fig-website/vendor/bin:${PATH}
+ENV PATH /fig-website/bin:/fig-website/vendor/sculpin/sculpin/bin:/fig-website/vendor/bin:${PATH}
 
 # setup user
 ARG UID=1000

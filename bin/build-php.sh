@@ -2,4 +2,4 @@
 
 set -e
 
-vendor/bin/sculpin generate -n --clean
+sculpin generate -n --clean
