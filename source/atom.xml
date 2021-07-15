@@ -1,0 +1,35 @@
+---
+permalink: atom.xml
+use:
+- authors
+- posts
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>PHP-FIG Blog Feed</title>
+    <link href="{{ site.host }}/atom.xml" rel="self"/>
+    <link href="{{ site.host }}/"/>
+    <author>
+        <name>PHP-FIG</name>
+    </author>
+    <updated>{{ site.calculated_date | date('c') }}</updated>
+    <id>{{ site.host }}/</id>
+
+    {% for post in data.posts %}
+        <entry>
+            <title type="html"><![CDATA[{{ post.title }}]]></title>
+            <link href="{{ site.host }}{{ post.url }}"/>
+            <updated>{{ post.date|date('c') }}</updated>
+            <id>{{ site.host }}{{ post.url }}</id>
+            <content type="html"><![CDATA[{{ post.blocks.content|striptags('<p><br><em><strong><blockquote><ul><ol><li><img><pre><code><a><h1><h2><h3><h4><h5><h6>')|raw }}]]></content>
+
+            {% for author in data.authors if post.author and author.identifier is same as(post.author) %}
+            <author>
+                <name><![CDATA[{{ author.title }}]]></name>
+                <uri>{{ site.host }}{{ author.url }}</uri>
+            </author>
+            {% endfor %}
+
+        </entry>
+    {% endfor %}
+</feed>
