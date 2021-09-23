@@ -19,4 +19,12 @@ RUN addgroup -g $GID fig && adduser -D -G fig -u $UID fig \
     && mkdir /fig-website \
     && chown fig:fig /fig-website
 WORKDIR /fig-website
+
+RUN apk add --no-cache --virtual .xdebug-build-deps $PHPIZE_DEPS \
+    && pecl install -o xdebug \
+    && docker-php-ext-enable xdebug \
+    && apk del .xdebug-build-deps \
+    && pecl clear-cache \
+    && docker-php-source delete
+
 USER fig

@@ -55,3 +55,6 @@ services:
 ## Updating the submodule
 This site uses the master branch of the [main PHP-FIG repository](https://github.com/php-fig/fig-standards) as a Git submodule to pull content from it. 
 If you need to update it, you can use the `bin/update_submodule.sh` script to pull new commits. Afterwards, you can commit the differences in this repo, to push the updates afterwards.
+
+## Using Xdebug
+If you need to debug the site build, you can enable Xdebug. To do it, you need to copy `docker-compose.override.dist.yml` as `docker-compose.override.yml` so that your local Docker Compose configuration loads that configuration. This (after a container reload) will put Xdebug in `debug` mode. Once done that, you need to configure your IDE to catch to that. Xdebug will automatically connect back your host system thanks to the `host.docker.internal` special hostname, with a serverName of `PHP-FIG`, as defined in `docker-compose.yml`.
