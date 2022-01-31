@@ -1,0 +1,8 @@
+.psr_index {
+  table tbody tr td:first-of-type {
+    width: 5%;
+  }
+  table tbody tr td:nth-of-type(2)  {
+    min-width: 40%;
+  }
+}
