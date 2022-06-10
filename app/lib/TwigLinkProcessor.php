@@ -11,9 +11,15 @@ class TwigLinkProcessor extends AbstractExtension
     {
         return [
             new TwigFilter('processLinks', function(string $input): string {
-                $step1 = $this->filterPsrLinks($input);
-                $step2 = $this->filterBylawsLinks($step1);
-                return $step2;
+                if (str_contains($input, 'accepted/PSR-')) {
+                    return $this->filterPsrLinks($input); 
+                }
+
+                if (str_contains($input, '/php-fig/per-')) {
+                    return $this->filterPerLinks($input); 
+                }
+                
+                return $this->filterBylawsLinks($input);
             }),
         ];
     }
@@ -23,6 +29,15 @@ class TwigLinkProcessor extends AbstractExtension
         return preg_replace(
             '/(\[.*?\]:) http(?:s)?:\/\/github\.com\/php-fig\/fig-standards\/blob\/master\/accepted\/PSR-(\d+).*\.md/i',
             '\1 /psr/psr-\2',
+            $input
+        );
+    }
+
+    private function filterPerLinks(string $input): string
+    {
+        return preg_replace(
+            '/(\[.*?\]:) http(?:s)?:\/\/github\.com\/php-fig\/per-([\w-]+)\/blob\/[\w.]+\/.*\.md/i',
+            '\1 /per/\2',
             $input
         );
     }

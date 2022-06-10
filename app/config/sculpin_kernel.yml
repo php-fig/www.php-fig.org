@@ -21,6 +21,10 @@ sculpin_content_types:
     permalink: psr/:basename
     type: path
     path: _psr
+  per:
+    permalink: per/:basename
+    type: path
+    path: _per
   bylaws:
     singular_name: bylaw
     permalink: bylaws/:slug_title
