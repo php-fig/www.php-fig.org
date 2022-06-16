@@ -1,3 +1,6 @@
 [submodule "fig-standards"]
 	path = source/_includes/fig-standards
 	url = https://github.com/php-fig/fig-standards.git
+[submodule "per-coding-style"]
+	path = source/_includes/per-coding-style
+	url = https://github.com/php-fig/per-coding-style.git
