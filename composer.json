@@ -7,6 +7,7 @@
         "league/commonmark": "^1.4",
         "sculpin/sculpin": "dev-master#2aed37a as 3.1.2",
         "spatie/commonmark-highlighter": "^2.1",
+        "symfony/flex": "^2.2",
         "symfony/polyfill-iconv": "^1.23"
     },
     "repositories": [
@@ -19,7 +20,15 @@
         "sculpin/sculpin-theme-composer-plugin": "1.0.2"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "symfony/flex": true
+        }
+    },
+    "extra": {
+        "symfony": {
+            "require": "^4.4"
+        }
     },
     "autoload": {
         "psr-4": {
