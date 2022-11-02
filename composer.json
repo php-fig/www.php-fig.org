@@ -5,17 +5,11 @@
         "php": "^8.0",
         "aptoma/twig-markdown": "^3.3",
         "league/commonmark": "^1.4",
-        "sculpin/sculpin": "dev-master#0f67f3a71 as 3.1.2",
+        "sculpin/sculpin": "^3.2.0",
         "spatie/commonmark-highlighter": "^2.1",
         "symfony/flex": "^2.2",
         "symfony/polyfill-iconv": "^1.23"
     },
-    "repositories": [
-        {
-            "type": "github",
-            "url": "https://github.com/php-fig/sculpin"
-        }
-    ],
     "replace": {
         "sculpin/sculpin-theme-composer-plugin": "1.0.2"
     },
