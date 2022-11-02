@@ -1,17 +1,17 @@
-https://www.{default}/:
+https://{default}/:
   type: upstream
   upstream: php-fig-website:http
   cache:
     enabled: true
 
-https://{default}/:
+https://www.{default}/:
   type: redirect
-  to: https://www.{default}/
+  to: https://{default}/
 
 http://www.{default}/:
   type: redirect
-  to: https://www.{default}/
+  to: https://{default}/
 
 http://{default}/:
   type: redirect
-  to: https://www.{default}/
+  to: https://{default}/
