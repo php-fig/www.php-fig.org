@@ -23,7 +23,7 @@ services:
 
   ruby:
     build:
-      context: docker/ruby
+      context: ruby:2.7-alpine
     user: 1000:1000
     working_dir: /fig-website
     volumes:

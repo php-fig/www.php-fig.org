@@ -15,6 +15,10 @@ GEM
       typhoeus (~> 1.3)
       yell (~> 2.0)
     mercenary (0.4.0)
+    mini_portile2 (2.6.1)
+    nokogiri (1.12.5)
+      mini_portile2 (~> 2.6.1)
+      racc (~> 1.4)
     nokogiri (1.12.5-x86_64-linux)
       racc (~> 1.4)
     nokogumbo (2.0.5)
@@ -28,6 +32,7 @@ GEM
     yell (2.2.2)
 
 PLATFORMS
+  aarch64-linux
   x86_64-linux
 
 DEPENDENCIES
@@ -37,4 +42,4 @@ RUBY VERSION
    ruby 2.5.9p229
 
 BUNDLED WITH
-   2.2.16
+   2.3.26
