@@ -31,14 +31,10 @@ services:
     entrypoint: 'sh'
 
   node-sass:
-    image: catchdigital/node-sass:8.12.0-alpine
+    image: node:16-alpine
     user: 1000:1000
     working_dir: /fig-website
     volumes:
       - .:/fig-website
     command:
-      - 'node-sass'
-      - '--output-style=compressed'
-      - '--watch'
-      - 'source/_sass/all.scss'
-      - 'output_dev/css/all.css'
+      - ./bin/build-sass.sh
