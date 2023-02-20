@@ -14,4 +14,4 @@ RUN addgroup -g $GID fig && adduser -D -G fig -u $UID fig
 USER fig
 
 # update to bundler 2.0
-RUN gem install bundler:2
+RUN gem install bundler:2.3.26
