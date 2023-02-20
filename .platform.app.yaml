@@ -28,8 +28,6 @@ dependencies:
     node-sass: '^4.9.4'
   php:
     composer/composer: '^2'
-  ruby:
-    bundler: 2.3.26
 
 hooks:
   build: |

@@ -1,4 +1,4 @@
-FROM php:8.0-cli-alpine
+FROM php:8.1-cli-alpine
 
 RUN apk add --no-cache \
         bash \
@@ -20,7 +20,9 @@ RUN addgroup -g $GID fig && adduser -D -G fig -u $UID fig \
     && chown fig:fig /fig-website
 WORKDIR /fig-website
 
-RUN apk add --no-cache --virtual .xdebug-build-deps $PHPIZE_DEPS \
+RUN apk add --no-cache --virtual .xdebug-build-deps \
+      $PHPIZE_DEPS \
+      linux-headers \
     && pecl install -o xdebug \
     && docker-php-ext-enable xdebug \
     && apk del .xdebug-build-deps \
