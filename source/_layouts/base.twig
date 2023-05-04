@@ -66,7 +66,7 @@
                     <a class="site_menu__link {% if page.url matches '#^/psr#' %}site_menu__link--active{% endif %}" href="/psr">PSRs</a>
                 </li>
                 <li class="site_menu__item">
-                    <a class="site_menu__link {% if page.url matches '#^/per#' and not page.url matches '#^/personnel#' %}site_menu__link--active{% endif %}" href="/per">PERs</a>
+                    <a class="site_menu__link {% if page.url matches '#^/per#' and not (page.url matches '#^/personnel#') %}site_menu__link--active{% endif %}" href="/per">PERs</a>
                 </li>
                 <li class="site_menu__item">
                     <a class="site_menu__link {% if page.url matches '#^/personnel#' %}site_menu__link--active{% endif %}" href="/personnel">Personnel</a>
