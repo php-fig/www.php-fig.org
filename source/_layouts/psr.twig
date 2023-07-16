@@ -24,6 +24,14 @@
             </ul>
         </nav>
     </div>
+
+    <div class="columns__column columns__column--4 columns__column--padding_left">
+        <nav class="sidebar">
+            <h2 class="sidebar__title">Table of contents:</h2>
+            {% set content = include(page.markdown_source) %}
+            {{ content | markdown_toc | raw }}
+        </nav>
+    </div>
     {% endif %}
 </div>
 {% endblock %}
