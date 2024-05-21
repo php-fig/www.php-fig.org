@@ -1,0 +1,18 @@
+.markdown.sidebar_toc {
+    ol {
+        list-style-type: none;
+        margin-top: 0;
+
+        li {
+            margin: 0;
+        }
+    }
+
+    & > ol {
+        padding-left: 15px;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+}
