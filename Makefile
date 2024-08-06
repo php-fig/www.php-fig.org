@@ -19,3 +19,6 @@ html-proofer:
 
 shell:
 	@docker-compose run --rm php bash
+
+update-sub-modules:
+	git submodule sync && git submodule update --init --remote --force

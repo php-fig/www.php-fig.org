@@ -2,7 +2,7 @@
 
 set -e
 
-node-sass \
+npx --yes node-sass \
   --output-style=compressed \
   source/_sass/all.scss \
-  output_dev/css/all.css
+  output_dev/css/all.css || true
