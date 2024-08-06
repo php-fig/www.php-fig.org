@@ -40,6 +40,13 @@ services:
     tags:
       - { name: twig.extension }
 
+  fig.website.markdown_toc_extension:
+    class: Fig\Website\TwigMarkdownTOCExtension
+    arguments:
+      $environment: '@League\CommonMark\EnvironmentInterface'
+    tags:
+      - { name: twig.extension }
+
   aptoma.twig.markdown_extension:
     class: Aptoma\Twig\Extension\MarkdownExtension
     arguments:
@@ -47,5 +54,10 @@ services:
     tags:
       - { name: twig.extension }
 
+  League\CommonMark\EnvironmentInterface:
+    factory: ['Fig\Website\CommonMarkEnvironmentFactory', 'create']
+
   Aptoma\Twig\Extension\MarkdownEngineInterface:
     factory: ['Fig\Website\CommonMarkEngineFactory', 'create']
+    arguments:
+      $environment: '@League\CommonMark\EnvironmentInterface'
