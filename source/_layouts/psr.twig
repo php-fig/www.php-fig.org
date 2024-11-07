@@ -19,6 +19,13 @@
                     <li class="sidebar__item">
                         <a class="sidebar__link {% if related.permalink == '' %}sidebar__link--active{% endif %}"
                            href="{{ related.permalink }}">{{ related.name }}</a>
+
+                        {% if related.permalink == '' %}
+                            {% set content = include(page.markdown_source) %}
+                            <div class="sidebar_toc markdown">
+                                {{ content | markdown_toc | raw }}
+                            </div>
+                        {% endif %}
                     </li>
                 {% endfor %}
             </ul>
