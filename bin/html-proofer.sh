@@ -2,9 +2,10 @@
 
 set -e
 
-gem install bundler:2.3.26
+gem install bundler:2.6.5
 bundle update --bundler
-bundle install --path .bundle
+bundle config set path '.bundle'
+bundle install
 
 bundle exec htmlproofer output_dev \
   --check-html \
