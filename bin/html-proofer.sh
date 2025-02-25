@@ -3,7 +3,6 @@
 set -e
 
 gem install bundler:2.6.5
-bundle update --bundler
 bundle config set path '.bundle'
 bundle install
 
