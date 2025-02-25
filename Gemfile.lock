@@ -39,7 +39,7 @@ DEPENDENCIES
   html-proofer (~> 3.19)
 
 RUBY VERSION
-   ruby 3.1.6p260
+   ruby 3.1.2
 
 BUNDLED WITH
    2.6.5

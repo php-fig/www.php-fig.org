@@ -1,17 +1,19 @@
-FROM ruby:3.1-alpine
+FROM ruby:3.1.6-slim-bullseye
 
-RUN apk add --no-cache \
-        build-base \
+RUN apt-get update \
+    && apt-get install -y \
+        build-essential \
         curl \
         libffi-dev \
         libzip-dev \
-        zip
+        zip \
+    && apt-get clean
 
 # setup user
 ARG UID=1000
 ARG GID=1000
-RUN addgroup -g $GID fig && adduser -D -G fig -u $UID fig
+RUN groupadd -g $GID fig \
+    && useradd -g fig -u $UID fig
 USER fig
 
-# update to bundler 2.0
 RUN gem install bundler:2.6.5
