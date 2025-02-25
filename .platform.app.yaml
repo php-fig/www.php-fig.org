@@ -25,7 +25,7 @@ disk: 1024
 
 dependencies:
   nodejs:
-    node-sass: '^4.9.4'
+    sass: '^1.85'
   php:
     composer/composer: '^2'
 
