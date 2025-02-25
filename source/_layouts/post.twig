@@ -14,12 +14,14 @@
         </span>
     </div>
 
-    {% for author in data.authors if page.author and author.identifier == page.author %}
+    {% for author in data.authors %}
+        {% if page.author and author.identifier == page.author %}
         <div class="columns__column columns__column--4 columns__column--padding_left">
             <nav class="sidebar">
                 {% include 'post-author.twig' %}
             </nav>
         </div>
+        {% endif %}
     {% endfor %}
 {% endblock %}
 

@@ -31,8 +31,10 @@
 
         <div class="author__posts">
             <h2 class="author__posts__subtitle">Articles by {{ page.title }}</h2>
-            {% for post in data.posts if post.author and page.identifier == post.author %}
+            {% for post in data.posts %}
+                {% if post.author and page.identifier == post.author %}
                 {% include 'post-preview.twig' with {skipAuthor: true} %}
+                {% endif %}
             {% endfor %}
         </div>
     </div>
