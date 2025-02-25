@@ -3,7 +3,11 @@
 namespace Fig\Website;
 
 use League\CommonMark\Extension\CommonMark\Node\Block\FencedCode;
+use League\CommonMark\Extension\CommonMark\Node\Block\HtmlBlock;
 use League\CommonMark\Extension\CommonMark\Node\Block\IndentedCode;
+use League\CommonMark\Extension\CommonMark\Node\Inline\HtmlInline;
+use League\CommonMark\Extension\CommonMark\Renderer\Block\HtmlBlockRenderer;
+use League\CommonMark\Extension\CommonMark\Renderer\Inline\HtmlInlineRenderer;
 use League\CommonMark\Extension\HeadingPermalink\HeadingPermalinkExtension;
 use League\CommonMark\Extension\Table\TableExtension;
 use League\CommonMark\GithubFlavoredMarkdownConverter;
@@ -25,6 +29,8 @@ class MarkdownConverterFactory
                 'fragment_prefix' => '',
                 'insert' => 'after',
             ],
+            'html_input' => 'allow',
+            'disallowed_raw_html' => ['disallowed_tags' => []],
         ];
 
         $converter = new GithubFlavoredMarkdownConverter($config);
