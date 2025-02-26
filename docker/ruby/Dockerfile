@@ -1,4 +1,4 @@
-FROM ruby:3.1.6-slim-bullseye
+FROM ruby:3.1.2-slim-bullseye
 
 RUN apt-get update \
     && apt-get install -y \
