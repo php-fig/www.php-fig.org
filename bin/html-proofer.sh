@@ -7,8 +7,6 @@ bundle config set path '.bundle'
 bundle install
 
 bundle exec htmlproofer output_dev \
-  --check-html \
-  --check-img-http \
-  --check-opengraph \
+  --checks html,images,links,opengraph,scripts \
   --disable-external \
-  --url-ignore 'foo-meta.md#errata-1-foo'
+  --ignore-urls 'foo-meta.md#errata-1-foo'
