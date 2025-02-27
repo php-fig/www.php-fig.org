@@ -10,8 +10,10 @@
             {{ post.date|date('F jS Y') }}
         </span>
         {% if skipAuthor is empty %}
-            {% for author in data.authors if post.author and author.identifier is same as(post.author) %}
+            {% for author in data.authors %}
+                {% if post.author and author.identifier is same as(post.author) %}
                 - <a class="blog-list__meta__author" href="{{ author.url }}">{{ author.title }}</a>
+                {% endif %}
             {% endfor %}
         {% endif %}
 

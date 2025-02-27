@@ -40,12 +40,12 @@ services:
     tags:
       - { name: twig.extension }
 
-  aptoma.twig.markdown_extension:
-    class: Aptoma\Twig\Extension\MarkdownExtension
+  markdown_extension:
+    class: \Fig\Website\MarkdownExtension
     arguments:
-      $markdownEngine: '@Aptoma\Twig\Extension\MarkdownEngineInterface'
+      $markdownConverter: '@League\CommonMark\GithubFlavoredMarkdownConverter'
     tags:
       - { name: twig.extension }
 
-  Aptoma\Twig\Extension\MarkdownEngineInterface:
-    factory: ['Fig\Website\CommonMarkEngineFactory', 'create']
+  League\CommonMark\GithubFlavoredMarkdownConverter:
+    factory: ['Fig\Website\MarkdownConverterFactory', 'create']

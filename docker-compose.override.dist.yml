@@ -1,6 +1,11 @@
-version: '3.5'
-
 services:
   php:
     environment:
+      PHP_IDE_CONFIG: "serverName=php-fig"
+      XDEBUG_HOST: host.docker.internal
+      XDEBUG_TRIGGER: 'yes'
       XDEBUG_MODE: 'debug'
+
+  node-sass:
+#    for MacOS ARM
+#    platform: linux/amd64

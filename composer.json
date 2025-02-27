@@ -2,13 +2,13 @@
     "name": "fig/www.php-fig.org",
     "description": "The static official site of PHP-FIG",
     "require": {
-        "php": "~8.1",
-        "aptoma/twig-markdown": "^3.3",
-        "league/commonmark": "^1.4",
-        "sculpin/sculpin": "^3.2.0",
-        "spatie/commonmark-highlighter": "^2.1",
-        "symfony/flex": "^2.2",
-        "symfony/polyfill-iconv": "^1.23"
+        "php": "~8.4",
+        "league/commonmark": "^2",
+        "sculpin/sculpin": "^3.3.0-alpha4",
+        "spatie/commonmark-highlighter": "^3",
+        "symfony/flex": "^2.4",
+        "symfony/polyfill-iconv": "^1.23",
+        "twig/twig": "^3"
     },
     "replace": {
         "sculpin/sculpin-theme-composer-plugin": "1.0.2"

@@ -1,5 +1,5 @@
 source "https://rubygems.org"
 
-ruby '>= 2.5', '< 2.6'
+ruby '>= 3.1', '< 3.2'
 
 gem "html-proofer", "~> 3.19"
