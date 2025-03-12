@@ -37,7 +37,7 @@ GEM
       yell (~> 2.0)
       zeitwerk (~> 2.5)
     io-event (1.9.0)
-    json (2.10.1)
+    json (2.10.2)
     metrics (0.12.1)
     mini_portile2 (2.8.8)
     nokogiri (1.18.3)
