@@ -29,6 +29,8 @@
 
     <meta name="og:title" content="{{ block('title') |replace({"\n": ''}) | trim }}" />
 
+    <meta name="fediverse:creator" content="@phpfig@phpc.social" />
+
     <meta name="twitter:title" content="{{ block('title') |replace({"\n": ''}) | trim }}" />
     <meta name="twitter:site" content="@{{ site.twitter }}" />
     <meta name="twitter:creator" content="@{{ site.twitter }}" />
@@ -93,8 +95,8 @@
     <div class="center">
         <div class="site_footer_links__content">
             <ul class="site_footer_links__list">
-                <li class="site_footer_links__item site_footer_links__item--twitter">
-                    <a class="site_footer_links__link" href="https://twitter.com/{{ site.twitter }}">Follow us on Twitter</a>
+                <li class="site_footer_links__item site_footer_links__item--mastodon">
+                    <a class="site_footer_links__link" href="{{ site.mastodon }}">Follow us on Mastodon</a>
                 </li>
                 <li class="site_footer_links__item site_footer_links__item--discord">
                     <a class="site_footer_links__link" href="https://discord.gg/php-fig">Discuss on Discord</a>

@@ -28,9 +28,9 @@
         }
     }
 
-    &__item--twitter {
+    &__item--mastodon {
         &:before {
-            background-image: url(/img/twitter_icon.png);
+            background-image: url(/img/mastodon_orange_icon.svg);
             height: 42px;
             top: 10px;
         }
