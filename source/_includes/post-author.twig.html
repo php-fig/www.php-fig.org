@@ -22,6 +22,14 @@
             </li>
         {% endif %}
 
+        {% if author.mastodon %}
+            <li class="sidebar__item">
+                <a class="sidebar__link" href="{{ author.mastodon }}" target="_blank">
+                    {{ author.mastodon }} on Mastodon
+                </a>
+            </li>
+        {% endif %}
+
         <li class="sidebar__item">
             <a class="sidebar__link" href="{{ author.url }}">
                 More about author
