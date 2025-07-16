@@ -28,11 +28,19 @@
         }
     }
 
-    &__item--twitter {
+    &__item--mastodon {
         &:before {
-            background-image: url(/img/twitter_icon.png);
-            height: 42px;
-            top: 10px;
+            background-image: url(/img/mastodon_orange_icon.svg);
+            height: 53px;
+            top: 6px;
+        }
+    }
+
+    &__item--bluesky {
+        &:before {
+            background-image: url(/img/bluesky_orange_icon.svg);
+            height: 44px;
+            top: 12px;
         }
     }
 

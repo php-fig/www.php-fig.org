@@ -22,6 +22,11 @@
                         @{{ page.twitter }} on Twitter
                     </a>
                 {% endif %}
+                {% if page.mastodon %}
+                    <a class="author__link" href="{{ page.mastodon }}" target="_blank">
+                        {{ page.mastodon }} on Mastodon
+                    </a>
+                {% endif %}
                 {% if page.web %}
                     <a class="author__link" href="{{ page.web }}" target="_blank">
                       Site: {{ page.web }}

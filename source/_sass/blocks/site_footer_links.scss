@@ -15,7 +15,7 @@
 
     &__item {
         float: left;
-        width: 25%;
+        width: 20%;
         padding: 0 0 0 10px;
     }
 
@@ -50,9 +50,18 @@
         }
     }
 
-    &__item--twitter &__link:before {
-        background-image: url(/img/twitter_footer_icon.png);
+    &__item--mastodon &__link:before {
+        background-image: url(/img/mastodon_white_icon.svg);
         width: 31px;
+        height: 33px;
+        left: -3px;
+        top: -1px;
+    }
+
+    &__item--bluesky &__link:before {
+        background-image: url(/img/bluesky_white_icon.svg);
+        width: 31px;
+        height: 26px;
         left: -3px;
         top: -1px;
     }
@@ -89,7 +98,8 @@
             padding: 30px 0 0 0;
         }
 
-        &__item--twitter &__link:before,
+        &__item--mastodon &__link:before,
+        &__item--bluesky &__link:before,
         &__item--discord &__link:before,
         &__item--github &__link:before,
         &__item--mailing_list &__link:before {
