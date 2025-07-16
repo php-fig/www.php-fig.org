@@ -15,7 +15,7 @@
 
     &__item {
         float: left;
-        width: 25%;
+        width: 20%;
         padding: 0 0 0 10px;
     }
 
@@ -61,7 +61,7 @@
     &__item--bluesky &__link:before {
         background-image: url(/img/bluesky_white_icon.svg);
         width: 31px;
-        height: 33px;
+        height: 26px;
         left: -3px;
         top: -1px;
     }
