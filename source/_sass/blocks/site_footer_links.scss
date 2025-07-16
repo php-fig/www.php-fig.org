@@ -58,6 +58,14 @@
         top: -1px;
     }
 
+    &__item--bluesky &__link:before {
+        background-image: url(/img/bluesky_white_icon.svg);
+        width: 31px;
+        height: 33px;
+        left: -3px;
+        top: -1px;
+    }
+
     &__item--discord &__link:before {
         background-image: url(/img/discord_footer_icon.png);
         width: 28px;
@@ -91,6 +99,7 @@
         }
 
         &__item--mastodon &__link:before,
+        &__item--bluesky &__link:before,
         &__item--discord &__link:before,
         &__item--github &__link:before,
         &__item--mailing_list &__link:before {

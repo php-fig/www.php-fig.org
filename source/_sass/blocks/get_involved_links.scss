@@ -36,6 +36,14 @@
         }
     }
 
+    &__item--bluesky {
+        &:before {
+            background-image: url(/img/bluesky_orange_icon.svg);
+            height: 53px;
+            top: 6px;
+        }
+    }
+
     &__item--discord {
         &:before {
             background-image: url(/img/discord_icon.png);
