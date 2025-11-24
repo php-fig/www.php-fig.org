@@ -11,6 +11,7 @@ GEM
       io-event (~> 1.9)
       metrics (~> 0.12)
       traces (~> 0.15)
+    benchmark (0.5.0)
     bigdecimal (3.3.1)
     console (1.30.2)
       fiber-annotation
@@ -28,9 +29,10 @@ GEM
       fiber-storage
     fiber-storage (1.0.1)
     hashery (2.1.2)
-    html-proofer (5.1.0)
+    html-proofer (5.1.1)
       addressable (~> 2.3)
       async (~> 2.1)
+      benchmark (~> 0.5)
       nokogiri (~> 1.13)
       pdf-reader (~> 2.11)
       rainbow (~> 3.0)
