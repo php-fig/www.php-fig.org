@@ -2,8 +2,8 @@ GEM
   remote: https://rubygems.org/
   specs:
     Ascii85 (2.0.1)
-    addressable (2.8.7)
-      public_suffix (>= 2.0.2, < 7.0)
+    addressable (2.8.8)
+      public_suffix (>= 2.0.2, < 8.0)
     afm (0.2.2)
     async (2.24.0)
       console (~> 1.29)
@@ -20,16 +20,16 @@ GEM
     ethon (0.18.0)
       ffi (>= 1.15.0)
       logger
-    ffi (1.17.2)
-    ffi (1.17.2-aarch64-linux-gnu)
-    ffi (1.17.2-arm64-darwin)
-    ffi (1.17.2-x86_64-darwin)
+    ffi (1.17.3)
+    ffi (1.17.3-aarch64-linux-gnu)
+    ffi (1.17.3-arm64-darwin)
+    ffi (1.17.3-x86_64-darwin)
     fiber-annotation (0.2.0)
     fiber-local (1.1.0)
       fiber-storage
     fiber-storage (1.0.1)
     hashery (2.1.2)
-    html-proofer (5.1.1)
+    html-proofer (5.2.0)
       addressable (~> 2.3)
       async (~> 2.1)
       benchmark (~> 0.5)
@@ -40,7 +40,7 @@ GEM
       yell (~> 2.0)
       zeitwerk (~> 2.5)
     io-event (1.11.2)
-    json (2.16.0)
+    json (2.18.0)
     logger (1.7.0)
     metrics (0.12.2)
     mini_portile2 (2.8.9)
@@ -53,7 +53,7 @@ GEM
       racc (~> 1.4)
     nokogiri (1.18.10-x86_64-darwin)
       racc (~> 1.4)
-    pdf-reader (2.15.0)
+    pdf-reader (2.15.1)
       Ascii85 (>= 1.0, < 3.0, != 2.0.0)
       afm (>= 0.2.1, < 2)
       hashery (~> 2.0)
@@ -78,7 +78,7 @@ PLATFORMS
   x86_64-darwin
 
 DEPENDENCIES
-  html-proofer (~> 5.1)
+  html-proofer (~> 5.2)
 
 RUBY VERSION
    ruby 3.1.2p20
