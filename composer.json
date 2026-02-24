@@ -2,7 +2,7 @@
     "name": "fig/www.php-fig.org",
     "description": "The static official site of PHP-FIG",
     "require": {
-        "php": "~8.4",
+        "php": "~8.5",
         "league/commonmark": "^2",
         "sculpin/sculpin": "^3.3.0-alpha4",
         "spatie/commonmark-highlighter": "^3",
@@ -14,6 +14,11 @@
         "sculpin/sculpin-theme-composer-plugin": "1.0.2"
     },
     "config": {
+        "audit": {
+            "ignore": [
+                "PKSA-q7hq-sbtp-vntg"
+            ]
+        },
         "sort-packages": true,
         "allow-plugins": {
             "symfony/flex": true
@@ -21,7 +26,7 @@
     },
     "extra": {
         "symfony": {
-            "require": "^4.4"
+            "require": "^5.4"
         }
     },
     "autoload": {
