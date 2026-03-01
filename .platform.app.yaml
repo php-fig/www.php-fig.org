@@ -1,5 +1,5 @@
 name: php-fig-website
-type: php:8.4
+type: php:8.5
 
 build:
   flavor: composer
@@ -27,7 +27,7 @@ dependencies:
   nodejs:
     sass: '^1.85'
   php:
-    composer/composer: '^2'
+    composer/composer: '^2.9'
 
 hooks:
   build: |
