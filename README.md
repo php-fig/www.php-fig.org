@@ -13,9 +13,9 @@ This is the source for [www.php-fig.org][php-fig.org]. It is a static site gener
  - If you notice something missing, please [open an issue on GitHub][issue].
 
  - If you'd like to fix it yourself, simply [edit the file on GitHub][edit] and
-    open a pull request. The site will be recompiled in preview as soon as open it.
+    open a pull request. The site will be recompiled in preview as soon as you open it.
 
- - If you'd like to run the site locally o generate the HTML files, you'll need to install the dependencies.
+ - If you'd like to run the site locally or generate the HTML files, you'll need to install the dependencies.
     The templates are built by directly including the Markdown sources from the [fig standards repo][fig-standards], which is provided as a git submodule.
 
     [issue]: https://github.com/php-fig/www.php-fig.org/issues

@@ -18,17 +18,17 @@
 
             <div class="columns__column columns__column--4">
                 {% if page.twitter %}
-                    <a class="author__link" href="https://twitter.com/{{ page.twitter }}" target="_blank">
+                    <a class="author__link" href="https://twitter.com/{{ page.twitter }}" target="_blank" rel="noopener noreferrer">
                         @{{ page.twitter }} on Twitter
                     </a>
                 {% endif %}
                 {% if page.mastodon %}
-                    <a class="author__link" href="{{ page.mastodon }}" target="_blank">
+                    <a class="author__link" href="{{ page.mastodon }}" target="_blank" rel="noopener noreferrer">
                         {{ page.mastodon }} on Mastodon
                     </a>
                 {% endif %}
                 {% if page.web %}
-                    <a class="author__link" href="{{ page.web }}" target="_blank">
+                    <a class="author__link" href="{{ page.web }}" target="_blank" rel="noopener noreferrer">
                       Site: {{ page.web }}
                     </a>
                 {% endif %}

@@ -16,7 +16,7 @@
     <ul class="sidebar__list">
         {% if author.twitter %}
             <li class="sidebar__item">
-                <a class="sidebar__link" href="https://twitter.com/{{ author.twitter }}" target="_blank">
+                <a class="sidebar__link" href="https://twitter.com/{{ author.twitter }}" target="_blank" rel="noopener noreferrer">
                     @{{ author.twitter }} on Twitter
                 </a>
             </li>
@@ -24,7 +24,7 @@
 
         {% if author.mastodon %}
             <li class="sidebar__item">
-                <a class="sidebar__link" href="{{ author.mastodon }}" target="_blank">
+                <a class="sidebar__link" href="{{ author.mastodon }}" target="_blank" rel="noopener noreferrer">
                     {{ author.mastodon }} on Mastodon
                 </a>
             </li>
