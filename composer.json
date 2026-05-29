@@ -4,7 +4,7 @@
     "require": {
         "php": "~8.5",
         "league/commonmark": "^2",
-        "sculpin/sculpin": "^3.3.0-alpha4",
+        "sculpin/sculpin": "dev-4.0.x-dev",
         "spatie/commonmark-highlighter": "^3",
         "symfony/flex": "^2.4",
         "symfony/polyfill-iconv": "^1.23",
@@ -26,7 +26,7 @@
     },
     "extra": {
         "symfony": {
-            "require": "^5.4"
+            "require": "^6.4"
         }
     },
     "autoload": {
